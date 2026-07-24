@@ -8,21 +8,53 @@
   :root{
     --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
     --text:#e6e9ef; --muted:#9aa4b2; --accent:#6ea8fe; --accent2:#7ee787;
-    --badge:#f0b429; --chip:#232838;
+    --badge:#f0b429; --new:#ff5c7a; --chip:#232838; --star:#ffd24a;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.55}
-  header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#12151c, #12151cf2);border-bottom:1px solid var(--line);padding:16px 22px;backdrop-filter:blur(6px)}
+  a{color:var(--accent);text-decoration:none}
+  header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#12151c,#12151cf2);border-bottom:1px solid var(--line);padding:14px 22px;backdrop-filter:blur(6px)}
   h1{margin:0 0 4px;font-size:19px}
   .sub{color:var(--muted);font-size:13px}
-  .wrap{padding:18px 22px;max-width:1280px;margin:0 auto}
-  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+  .wrap{padding:16px 22px;max-width:1320px;margin:0 auto}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:var(--chip);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:20px;cursor:pointer;font-size:13px;user-select:none}
   .chip.active{background:var(--accent);color:#0b0d12;border-color:var(--accent);font-weight:600}
   select,input[type=search]{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:7px 10px;border-radius:8px;font-size:13px}
-  input[type=search]{min-width:220px}
-  .day{margin:26px 0 8px;font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px}
+  input[type=search]{min-width:200px}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+  .btn:hover{border-color:var(--accent)}
+  .btn.on{background:var(--new);border-color:var(--new);color:#fff;font-weight:600}
+  .section-title{font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px;margin:22px 0 10px}
+  /* stat cards */
+  .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .stat h4{margin:0 0 8px;font-size:13px;color:var(--muted);font-weight:600}
+  .stat .row{display:flex;justify-content:space-between;font-size:13px;margin:3px 0}
+  .stat .big{font-size:22px;font-weight:700}
+  .stat .k{color:var(--muted)}
+  .pill{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;font-weight:700}
+  .pill.new{background:var(--new);color:#fff}
+  .pill.ment{background:var(--badge);color:#241c00}
+  /* tldr + panels */
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .tldr ul{margin:6px 0 0 18px;padding:0}
+  .tldr li{margin:5px 0}
+  .placeholder{color:var(--muted);font-style:italic;padding:8px 0}
+  /* competitor table */
+  .tblwrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:13px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:var(--panel2);color:#cbd3df;cursor:pointer;white-space:nowrap}
+  tbody tr:nth-child(even){background:#141821}
+  /* chart */
+  .chart{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin-top:6px}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+  .legend i{width:12px;height:3px;display:inline-block;border-radius:2px}
+  /* day + creative cards */
+  .day{margin:24px 0 8px;font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}
   .card-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 16px;background:var(--panel2);border-bottom:1px solid var(--line)}
   .net-tag{font-weight:700}
@@ -33,16 +65,26 @@
   .analysis h3{font-size:14px;margin:12px 0 4px;color:#cbd3df}
   .analysis ul{margin:6px 0 6px 18px;padding:0}
   .analysis li{margin:3px 0}
-  .analysis.collapsed{max-height:150px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+  .analysis.collapsed{max-height:130px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 55%,transparent)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;padding:14px 16px 18px}
   .mat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative}
-  .mat video,.mat img{width:100%;height:250px;object-fit:cover;display:block;background:#000}
-  .mat .meta{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;font-size:12px}
-  .mat a{color:var(--accent);text-decoration:none}
-  .mentioned{position:absolute;top:8px;left:8px;background:var(--badge);color:#241c00;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px}
-  .empty{color:var(--muted);text-align:center;padding:60px 0}
+  .mat .thumb{width:100%;height:250px;object-fit:cover;display:block;background:#000;cursor:zoom-in}
+  .mat .meta{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;font-size:12px;gap:6px}
+  .mat .note{width:100%;border:1px solid var(--line);background:#11141b;color:var(--text);font-size:12px;border-radius:6px;padding:5px;margin:0 0 8px;resize:vertical;min-height:30px}
+  .noteWrap{padding:0 10px}
+  .badges{position:absolute;top:8px;left:8px;display:flex;gap:5px}
+  .star{position:absolute;top:6px;right:8px;font-size:20px;cursor:pointer;color:#556;user-select:none;text-shadow:0 1px 3px #000}
+  .star.on{color:var(--star)}
   .missing{display:flex;align-items:center;justify-content:center;height:250px;color:var(--muted);font-size:12px;text-align:center;padding:0 10px}
+  .empty{color:var(--muted);text-align:center;padding:60px 0}
   footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
+  /* modal */
+  .modal{position:fixed;inset:0;background:#000d;z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+  .modal.open{display:flex}
+  .modal .box{max-width:92vw;max-height:92vh}
+  .modal video,.modal img{max-width:92vw;max-height:86vh;border-radius:10px;background:#000}
+  .modal .x{position:absolute;top:16px;right:22px;font-size:30px;color:#fff;cursor:pointer}
+  .modal .dl{display:block;text-align:center;margin-top:8px}
 </style>
 </head>
 <body>
@@ -52,107 +94,271 @@
   <div class="controls">
     <div class="chips" id="netChips"></div>
     <select id="dateSel"><option value="all">Tất cả ngày</option></select>
-    <input type="search" id="search" placeholder="Tìm trong nội dung phân tích...">
+    <input type="search" id="search" placeholder="Tìm trong phân tích...">
+    <button class="btn" id="newBtn">🆕 Chỉ xem mới</button>
+    <button class="btn" id="starBtn">★ Chỉ mục đã lưu</button>
+    <button class="btn" id="exportBtn">⬇ Export shortlist</button>
   </div>
 </header>
-<div class="wrap" id="content"></div>
-<footer>Dashboard tự sinh bởi Update-Dashboard.ps1 · Dữ liệu creative thuộc AppGrowing Global</footer>
+
+<div class="wrap">
+  <div class="section-title">📌 TL;DR — xu hướng nổi bật</div>
+  <div class="panel tldr" id="tldr"></div>
+
+  <div class="section-title">📊 Tổng quan (ngày mới nhất)</div>
+  <div class="stats" id="stats"></div>
+
+  <div class="section-title">📈 Số creative theo ngày</div>
+  <div class="chart" id="chart"></div>
+
+  <div class="section-title">🏆 So sánh đối thủ</div>
+  <div class="panel" id="competitors"></div>
+
+  <div class="section-title">🎬 Creative theo network</div>
+  <div id="content"></div>
+</div>
+<footer>Dashboard tự sinh · Dữ liệu creative thuộc AppGrowing Global</footer>
+
+<div class="modal" id="modal"><span class="x" id="modalX">✕</span><div class="box" id="modalBox"></div></div>
 
 <script>
 /*__DATA__*/
 
-// ---- tiny markdown renderer ----
+// ---------- helpers ----------
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function inline(s){return s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
 function md(t){
   if(!t) return "";
-  const lines = esc(t).split(/\r?\n/);
-  let html="", inList=false;
-  const flush=()=>{ if(inList){html+="</ul>";inList=false;} };
+  const lines=esc(t).split(/\r?\n/); let html="",inList=false;
+  const flush=()=>{if(inList){html+="</ul>";inList=false;}};
   for(let ln of lines){
-    let m;
     if(/^\s*#{3,}\s+/.test(ln)){flush();html+="<h3>"+ln.replace(/^\s*#{3,}\s+/,"")+"</h3>";continue;}
     if(/^\s*#{1,2}\s+/.test(ln)){flush();html+="<h2>"+ln.replace(/^\s*#{1,2}\s+/,"")+"</h2>";continue;}
-    if(/^\s*[-*•]\s+/.test(ln)){ if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(ln.replace(/^\s*[-*•]\s+/,""))+"</li>"; continue;}
-    if(/^\s*\d+\.\s+/.test(ln)){ if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(ln.replace(/^\s*\d+\.\s+/,""))+"</li>"; continue;}
-    flush();
-    if(ln.trim()==="") continue;
-    html+="<p>"+inline(ln)+"</p>";
+    if(/^\s*[-*•]\s+/.test(ln)){if(!inList){html+="<ul>";inList=true;}html+="<li>"+inline(ln.replace(/^\s*[-*•]\s+/,""))+"</li>";continue;}
+    if(/^\s*\d+\.\s+/.test(ln)){if(!inList){html+="<ul>";inList=true;}html+="<li>"+inline(ln.replace(/^\s*\d+\.\s+/,""))+"</li>";continue;}
+    flush(); if(ln.trim()==="")continue; html+="<p>"+inline(ln)+"</p>";
   }
-  flush();
-  return html;
+  flush(); return html;
 }
-function inline(s){return s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
+const LS={get:(k,d)=>{try{return localStorage.getItem(k)??d}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
 
-let activeNet="all";
-function render(){
-  document.getElementById("anchor").textContent = DATA.anchor;
-  document.getElementById("generated").textContent = new Date(DATA.generated).toLocaleString("vi-VN");
+// ---------- derived data ----------
+const NETS = DATA.networks||[];
+const ENTRIES = DATA.entries||[];
+const allDates=[...new Set(ENTRIES.map(e=>e.date))].sort();
+const latestDate=allDates[allDates.length-1];
+function prevEntry(net,date){
+  const c=ENTRIES.filter(e=>e.network===net && e.date<date).sort((a,b)=>a.date.localeCompare(b.date));
+  return c.length?c[c.length-1]:null;
+}
+function newIdSet(entry){
+  const p=prevEntry(entry.network,entry.date);
+  if(!p) return new Set();
+  const prev=new Set((p.materials||[]).map(m=>String(m.id)));
+  const s=new Set();
+  (entry.materials||[]).forEach(m=>{if(!prev.has(String(m.id)))s.add(String(m.id));});
+  return s;
+}
 
-  const netChips = document.getElementById("netChips");
-  if(!netChips.dataset.built){
-    let chips = '<span class="chip active" data-net="all">Tất cả network</span>';
-    DATA.networks.forEach(n=> chips += `<span class="chip" data-net="${n.id}">${n.label}</span>`);
-    netChips.innerHTML = chips; netChips.dataset.built="1";
-    netChips.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
-      netChips.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));
-      c.classList.add("active"); activeNet=c.dataset.net; draw();
+let activeNet="all", showNewOnly=false, showStarOnly=false;
+
+// ---------- render: TL;DR ----------
+function renderTldr(){
+  const el=document.getElementById("tldr");
+  let t=DATA.tldr;
+  if(!t || (Array.isArray(t)&&!t.length)){ el.innerHTML='<div class="placeholder">Chưa có TL;DR — sẽ xuất hiện sau lần chạy tự động kế tiếp (08:00).</div>'; return; }
+  let items = Array.isArray(t)? t : String(t).split(/\r?\n/).map(x=>x.replace(/^\s*[-*•]\s*/,"").trim()).filter(Boolean);
+  el.innerHTML="<ul>"+items.map(x=>"<li>"+inline(esc(x))+"</li>").join("")+"</ul>";
+}
+
+// ---------- render: stat cards ----------
+function renderStats(){
+  const el=document.getElementById("stats");
+  const latest=ENTRIES.filter(e=>e.date===latestDate);
+  let tot={c:0,m:0,n:0,v:0,i:0};
+  let cards="";
+  NETS.forEach(n=>{
+    const e=latest.find(x=>x.network===n.id);
+    const mats=e?(e.materials||[]):[];
+    const ns=e?newIdSet(e):new Set();
+    const m=mats.filter(x=>x.is_mentioned).length;
+    const v=mats.filter(x=>x.type==="video").length;
+    const img=mats.length-v;
+    tot.c+=mats.length; tot.m+=m; tot.n+=ns.size; tot.v+=v; tot.i+=img;
+    cards+=`<div class="stat"><h4>${n.label}</h4>
+      <div class="row"><span class="big">${mats.length}</span><span class="k">creative</span></div>
+      <div class="row"><span class="k">🆕 Mới</span><b>${ns.size}</b></div>
+      <div class="row"><span class="k">⭐ AI nhấn mạnh</span><b>${m}</b></div>
+      <div class="row"><span class="k">🎬 Video / 🖼 Ảnh</span><b>${v} / ${img}</b></div></div>`;
+  });
+  cards=`<div class="stat" style="border-color:var(--accent)"><h4>TỔNG CỘNG</h4>
+      <div class="row"><span class="big">${tot.c}</span><span class="k">creative</span></div>
+      <div class="row"><span class="k">🆕 Mới hôm nay</span><b>${tot.n}</b></div>
+      <div class="row"><span class="k">⭐ AI nhấn mạnh</span><b>${tot.m}</b></div>
+      <div class="row"><span class="k">🎬 / 🖼</span><b>${tot.v} / ${tot.i}</b></div></div>`+cards;
+  el.innerHTML=cards;
+}
+
+// ---------- render: line chart (vanilla SVG) ----------
+const COLORS=["#6ea8fe","#7ee787","#f0b429","#ff5c7a","#b083f0"];
+function renderChart(){
+  const el=document.getElementById("chart");
+  if(allDates.length===0){el.innerHTML='<div class="placeholder">Chưa có dữ liệu.</div>';return;}
+  const W=Math.max(520,allDates.length*90), H=220, pad=34;
+  const series=NETS.map((n,i)=>({label:n.label,color:COLORS[i%COLORS.length],
+    pts:allDates.map(d=>{const e=ENTRIES.find(x=>x.network===n.id&&x.date===d);return e?(e.materials||[]).length:0;})}));
+  let maxV=1; series.forEach(s=>s.pts.forEach(v=>{if(v>maxV)maxV=v;}));
+  const x=i=>pad+ (allDates.length<=1?W/2:(i*(W-2*pad)/(allDates.length-1)));
+  const y=v=>H-pad-(v/maxV)*(H-2*pad);
+  let svg=`<svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet">`;
+  svg+=`<line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2a2f3a"/>`;
+  svg+=`<line x1="${pad}" y1="${pad}" x2="${pad}" y2="${H-pad}" stroke="#2a2f3a"/>`;
+  allDates.forEach((d,i)=>{svg+=`<text x="${x(i)}" y="${H-pad+16}" fill="#9aa4b2" font-size="11" text-anchor="middle">${d.slice(5)}</text>`;});
+  svg+=`<text x="${pad-6}" y="${y(maxV)+4}" fill="#9aa4b2" font-size="11" text-anchor="end">${maxV}</text>`;
+  series.forEach(s=>{
+    if(allDates.length>1){
+      let dpath=s.pts.map((v,i)=>(i?"L":"M")+x(i)+" "+y(v)).join(" ");
+      svg+=`<path d="${dpath}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+    }
+    s.pts.forEach((v,i)=>{svg+=`<circle cx="${x(i)}" cy="${y(v)}" r="3.5" fill="${s.color}"/>`;});
+  });
+  svg+=`</svg>`;
+  let leg=`<div class="legend">`+series.map(s=>`<span><i style="background:${s.color}"></i>${s.label}</span>`).join("")+`</div>`;
+  el.innerHTML=svg+leg;
+}
+
+// ---------- render: competitor table ----------
+let compSort={k:"creatives",dir:-1};
+function gatherCompetitors(){
+  const rows=[];
+  ENTRIES.filter(e=>e.date===latestDate).forEach(e=>{
+    (e.competitors||[]).forEach(c=>{
+      rows.push({network:e.networkLabel||e.network,game:c.game||"",publisher:c.publisher||"",
+        creatives:Number(c.creatives)||0,hook:c.hook||"",format:c.format||"",region:c.region||"",why:c.why||""});
     });
-    const dates=[...new Set(DATA.entries.map(e=>e.date))].sort().reverse();
-    const dsel=document.getElementById("dateSel");
-    dates.forEach(d=> dsel.innerHTML+=`<option value="${d}">${d}</option>`);
-    dsel.onchange=draw;
-    document.getElementById("search").oninput=draw;
-  }
-  draw();
+  });
+  return rows;
 }
-function draw(){
+function renderCompetitors(){
+  const el=document.getElementById("competitors");
+  let rows=gatherCompetitors();
+  if(!rows.length){el.innerHTML='<div class="placeholder">Chưa có dữ liệu đối thủ có cấu trúc — sẽ xuất hiện sau lần chạy tự động kế tiếp (08:00), khi prompt mới trả về bảng đối thủ.</div>';return;}
+  rows.sort((a,b)=>{const k=compSort.k;let av=a[k],bv=b[k];if(typeof av==="string"){av=av.toLowerCase();bv=bv.toLowerCase();}return (av>bv?1:av<bv?-1:0)*compSort.dir;});
+  const cols=[["network","Network"],["game","Game"],["publisher","Nhà phát hành"],["creatives","#Creative"],["hook","Hook 3s"],["format","Format"],["region","Khu vực"],["why","Vì sao ăn"]];
+  let h="<div class='tblwrap'><table><thead><tr>"+cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join("")+"</tr></thead><tbody>";
+  rows.forEach(r=>{h+="<tr>"+cols.map(c=>`<td>${esc(String(r[c[0]]))}</td>`).join("")+"</tr>";});
+  h+="</tbody></table></div>";
+  el.innerHTML=h;
+  el.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;compSort.dir=(compSort.k===k?-compSort.dir:-1);compSort.k=k;renderCompetitors();});
+}
+
+// ---------- render: creative grid ----------
+function renderGrid(){
   const dateF=document.getElementById("dateSel").value;
   const q=document.getElementById("search").value.trim().toLowerCase();
-  let entries=DATA.entries.slice();
+  let entries=ENTRIES.slice();
   if(activeNet!=="all") entries=entries.filter(e=>e.network===activeNet);
   if(dateF!=="all") entries=entries.filter(e=>e.date===dateF);
   if(q) entries=entries.filter(e=>(e.analysis||"").toLowerCase().includes(q));
-  entries.sort((a,b)=> b.date.localeCompare(a.date) || a.network.localeCompare(b.network));
-
-  const byDay={};
-  entries.forEach(e=>{(byDay[e.date]=byDay[e.date]||[]).push(e);});
+  entries.sort((a,b)=>b.date.localeCompare(a.date)||a.network.localeCompare(b.network));
+  const byDay={}; entries.forEach(e=>{(byDay[e.date]=byDay[e.date]||[]).push(e);});
   const days=Object.keys(byDay).sort().reverse();
   const c=document.getElementById("content");
-  if(days.length===0){c.innerHTML='<div class="empty">Chưa có dữ liệu phù hợp. Chạy Update-Dashboard.ps1 để cập nhật.</div>';return;}
+  if(!days.length){c.innerHTML='<div class="empty">Không có dữ liệu phù hợp.</div>';return;}
   let html="";
   days.forEach(d=>{
     html+=`<div class="day">📅 ${d}</div>`;
-    byDay[d].forEach((e,i)=>{
-      const mats=e.materials||[];
-      const ment=mats.filter(m=>m.is_mentioned).length;
-      const cid=`a_${d}_${e.network}_${i}`.replace(/[^a-z0-9_]/gi,"");
-      html+=`<div class="card">
-        <div class="card-head">
-          <span class="net-tag">${e.networkLabel||e.network}</span>
-          <span class="count">${mats.length} creative${ment?` · ${ment} được AI nhắc tới`:""}</span>
-          <span class="toggle" onclick="document.getElementById('${cid}').classList.toggle('collapsed')">Thu gọn/mở phân tích</span>
-        </div>
-        <div class="analysis collapsed" id="${cid}">${md(e.analysis)}</div>`;
-      if(mats.length){
+    byDay[d].forEach((e,idx)=>{
+      const mats=e.materials||[]; const ns=newIdSet(e);
+      const cid=("a_"+d+"_"+e.network+"_"+idx).replace(/[^a-z0-9_]/gi,"");
+      html+=`<div class="card"><div class="card-head">
+        <span class="net-tag">${e.networkLabel||e.network}</span>
+        <span class="count">${mats.length} creative · ${ns.size} mới · ${mats.filter(m=>m.is_mentioned).length} AI nhấn mạnh</span>
+        <span class="toggle" onclick="document.getElementById('${cid}').classList.toggle('collapsed')">Thu gọn/mở phân tích</span>
+      </div><div class="analysis collapsed" id="${cid}">${md(e.analysis)}</div>`;
+      const vis=mats.filter(m=>{
+        if(showNewOnly && !ns.has(String(m.id))) return false;
+        if(showStarOnly && LS.get("agg_star_"+m.id)!=="1") return false;
+        return true;
+      });
+      if(vis.length){
         html+='<div class="grid">';
-        mats.forEach(m=>{
-          const badge=m.is_mentioned?'<span class="mentioned">AI nhắc tới</span>':"";
-          let media;
-          if(!m.media){ media='<div class="missing">Chưa tải được media<br>(mở link chi tiết)</div>'; }
-          else if(m.type==="video"){ media=`<video src="${m.media}" controls preload="metadata"></video>`; }
-          else{ media=`<img src="${m.media}" loading="lazy">`; }
-          html+=`<div class="mat">${badge}${media}
+        vis.forEach(m=>{
+          const isNew=ns.has(String(m.id));
+          const starred=LS.get("agg_star_"+m.id)==="1";
+          const note=esc(LS.get("agg_note_"+m.id,""));
+          let badges='<div class="badges">';
+          if(isNew) badges+='<span class="pill new">MỚI</span>';
+          if(m.is_mentioned) badges+='<span class="pill ment">AI</span>';
+          badges+='</div>';
+          let thumb;
+          if(!m.media){thumb='<div class="missing">Không có media<br>(mở Chi tiết)</div>';}
+          else if(m.type==="video"){thumb=`<video class="thumb" src="${m.media}" muted preload="metadata" loop data-src="${m.media}" data-type="video" onmouseenter="this.play()" onmouseleave="this.pause()" onclick="openModal(this)"></video>`;}
+          else{thumb=`<img class="thumb" src="${m.media}" loading="lazy" data-src="${m.media}" data-type="image" onclick="openModal(this)">`;}
+          html+=`<div class="mat">${badges}<span class="star ${starred?'on':''}" data-id="${m.id}" onclick="toggleStar(this)">${starred?'★':'☆'}</span>
+            ${thumb}
+            <div class="noteWrap"><textarea class="note" placeholder="Ghi chú..." data-id="${m.id}" oninput="saveNote(this)">${note}</textarea></div>
             <div class="meta"><span>#${m.id}</span>${m.detail_url?`<a href="${m.detail_url}" target="_blank">Chi tiết ↗</a>`:""}</div>
           </div>`;
         });
         html+='</div>';
+      } else {
+        html+='<div class="placeholder" style="padding:12px 16px">Không có creative khớp bộ lọc.</div>';
       }
       html+='</div>';
     });
   });
   c.innerHTML=html;
 }
-render();
+
+// ---------- interactions ----------
+function toggleStar(el){const id=el.dataset.id;const on=LS.get("agg_star_"+id)==="1";LS.set("agg_star_"+id,on?"0":"1");el.classList.toggle("on",!on);el.textContent=on?"☆":"★";}
+function saveNote(el){LS.set("agg_note_"+el.dataset.id,el.value);}
+function openModal(el){
+  const src=el.dataset.src,type=el.dataset.type;
+  const box=document.getElementById("modalBox");
+  box.innerHTML = type==="video"
+    ? `<video src="${src}" controls autoplay loop style="display:block"></video><a class="dl" href="${src}" target="_blank">Mở/tải bản gốc ↗</a>`
+    : `<img src="${src}"><a class="dl" href="${src}" target="_blank">Mở bản gốc ↗</a>`;
+  document.getElementById("modal").classList.add("open");
+}
+document.getElementById("modalX").onclick=()=>{document.getElementById("modal").classList.remove("open");document.getElementById("modalBox").innerHTML="";};
+document.getElementById("modal").onclick=(e)=>{if(e.target.id==="modal"){e.currentTarget.classList.remove("open");document.getElementById("modalBox").innerHTML="";}};
+
+function exportShortlist(){
+  const rows=[["id","network","date","is_mentioned","note","detail_url","media_url"]];
+  ENTRIES.forEach(e=>(e.materials||[]).forEach(m=>{
+    if(LS.get("agg_star_"+m.id)==="1"){
+      rows.push([m.id,e.networkLabel||e.network,e.date,m.is_mentioned?"1":"0",(LS.get("agg_note_"+m.id,"")||"").replace(/"/g,'""'),m.detail_url||"",m.media||""]);
+    }
+  }));
+  if(rows.length===1){alert("Chưa có creative nào được lưu (★). Bấm ngôi sao trên creative để lưu.");return;}
+  const csv="﻿"+rows.map(r=>r.map(c=>`"${String(c)}"`).join(",")).join("\r\n");
+  const blob=new Blob([csv],{type:"text/csv"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="shortlist_creative.csv";a.click();
+}
+
+// ---------- init ----------
+function init(){
+  document.getElementById("anchor").textContent=DATA.anchor||"";
+  document.getElementById("generated").textContent=DATA.generated?new Date(DATA.generated).toLocaleString("vi-VN"):"";
+  // net chips
+  const nc=document.getElementById("netChips");
+  let chips='<span class="chip active" data-net="all">Tất cả network</span>';
+  NETS.forEach(n=>chips+=`<span class="chip" data-net="${n.id}">${n.label}</span>`);
+  nc.innerHTML=chips;
+  nc.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{nc.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));c.classList.add("active");activeNet=c.dataset.net;renderGrid();});
+  // dates
+  const ds=document.getElementById("dateSel");
+  allDates.slice().reverse().forEach(d=>ds.innerHTML+=`<option value="${d}">${d}</option>`);
+  ds.onchange=renderGrid;
+  document.getElementById("search").oninput=renderGrid;
+  document.getElementById("newBtn").onclick=(e)=>{showNewOnly=!showNewOnly;e.target.classList.toggle("on",showNewOnly);renderGrid();};
+  document.getElementById("starBtn").onclick=(e)=>{showStarOnly=!showStarOnly;e.target.classList.toggle("on",showStarOnly);renderGrid();};
+  document.getElementById("exportBtn").onclick=exportShortlist;
+  renderTldr(); renderStats(); renderChart(); renderCompetitors(); renderGrid();
+}
+init();
 </script>
 </body>
 </html>

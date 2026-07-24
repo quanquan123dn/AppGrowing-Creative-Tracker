@@ -8,21 +8,53 @@
   :root{
     --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
     --text:#e6e9ef; --muted:#9aa4b2; --accent:#6ea8fe; --accent2:#7ee787;
-    --badge:#f0b429; --chip:#232838;
+    --badge:#f0b429; --new:#ff5c7a; --chip:#232838; --star:#ffd24a;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.55}
-  header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#12151c, #12151cf2);border-bottom:1px solid var(--line);padding:16px 22px;backdrop-filter:blur(6px)}
+  a{color:var(--accent);text-decoration:none}
+  header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#12151c,#12151cf2);border-bottom:1px solid var(--line);padding:14px 22px;backdrop-filter:blur(6px)}
   h1{margin:0 0 4px;font-size:19px}
   .sub{color:var(--muted);font-size:13px}
-  .wrap{padding:18px 22px;max-width:1280px;margin:0 auto}
-  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+  .wrap{padding:16px 22px;max-width:1320px;margin:0 auto}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:var(--chip);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:20px;cursor:pointer;font-size:13px;user-select:none}
   .chip.active{background:var(--accent);color:#0b0d12;border-color:var(--accent);font-weight:600}
   select,input[type=search]{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:7px 10px;border-radius:8px;font-size:13px}
-  input[type=search]{min-width:220px}
-  .day{margin:26px 0 8px;font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px}
+  input[type=search]{min-width:200px}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+  .btn:hover{border-color:var(--accent)}
+  .btn.on{background:var(--new);border-color:var(--new);color:#fff;font-weight:600}
+  .section-title{font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px;margin:22px 0 10px}
+  /* stat cards */
+  .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .stat h4{margin:0 0 8px;font-size:13px;color:var(--muted);font-weight:600}
+  .stat .row{display:flex;justify-content:space-between;font-size:13px;margin:3px 0}
+  .stat .big{font-size:22px;font-weight:700}
+  .stat .k{color:var(--muted)}
+  .pill{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;font-weight:700}
+  .pill.new{background:var(--new);color:#fff}
+  .pill.ment{background:var(--badge);color:#241c00}
+  /* tldr + panels */
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .tldr ul{margin:6px 0 0 18px;padding:0}
+  .tldr li{margin:5px 0}
+  .placeholder{color:var(--muted);font-style:italic;padding:8px 0}
+  /* competitor table */
+  .tblwrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:13px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:var(--panel2);color:#cbd3df;cursor:pointer;white-space:nowrap}
+  tbody tr:nth-child(even){background:#141821}
+  /* chart */
+  .chart{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin-top:6px}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+  .legend i{width:12px;height:3px;display:inline-block;border-radius:2px}
+  /* day + creative cards */
+  .day{margin:24px 0 8px;font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}
   .card-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 16px;background:var(--panel2);border-bottom:1px solid var(--line)}
   .net-tag{font-weight:700}
@@ -33,16 +65,26 @@
   .analysis h3{font-size:14px;margin:12px 0 4px;color:#cbd3df}
   .analysis ul{margin:6px 0 6px 18px;padding:0}
   .analysis li{margin:3px 0}
-  .analysis.collapsed{max-height:150px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+  .analysis.collapsed{max-height:130px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 55%,transparent)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;padding:14px 16px 18px}
   .mat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative}
-  .mat video,.mat img{width:100%;height:250px;object-fit:cover;display:block;background:#000}
-  .mat .meta{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;font-size:12px}
-  .mat a{color:var(--accent);text-decoration:none}
-  .mentioned{position:absolute;top:8px;left:8px;background:var(--badge);color:#241c00;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px}
-  .empty{color:var(--muted);text-align:center;padding:60px 0}
+  .mat .thumb{width:100%;height:250px;object-fit:cover;display:block;background:#000;cursor:zoom-in}
+  .mat .meta{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;font-size:12px;gap:6px}
+  .mat .note{width:100%;border:1px solid var(--line);background:#11141b;color:var(--text);font-size:12px;border-radius:6px;padding:5px;margin:0 0 8px;resize:vertical;min-height:30px}
+  .noteWrap{padding:0 10px}
+  .badges{position:absolute;top:8px;left:8px;display:flex;gap:5px}
+  .star{position:absolute;top:6px;right:8px;font-size:20px;cursor:pointer;color:#556;user-select:none;text-shadow:0 1px 3px #000}
+  .star.on{color:var(--star)}
   .missing{display:flex;align-items:center;justify-content:center;height:250px;color:var(--muted);font-size:12px;text-align:center;padding:0 10px}
+  .empty{color:var(--muted);text-align:center;padding:60px 0}
   footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
+  /* modal */
+  .modal{position:fixed;inset:0;background:#000d;z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+  .modal.open{display:flex}
+  .modal .box{max-width:92vw;max-height:92vh}
+  .modal video,.modal img{max-width:92vw;max-height:86vh;border-radius:10px;background:#000}
+  .modal .x{position:absolute;top:16px;right:22px;font-size:30px;color:#fff;cursor:pointer}
+  .modal .dl{display:block;text-align:center;margin-top:8px}
 </style>
 </head>
 <body>
@@ -52,11 +94,32 @@
   <div class="controls">
     <div class="chips" id="netChips"></div>
     <select id="dateSel"><option value="all">Tất cả ngày</option></select>
-    <input type="search" id="search" placeholder="Tìm trong nội dung phân tích...">
+    <input type="search" id="search" placeholder="Tìm trong phân tích...">
+    <button class="btn" id="newBtn">🆕 Chỉ xem mới</button>
+    <button class="btn" id="starBtn">★ Chỉ mục đã lưu</button>
+    <button class="btn" id="exportBtn">⬇ Export shortlist</button>
   </div>
 </header>
-<div class="wrap" id="content"></div>
-<footer>Dashboard tự sinh bởi Update-Dashboard.ps1 · Dữ liệu creative thuộc AppGrowing Global</footer>
+
+<div class="wrap">
+  <div class="section-title">📌 TL;DR — xu hướng nổi bật</div>
+  <div class="panel tldr" id="tldr"></div>
+
+  <div class="section-title">📊 Tổng quan (ngày mới nhất)</div>
+  <div class="stats" id="stats"></div>
+
+  <div class="section-title">📈 Số creative theo ngày</div>
+  <div class="chart" id="chart"></div>
+
+  <div class="section-title">🏆 So sánh đối thủ</div>
+  <div class="panel" id="competitors"></div>
+
+  <div class="section-title">🎬 Creative theo network</div>
+  <div id="content"></div>
+</div>
+<footer>Dashboard tự sinh · Dữ liệu creative thuộc AppGrowing Global</footer>
+
+<div class="modal" id="modal"><span class="x" id="modalX">✕</span><div class="box" id="modalBox"></div></div>
 
 <script>
 const DATA = {
@@ -92,280 +155,280 @@ const DATA = {
                                               "id":  "784ab35edd00bff7ee0c2c726592fd98-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/784ab35edd00bff7ee0c2c726592fd98-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/78/4a/b3/784ab35edd00bff7ee0c2c726592fd98.mp4?auth_key=1786174107-0-0-b8b2d8696407777d08f7873e17d283b5",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/78/4a/b3/784ab35edd00bff7ee0c2c726592fd98.mp4?auth_key=1786176345-0-0-334e3fc4d4425f90a6952e5a6fca34a7",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "9fc55e6fbd34f81ef340e6c63646feae-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/9fc55e6fbd34f81ef340e6c63646feae-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/9f/c5/5e/9fc55e6fbd34f81ef340e6c63646feae.mp4?auth_key=1786174107-0-0-ccc507253ef700fdb09e0a9a0d1a74ea",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/9f/c5/5e/9fc55e6fbd34f81ef340e6c63646feae.mp4?auth_key=1786176345-0-0-05eacc4cffb10995349e5099f265572a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "18738ac60c46fddb2096f9031cab305f-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/18738ac60c46fddb2096f9031cab305f-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/18/73/8a/18738ac60c46fddb2096f9031cab305f.mp4?auth_key=1786174107-0-0-6331207d8215cbacf6cb6bd9d671c666",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/18/73/8a/18738ac60c46fddb2096f9031cab305f.mp4?auth_key=1786176345-0-0-ae27a9a945091001802155c917a54210",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "0670f618d12b04b85c071eae2b90ea26-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/0670f618d12b04b85c071eae2b90ea26-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/06/70/f6/0670f618d12b04b85c071eae2b90ea26.mp4?auth_key=1786174107-0-0-5d43c8c057fef2a8c65c80d073fcd77a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/06/70/f6/0670f618d12b04b85c071eae2b90ea26.mp4?auth_key=1786176345-0-0-fa6868a3dbd0c8e0c98a704074bacc6d",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "fc7e3c99510e8f1821d15d40acd6b5a4-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/fc7e3c99510e8f1821d15d40acd6b5a4-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/fc/7e/3c/fc7e3c99510e8f1821d15d40acd6b5a4.mp4?auth_key=1786174107-0-0-65ae7eac48344f87df3348a9f0a93098",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/fc/7e/3c/fc7e3c99510e8f1821d15d40acd6b5a4.mp4?auth_key=1786176345-0-0-93e5c28f3e2b4bbf958fd8a9585ce1f0",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "2e92687a69741caa02c8841aada691e1-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/2e92687a69741caa02c8841aada691e1-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/2e/92/68/2e92687a69741caa02c8841aada691e1.mp4?auth_key=1786174107-0-0-efe62278d577a041a725f60cd93b64d8",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/2e/92/68/2e92687a69741caa02c8841aada691e1.mp4?auth_key=1786176345-0-0-350ac4b92c0e755f7e13cfabfd9c267f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "d82378b650216336117d7e6cb5ab6b62-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/d82378b650216336117d7e6cb5ab6b62-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d8/23/78/d82378b650216336117d7e6cb5ab6b62.mp4?auth_key=1786174107-0-0-c657c8d002f9b6f2c05f4fd6dcf92e62",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d8/23/78/d82378b650216336117d7e6cb5ab6b62.mp4?auth_key=1786176345-0-0-fca58b5f1583818e41ecf6ca911c6230",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "a14c9cec62558b8aca169de17ccac05e-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a14c9cec62558b8aca169de17ccac05e-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a1/4c/9c/a14c9cec62558b8aca169de17ccac05e.mp4?auth_key=1786174107-0-0-44ad418aa4e7d76deb80d8c1a81b0cc2",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a1/4c/9c/a14c9cec62558b8aca169de17ccac05e.mp4?auth_key=1786176345-0-0-521a603209e52ed7c049754709d3c078",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "78dae1e9120813df81f6dae620f708cc-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/78dae1e9120813df81f6dae620f708cc-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/78/da/e1/78dae1e9120813df81f6dae620f708cc.mp4?auth_key=1786174107-0-0-fc22622bac1602d0751a417c4f68ad7d",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/78/da/e1/78dae1e9120813df81f6dae620f708cc.mp4?auth_key=1786176345-0-0-7e422b0cca6a421f15e822343e7d59da",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "48d35e7b46925e74f4d19200eb683df5-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/48d35e7b46925e74f4d19200eb683df5-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/48/d3/5e/48d35e7b46925e74f4d19200eb683df5.mp4?auth_key=1786174107-0-0-21b099f0e4754c103bb88b82055e3cb4",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/48/d3/5e/48d35e7b46925e74f4d19200eb683df5.mp4?auth_key=1786176345-0-0-a23019e99c1a717407940831d07f677f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "15971e26c55965fb32970ac760257a31-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/15971e26c55965fb32970ac760257a31-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/15/97/1e/15971e26c55965fb32970ac760257a31.mp4?auth_key=1786174107-0-0-c0fc22f2879ae875c8ad0d845d00f81c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/15/97/1e/15971e26c55965fb32970ac760257a31.mp4?auth_key=1786176345-0-0-9602157dca16f5c2e54a97f50b15cdcf",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "a5b736d1ec59658e5e5dab406d0684e3-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a5b736d1ec59658e5e5dab406d0684e3-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a5/b7/36/a5b736d1ec59658e5e5dab406d0684e3.mp4?auth_key=1786174107-0-0-884e824c2e2c6dc1439b10612c0adb5f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a5/b7/36/a5b736d1ec59658e5e5dab406d0684e3.mp4?auth_key=1786176345-0-0-803829888503f18be1aff5bdc34ee0d0",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "888f99d4ed8359671388e3e9f70a6aa2-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/888f99d4ed8359671388e3e9f70a6aa2-102",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/8f/99/888f99d4ed8359671388e3e9f70a6aa2.jpeg?auth_key=1786174107-0-0-babfd7a8879a6eede4f07a4c93993a71",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/8f/99/888f99d4ed8359671388e3e9f70a6aa2.jpeg?auth_key=1786176345-0-0-1427f488a1f246e73799414bb05c6a28",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "8ed5fa568b8546cd105fdb13847d3138-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/8ed5fa568b8546cd105fdb13847d3138-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8e/d5/fa/8ed5fa568b8546cd105fdb13847d3138.mp4?auth_key=1786174107-0-0-c5232f0359fb6d978f5e463d1073e35c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8e/d5/fa/8ed5fa568b8546cd105fdb13847d3138.mp4?auth_key=1786176345-0-0-50cce2f194a77b5c2045a1ad94d376e5",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "88e2ebcd4fdd65439e84916c6eede753-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/88e2ebcd4fdd65439e84916c6eede753-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/88/e2/eb/88e2ebcd4fdd65439e84916c6eede753.mp4?auth_key=1786174107-0-0-6fcb465e0c2dc5db67e6384db8b83d9a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/88/e2/eb/88e2ebcd4fdd65439e84916c6eede753.mp4?auth_key=1786176345-0-0-b13bf80255d913a1b12494760bb85db9",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "c727996cbc2fc9f6f72164e584afc3b9-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/c727996cbc2fc9f6f72164e584afc3b9-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c7/27/99/c727996cbc2fc9f6f72164e584afc3b9.mp4?auth_key=1786174107-0-0-875d5783263526f5fe599ee82efc8804",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c7/27/99/c727996cbc2fc9f6f72164e584afc3b9.mp4?auth_key=1786176345-0-0-6ef4ea5051596974df8a9d7b27029bf9",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "06cbe193e2d7bb14cfaaea926b477dd1-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/06cbe193e2d7bb14cfaaea926b477dd1-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/06/cb/e1/06cbe193e2d7bb14cfaaea926b477dd1.mp4?auth_key=1786174107-0-0-740789427598214ac17ceeec35ebc741",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/06/cb/e1/06cbe193e2d7bb14cfaaea926b477dd1.mp4?auth_key=1786176345-0-0-a223a37ae81978605ac8e0e852838277",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "c266b5e09219b4cb35be9d663c30b653-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/c266b5e09219b4cb35be9d663c30b653-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c2/66/b5/c266b5e09219b4cb35be9d663c30b653.mp4?auth_key=1786174107-0-0-2f730c65f886b61fe5807308951cdc68",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c2/66/b5/c266b5e09219b4cb35be9d663c30b653.mp4?auth_key=1786176345-0-0-1d50dc3d211d4e661f6e6f58de4d8baa",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "125932d1f573d22e104dc78b6600081f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/125932d1f573d22e104dc78b6600081f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/12/59/32/125932d1f573d22e104dc78b6600081f.mp4?auth_key=1786174107-0-0-237675195cb0955b8e3890ad4b140dd9",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/12/59/32/125932d1f573d22e104dc78b6600081f.mp4?auth_key=1786176345-0-0-770a54c80d25e994a08f00d173e2cf1e",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "8ce51d9b35be97066ebfa1ad7bae4095-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/8ce51d9b35be97066ebfa1ad7bae4095-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/8c/e5/1d/8ce51d9b35be97066ebfa1ad7bae4095.jpeg?auth_key=1786174107-0-0-1637d657a14f6d79306073631c814d1f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/8c/e5/1d/8ce51d9b35be97066ebfa1ad7bae4095.jpeg?auth_key=1786176345-0-0-cf9eb4d0f9ea22feb1ad94c8a07ce5f3",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "a12ef874e650ed31cd6443308c906fd2-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a12ef874e650ed31cd6443308c906fd2-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a1/2e/f8/a12ef874e650ed31cd6443308c906fd2.mp4?auth_key=1786174107-0-0-42e685d3e71cb04a9771b49aff9541b7",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a1/2e/f8/a12ef874e650ed31cd6443308c906fd2.mp4?auth_key=1786176345-0-0-2462c963561e0caa899d4a29e849a213",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "5116e0343bb432886e05636ef5794eaf-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/5116e0343bb432886e05636ef5794eaf-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/51/16/e0/5116e0343bb432886e05636ef5794eaf.mp4?auth_key=1786174107-0-0-6391fdee2df67ec9b05894917e824a0f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/51/16/e0/5116e0343bb432886e05636ef5794eaf.mp4?auth_key=1786176345-0-0-5047355dd0930fca778be9177b2b4c47",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "5e795e4f9ea0579c6bae93d0d023ab70-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/5e795e4f9ea0579c6bae93d0d023ab70-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/5e/79/5e/5e795e4f9ea0579c6bae93d0d023ab70.mp4?auth_key=1786174107-0-0-94afdbc22671d1037b104a38d0664213",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/5e/79/5e/5e795e4f9ea0579c6bae93d0d023ab70.mp4?auth_key=1786176345-0-0-40dfd0af87ab9638e93490dae95cb24d",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "99e23024dea94e5c23f0a02bf7cd12a0-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/99e23024dea94e5c23f0a02bf7cd12a0-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/99/e2/30/99e23024dea94e5c23f0a02bf7cd12a0.mp4?auth_key=1786174107-0-0-e4c22cf9f88fb81da9b09b5556cc8d6c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/99/e2/30/99e23024dea94e5c23f0a02bf7cd12a0.mp4?auth_key=1786176345-0-0-0b53e14ec5abb810df847655a5162dfb",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "be0e25484ad6096f20ad4f856ccbd28f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/be0e25484ad6096f20ad4f856ccbd28f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/be/0e/25/be0e25484ad6096f20ad4f856ccbd28f.mp4?auth_key=1786174107-0-0-34730c222bc7a7291f99b20eecfa21fd",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/be/0e/25/be0e25484ad6096f20ad4f856ccbd28f.mp4?auth_key=1786176345-0-0-0824163d588ef1ff675583becc89d74f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "73801203d59be146fbcf52aa8c37b88f-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/73801203d59be146fbcf52aa8c37b88f-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/73/80/12/73801203d59be146fbcf52aa8c37b88f.jpeg?auth_key=1786174107-0-0-2782cad5d4acba1a42472ca0ea01703c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/73/80/12/73801203d59be146fbcf52aa8c37b88f.jpeg?auth_key=1786176345-0-0-4e96cc88a56fc3f0a5860f2720e481c7",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "1ef7e41b03d65c22cd0b90eb223a495a-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/1ef7e41b03d65c22cd0b90eb223a495a-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/1e/f7/e4/1ef7e41b03d65c22cd0b90eb223a495a.mp4?auth_key=1786174107-0-0-c62ff1147147037b6cbc6d77ce2b64fc",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/1e/f7/e4/1ef7e41b03d65c22cd0b90eb223a495a.mp4?auth_key=1786176345-0-0-c711c2d1c26f9d71b863e0f07dc08b07",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "e84b6e3b421572025c52dd675b7a312d-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e84b6e3b421572025c52dd675b7a312d-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/e8/4b/6e/e84b6e3b421572025c52dd675b7a312d.jpeg?auth_key=1786174107-0-0-f9b42fff1238dd24140cd1bfc583e761",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/e8/4b/6e/e84b6e3b421572025c52dd675b7a312d.jpeg?auth_key=1786176345-0-0-acd4395fcd857ee322ad40276e9ce8f3",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "e34bbee4528003fe01329b1ac545a0ca-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e34bbee4528003fe01329b1ac545a0ca-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/4b/be/e34bbee4528003fe01329b1ac545a0ca.mp4?auth_key=1786174107-0-0-ded13240a05216c51e8479d91fa7aa35",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/4b/be/e34bbee4528003fe01329b1ac545a0ca.mp4?auth_key=1786176345-0-0-10cb8453a788637effbd15f277be22df",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "560e5709a4c86a5cd70270117020f4a3-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/560e5709a4c86a5cd70270117020f4a3-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/56/0e/57/560e5709a4c86a5cd70270117020f4a3.mp4?auth_key=1786174107-0-0-8575e8c073eb6cd4027343585f017227",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/56/0e/57/560e5709a4c86a5cd70270117020f4a3.mp4?auth_key=1786176345-0-0-1e4b1de4c6c10b50ba4c1d2e5f365efa",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "28be5e1f39da21d44e18115df84c959f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/28be5e1f39da21d44e18115df84c959f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/28/be/5e/28be5e1f39da21d44e18115df84c959f.mp4?auth_key=1786174107-0-0-0021b82faa16778d6901c35d87849717",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/28/be/5e/28be5e1f39da21d44e18115df84c959f.mp4?auth_key=1786176345-0-0-0d70cf802ee02efeedbf6bd54674fe1f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "e39f02a348f4b32892498c3477f172cf-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e39f02a348f4b32892498c3477f172cf-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/9f/02/e39f02a348f4b32892498c3477f172cf.mp4?auth_key=1786174107-0-0-60cb78536ffb9d5842d5d17e4805645c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/9f/02/e39f02a348f4b32892498c3477f172cf.mp4?auth_key=1786176345-0-0-6dd46a7532fc8b9e78411e71abdd18e0",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "f5c92209da62454eac192d1f50b0a6ac-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/f5c92209da62454eac192d1f50b0a6ac-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f5/c9/22/f5c92209da62454eac192d1f50b0a6ac.mp4?auth_key=1786174107-0-0-d91f537a09f51bcde466f9e1f582b465",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f5/c9/22/f5c92209da62454eac192d1f50b0a6ac.mp4?auth_key=1786176345-0-0-32a62655bbc3cf2f4acf34c4e5c05143",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "aaffaa4b27a827fe2f90a7119cc7e92b-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/aaffaa4b27a827fe2f90a7119cc7e92b-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/aa/ff/aa/aaffaa4b27a827fe2f90a7119cc7e92b.mp4?auth_key=1786174107-0-0-7f831d72066ac8394c4177b4f9219cff",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/aa/ff/aa/aaffaa4b27a827fe2f90a7119cc7e92b.mp4?auth_key=1786176345-0-0-49ccde9afe63aa8fc5bb22c218e8ec27",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "884caa2c0d5894c5630863fe28912cbb-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/884caa2c0d5894c5630863fe28912cbb-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/4c/aa/884caa2c0d5894c5630863fe28912cbb.jpeg?auth_key=1786174107-0-0-77e9055b1d053d97c8fea7bca2a7c11e",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/4c/aa/884caa2c0d5894c5630863fe28912cbb.jpeg?auth_key=1786176345-0-0-8f1b893ebca2a51a91463785673e5a48",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "e33ad9fd8458c16aafd3c8ba0a70dc3b-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e33ad9fd8458c16aafd3c8ba0a70dc3b-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/3a/d9/e33ad9fd8458c16aafd3c8ba0a70dc3b.mp4?auth_key=1786174107-0-0-468f9311f5e89d559cda2e5394fc0e13",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/3a/d9/e33ad9fd8458c16aafd3c8ba0a70dc3b.mp4?auth_key=1786176345-0-0-f2143458953ac52a0f8f5e1212bb5fee",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "ad1d57fe76bdb3c8883aa677701cc53a-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ad1d57fe76bdb3c8883aa677701cc53a-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/ad/1d/57/ad1d57fe76bdb3c8883aa677701cc53a.jpeg?auth_key=1786174107-0-0-d9aa43d03cb43a3f8b38c11a9cfefc10",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/ad/1d/57/ad1d57fe76bdb3c8883aa677701cc53a.jpeg?auth_key=1786176345-0-0-1c9ac644eaee50d378b2d1dc0c5507d1",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "b717aa3c82125fe81fdd04e73e354ebe-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b717aa3c82125fe81fdd04e73e354ebe-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b7/17/aa/b717aa3c82125fe81fdd04e73e354ebe.mp4?auth_key=1786174107-0-0-c804ecbb22f14dac7933fd635382eecc",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b7/17/aa/b717aa3c82125fe81fdd04e73e354ebe.mp4?auth_key=1786176345-0-0-efa441e3e252f7eb744abae6e2aedeec",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "ad3d134ac0948883655dc5ff93705e8a-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ad3d134ac0948883655dc5ff93705e8a-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ad/3d/13/ad3d134ac0948883655dc5ff93705e8a.mp4?auth_key=1786174107-0-0-6c936c4e39ded75c159af685351b1236",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ad/3d/13/ad3d134ac0948883655dc5ff93705e8a.mp4?auth_key=1786176345-0-0-22b2cd3f36fcf180db2b99600fc08924",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "581225da8ce5fc68005bd1d43c1c7e93-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/581225da8ce5fc68005bd1d43c1c7e93-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/58/12/25/581225da8ce5fc68005bd1d43c1c7e93.mp4?auth_key=1786174107-0-0-3a1fa2f0a4da1061194a664d5a812cae",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/58/12/25/581225da8ce5fc68005bd1d43c1c7e93.mp4?auth_key=1786176345-0-0-0a6a96355a515f9aad091b97cbba27ec",
                                               "type":  "video"
                                           }
                                       ]
@@ -381,280 +444,280 @@ const DATA = {
                                               "id":  "e34bbee4528003fe01329b1ac545a0ca-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e34bbee4528003fe01329b1ac545a0ca-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/4b/be/e34bbee4528003fe01329b1ac545a0ca.mp4?auth_key=1786174109-0-0-498477d2ba62889fc0eb4ac07130bf5c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/4b/be/e34bbee4528003fe01329b1ac545a0ca.mp4?auth_key=1786176347-0-0-91c10d797eb3a97a8b31ccc982147cd6",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b36c5f6c1b11ae475b641104c75de59d-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b36c5f6c1b11ae475b641104c75de59d-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b3/6c/5f/b36c5f6c1b11ae475b641104c75de59d.mp4?auth_key=1786174109-0-0-95baf5b97b9e6b344c1627a806388951",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b3/6c/5f/b36c5f6c1b11ae475b641104c75de59d.mp4?auth_key=1786176347-0-0-e37ef63f06e3a00667d38fafad35cea4",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "cc9975edd9bf67bf0c838b7bb5a3b96f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/cc9975edd9bf67bf0c838b7bb5a3b96f-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/cc/99/75/cc9975edd9bf67bf0c838b7bb5a3b96f.mp4?auth_key=1786174109-0-0-0b1d2d9d529233deba5ec4e54c07a3e4",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/cc/99/75/cc9975edd9bf67bf0c838b7bb5a3b96f.mp4?auth_key=1786176347-0-0-1b071f903a14bcea83f3a46019cccc32",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "5e795e4f9ea0579c6bae93d0d023ab70-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/5e795e4f9ea0579c6bae93d0d023ab70-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/5e/79/5e/5e795e4f9ea0579c6bae93d0d023ab70.mp4?auth_key=1786174109-0-0-02b671cc585517c20d1a3b2999937466",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/5e/79/5e/5e795e4f9ea0579c6bae93d0d023ab70.mp4?auth_key=1786176347-0-0-8eb88cf7dc783453614f7c502ec1cc23",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "cfd05718c9ed6c07bffd02d029daf9ea-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/cfd05718c9ed6c07bffd02d029daf9ea-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/cf/d0/57/cfd05718c9ed6c07bffd02d029daf9ea.mp4?auth_key=1786174109-0-0-65e782fcb254d516cdd7599a84b8276a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/cf/d0/57/cfd05718c9ed6c07bffd02d029daf9ea.mp4?auth_key=1786176347-0-0-80bbb14d903e3220d68e86e3d0f7097a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "7ea3b293ec35350c42bb55e8733f424f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7ea3b293ec35350c42bb55e8733f424f-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7e/a3/b2/7ea3b293ec35350c42bb55e8733f424f.mp4?auth_key=1786174109-0-0-8eda6eb916cac2293c4ba0272871dc39",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7e/a3/b2/7ea3b293ec35350c42bb55e8733f424f.mp4?auth_key=1786176347-0-0-5e330eb47d68bfdd730772a56fd178b1",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "fffad8877c6a9d972bdf1919c163d31b-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/fffad8877c6a9d972bdf1919c163d31b-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ff/fa/d8/fffad8877c6a9d972bdf1919c163d31b.mp4?auth_key=1786174109-0-0-70d1df20cea40c202d6a146b06db6ca7",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ff/fa/d8/fffad8877c6a9d972bdf1919c163d31b.mp4?auth_key=1786176347-0-0-552ad264e0292210bc112c7176e29125",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "1847e97d9b82e31796005007d9c1ac45-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/1847e97d9b82e31796005007d9c1ac45-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/18/47/e9/1847e97d9b82e31796005007d9c1ac45.mp4?auth_key=1786174109-0-0-d6ea0c80cef4236f9ca7be0673c636b5",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/18/47/e9/1847e97d9b82e31796005007d9c1ac45.mp4?auth_key=1786176347-0-0-fc808f6127f4b210ee6595a76d244c33",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "a247c7e1e7c73d6e78876ef6261e5d20-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a247c7e1e7c73d6e78876ef6261e5d20-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a2/47/c7/a247c7e1e7c73d6e78876ef6261e5d20.mp4?auth_key=1786174109-0-0-b2ff4b11593bff51e5e3af07199a9b05",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a2/47/c7/a247c7e1e7c73d6e78876ef6261e5d20.mp4?auth_key=1786176347-0-0-9fffff6f412af2b49f5c79d54a774f0f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "73801203d59be146fbcf52aa8c37b88f-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/73801203d59be146fbcf52aa8c37b88f-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/73/80/12/73801203d59be146fbcf52aa8c37b88f.jpeg?auth_key=1786174109-0-0-c18fe095a2e13120a52b7f38f55319ee",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/73/80/12/73801203d59be146fbcf52aa8c37b88f.jpeg?auth_key=1786176347-0-0-159327cd4a4bcd63ebeab63f1119cdf3",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "d837368fcfcceccb158c6c7552ed3c07-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/d837368fcfcceccb158c6c7552ed3c07-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d8/37/36/d837368fcfcceccb158c6c7552ed3c07.mp4?auth_key=1786174109-0-0-7783adb67bf0d8fd8238a80dfb631226",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d8/37/36/d837368fcfcceccb158c6c7552ed3c07.mp4?auth_key=1786176347-0-0-1be0760cd8c3615118519245e087af05",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "a5b736d1ec59658e5e5dab406d0684e3-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a5b736d1ec59658e5e5dab406d0684e3-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a5/b7/36/a5b736d1ec59658e5e5dab406d0684e3.mp4?auth_key=1786174109-0-0-17783c9f11ce7c420dff7136ca5f0a71",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a5/b7/36/a5b736d1ec59658e5e5dab406d0684e3.mp4?auth_key=1786176347-0-0-9db2fa1514bf98a24e7380f7bef4b5c5",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "2408d860adb77a8cdc72461d3f87a591-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/2408d860adb77a8cdc72461d3f87a591-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/24/08/d8/2408d860adb77a8cdc72461d3f87a591.mp4?auth_key=1786174109-0-0-43693f10e74b2f30af9dca7e390c7503",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/24/08/d8/2408d860adb77a8cdc72461d3f87a591.mp4?auth_key=1786176347-0-0-25b609a0f360678ffe5a960868ea75eb",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "287ca13e9c6d09e762ada9495aba87d6-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/287ca13e9c6d09e762ada9495aba87d6-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/28/7c/a1/287ca13e9c6d09e762ada9495aba87d6.mp4?auth_key=1786174109-0-0-eb0ff824fc77c7167ec68d956abb2611",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/28/7c/a1/287ca13e9c6d09e762ada9495aba87d6.mp4?auth_key=1786176347-0-0-f8a0ff599c8d511b707eee525ee5e5af",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "152d2c48961e8a433beabe3810d54c0c-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/152d2c48961e8a433beabe3810d54c0c-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/15/2d/2c/152d2c48961e8a433beabe3810d54c0c.mp4?auth_key=1786174109-0-0-1fdd81fc3e60f7bba22bfeb177c0c074",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/15/2d/2c/152d2c48961e8a433beabe3810d54c0c.mp4?auth_key=1786176347-0-0-a946d2484a03471ee31f93218fd2314a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "8bdf05c937194aeb40a3156007852d16-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/8bdf05c937194aeb40a3156007852d16-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8b/df/05/8bdf05c937194aeb40a3156007852d16.mp4?auth_key=1786174109-0-0-efba2db48f12461cf26ddc95cd442bdf",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8b/df/05/8bdf05c937194aeb40a3156007852d16.mp4?auth_key=1786176347-0-0-49b5b3fac09b9e44982082b0cbb776cc",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "6949b38b365cfffacd2462f4b6dc662e-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6949b38b365cfffacd2462f4b6dc662e-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/69/49/b3/6949b38b365cfffacd2462f4b6dc662e.mp4?auth_key=1786174109-0-0-735701184e2ce5d04f4acf58f30e8f60",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/69/49/b3/6949b38b365cfffacd2462f4b6dc662e.mp4?auth_key=1786176347-0-0-90203eb562e29f3a78ccc5b68a93114a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "30326d6c590b97a07d4dd0187f1c56ef-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/30326d6c590b97a07d4dd0187f1c56ef-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/30/32/6d/30326d6c590b97a07d4dd0187f1c56ef.mp4?auth_key=1786174109-0-0-e82a5719d59a925ab2815099768b6f49",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/30/32/6d/30326d6c590b97a07d4dd0187f1c56ef.mp4?auth_key=1786176347-0-0-e254437a7317b9543f50b6a42d880b5e",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "10347c3b6705a2c0448ec17b825a59bd-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/10347c3b6705a2c0448ec17b825a59bd-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/10/34/7c/10347c3b6705a2c0448ec17b825a59bd.mp4?auth_key=1786174109-0-0-d79d3088ce87a68dda302ba15faae4ef",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/10/34/7c/10347c3b6705a2c0448ec17b825a59bd.mp4?auth_key=1786176347-0-0-f311875f78b06a201b5f8eb545e02b9b",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "28be5e1f39da21d44e18115df84c959f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/28be5e1f39da21d44e18115df84c959f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/28/be/5e/28be5e1f39da21d44e18115df84c959f.mp4?auth_key=1786174109-0-0-9bf3f31903edc82c31b360dec225688e",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/28/be/5e/28be5e1f39da21d44e18115df84c959f.mp4?auth_key=1786176347-0-0-502dfe5dc2a4063b0873dd225d4d598e",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "e84b6e3b421572025c52dd675b7a312d-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e84b6e3b421572025c52dd675b7a312d-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/e8/4b/6e/e84b6e3b421572025c52dd675b7a312d.jpeg?auth_key=1786174109-0-0-7511362d1b5927e58039d51bcbb74fb0",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/e8/4b/6e/e84b6e3b421572025c52dd675b7a312d.jpeg?auth_key=1786176347-0-0-14e11d30dd35c829f0a2dfdff5a6c267",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "a25bd7eaf55d930c28f5b18b129ae0ac-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a25bd7eaf55d930c28f5b18b129ae0ac-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a2/5b/d7/a25bd7eaf55d930c28f5b18b129ae0ac.mp4?auth_key=1786174109-0-0-e51b3119b64af9f43828d0cebd004ba3",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a2/5b/d7/a25bd7eaf55d930c28f5b18b129ae0ac.mp4?auth_key=1786176347-0-0-d1058516f01ce834df81a14eb244dd4f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "f270af4296c101789cd7db404d22ff5c-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/f270af4296c101789cd7db404d22ff5c-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f2/70/af/f270af4296c101789cd7db404d22ff5c.mp4?auth_key=1786174109-0-0-76c55b0d5eccb9fdf6b2c461830ca8d1",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f2/70/af/f270af4296c101789cd7db404d22ff5c.mp4?auth_key=1786176347-0-0-08d1c4ccd35a40039ecc81502d0b2864",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "e3c8fff8cc6e2d6868b48a994fd87bdb-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e3c8fff8cc6e2d6868b48a994fd87bdb-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/c8/ff/e3c8fff8cc6e2d6868b48a994fd87bdb.mp4?auth_key=1786174109-0-0-98d80fa92b22efdaea74d77015db505a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e3/c8/ff/e3c8fff8cc6e2d6868b48a994fd87bdb.mp4?auth_key=1786176347-0-0-9901b69089eba3fb8ba396b8009740c1",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "9fc55e6fbd34f81ef340e6c63646feae-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/9fc55e6fbd34f81ef340e6c63646feae-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/9f/c5/5e/9fc55e6fbd34f81ef340e6c63646feae.mp4?auth_key=1786174109-0-0-ad4d9ec7d44550d6d1d2b897e4b06bfe",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/9f/c5/5e/9fc55e6fbd34f81ef340e6c63646feae.mp4?auth_key=1786176347-0-0-f235a87646a575fcfa260d1b55026a4f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "6715a6ccc414323d83eb3b0f621a48a9-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6715a6ccc414323d83eb3b0f621a48a9-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/67/15/a6/6715a6ccc414323d83eb3b0f621a48a9.mp4?auth_key=1786174109-0-0-9275c30e2cf6986e7bb83a46e918028e",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/67/15/a6/6715a6ccc414323d83eb3b0f621a48a9.mp4?auth_key=1786176347-0-0-0090d45a240283e5375119a6a68e49fc",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "6b42d65e9b84ae19d356063077bc7e91-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6b42d65e9b84ae19d356063077bc7e91-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6b/42/d6/6b42d65e9b84ae19d356063077bc7e91.mp4?auth_key=1786174109-0-0-26f8a138071b7d6bc97db72513acf692",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6b/42/d6/6b42d65e9b84ae19d356063077bc7e91.mp4?auth_key=1786176347-0-0-76465228a864da1c6a62d783f6cfd5eb",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "719578b1b4c843f3ff6c2e01b520d520-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/719578b1b4c843f3ff6c2e01b520d520-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/71/95/78/719578b1b4c843f3ff6c2e01b520d520.mp4?auth_key=1786174109-0-0-ff483c55db445de649cbf1d04b6edd55",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/71/95/78/719578b1b4c843f3ff6c2e01b520d520.mp4?auth_key=1786176347-0-0-e5a345a2164b673125abaf6f11d0b889",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b9a15d801cec3e2c4730bde7825a9bb9-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b9a15d801cec3e2c4730bde7825a9bb9-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b9/a1/5d/b9a15d801cec3e2c4730bde7825a9bb9.mp4?auth_key=1786174109-0-0-116e45b56cd7fdd8f806e3656af39a6f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b9/a1/5d/b9a15d801cec3e2c4730bde7825a9bb9.mp4?auth_key=1786176347-0-0-511baa37dbfd974163e1a1e3dc93fcc7",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "a2988ad23884332fd767abb8c1a69d3e-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a2988ad23884332fd767abb8c1a69d3e-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/a2/98/8a/a2988ad23884332fd767abb8c1a69d3e.jpeg?auth_key=1786174109-0-0-885974c2d43d2b66411ba880b075bbb5",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/a2/98/8a/a2988ad23884332fd767abb8c1a69d3e.jpeg?auth_key=1786176347-0-0-2f3b111fefe4a6ade9a7af8ddcc416ad",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "ad3d134ac0948883655dc5ff93705e8a-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ad3d134ac0948883655dc5ff93705e8a-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ad/3d/13/ad3d134ac0948883655dc5ff93705e8a.mp4?auth_key=1786174109-0-0-baa1f4321b698e4fc5334b47baff9b46",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ad/3d/13/ad3d134ac0948883655dc5ff93705e8a.mp4?auth_key=1786176347-0-0-6d6ffb43c314014fb9ae24200644de23",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "ad1d57fe76bdb3c8883aa677701cc53a-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ad1d57fe76bdb3c8883aa677701cc53a-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/ad/1d/57/ad1d57fe76bdb3c8883aa677701cc53a.jpeg?auth_key=1786174109-0-0-2fc905751618e398327518d25755f4c7",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/ad/1d/57/ad1d57fe76bdb3c8883aa677701cc53a.jpeg?auth_key=1786176347-0-0-76ee17053903bf794e87701db03f1c4b",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "0daf6c9f73efe2ae53677d3beaf4fb73-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/0daf6c9f73efe2ae53677d3beaf4fb73-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/0d/af/6c/0daf6c9f73efe2ae53677d3beaf4fb73.mp4?auth_key=1786174109-0-0-658104b7de584ef36a13b80169035a80",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/0d/af/6c/0daf6c9f73efe2ae53677d3beaf4fb73.mp4?auth_key=1786176347-0-0-9b5445e37668daec3e51db77c1ff049a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "639317d4cff8baa169599de11d3e5aa7-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/639317d4cff8baa169599de11d3e5aa7-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/63/93/17/639317d4cff8baa169599de11d3e5aa7.mp4?auth_key=1786174109-0-0-b223e50a1bf03e7e01fcd8262f766e5f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/63/93/17/639317d4cff8baa169599de11d3e5aa7.mp4?auth_key=1786176347-0-0-52000c3c49601db80ebda3f4a10696bd",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "9c6115b1748a18717c409e34450b8722-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/9c6115b1748a18717c409e34450b8722-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/9c/61/15/9c6115b1748a18717c409e34450b8722.mp4?auth_key=1786174109-0-0-f752c7dfe5e58869128ce2f41bade06a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/9c/61/15/9c6115b1748a18717c409e34450b8722.mp4?auth_key=1786176347-0-0-8d2f17951b7a325660aa6b4ef0e6baaa",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "a27f5d2b5feb6fdf48b5bdb8587a8022-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/a27f5d2b5feb6fdf48b5bdb8587a8022-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a2/7f/5d/a27f5d2b5feb6fdf48b5bdb8587a8022.mp4?auth_key=1786174109-0-0-0a46c1528b635ceb40a5d65d7dce9936",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/a2/7f/5d/a27f5d2b5feb6fdf48b5bdb8587a8022.mp4?auth_key=1786176347-0-0-7e2ac773c708343bd1956583a3de4413",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "bc9c4e7cfdf78cfa499cd5dc1c0858eb-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/bc9c4e7cfdf78cfa499cd5dc1c0858eb-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/bc/9c/4e/bc9c4e7cfdf78cfa499cd5dc1c0858eb.mp4?auth_key=1786174109-0-0-e04c12cba01405279d95dc0380806da6",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/bc/9c/4e/bc9c4e7cfdf78cfa499cd5dc1c0858eb.mp4?auth_key=1786176347-0-0-e77e812497d86d7fcfc3a5584a9c8efe",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "462a0cccbe12239ed60cbb269a0485f5-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/462a0cccbe12239ed60cbb269a0485f5-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/46/2a/0c/462a0cccbe12239ed60cbb269a0485f5.mp4?auth_key=1786174109-0-0-d9c7616b7463246c49191004d2292ff9",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/46/2a/0c/462a0cccbe12239ed60cbb269a0485f5.mp4?auth_key=1786176347-0-0-a0f195a736055951ce441f6c869010ca",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "35c7e7996a0e65e8659ecf51dfca12ee-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/35c7e7996a0e65e8659ecf51dfca12ee-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/35/c7/e7/35c7e7996a0e65e8659ecf51dfca12ee.mp4?auth_key=1786174109-0-0-f9c5b80b8ff564504c9d2d77e4a38293",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/35/c7/e7/35c7e7996a0e65e8659ecf51dfca12ee.mp4?auth_key=1786176347-0-0-b56ab9fb3be3f1c38f3389d604fb502e",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "c2367b3bc8fd78adffc66671b90b16f5-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/c2367b3bc8fd78adffc66671b90b16f5-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/c2/36/7b/c2367b3bc8fd78adffc66671b90b16f5.jpeg?auth_key=1786174109-0-0-ee130264b7bcec85856e99c9dc8cecef",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/c2/36/7b/c2367b3bc8fd78adffc66671b90b16f5.jpeg?auth_key=1786176347-0-0-a1cfa25db17507c65915227386b8b572",
                                               "type":  "image"
                                           }
                                       ]
@@ -670,280 +733,280 @@ const DATA = {
                                               "id":  "b1281f42e918ccc4a82d8aca440a0f44-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b1281f42e918ccc4a82d8aca440a0f44-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b1/28/1f/b1281f42e918ccc4a82d8aca440a0f44.mp4?auth_key=1786174110-0-0-7691688ca06b247909b48a934b43fe38",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b1/28/1f/b1281f42e918ccc4a82d8aca440a0f44.mp4?auth_key=1786176348-0-0-69a41bdf59e89024420f441a2a882583",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "c0c52b6e56c9c8a3964fd2d7cdd74ba8-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/c0c52b6e56c9c8a3964fd2d7cdd74ba8-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c0/c5/2b/c0c52b6e56c9c8a3964fd2d7cdd74ba8.mp4?auth_key=1786174110-0-0-87231ada40b469e8af0b87dc44c4f9c5",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c0/c5/2b/c0c52b6e56c9c8a3964fd2d7cdd74ba8.mp4?auth_key=1786176348-0-0-5301908ad948333ed212cf53724debcb",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "8b586d15fc219c6d43f490448bb11fa4-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/8b586d15fc219c6d43f490448bb11fa4-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8b/58/6d/8b586d15fc219c6d43f490448bb11fa4.mp4?auth_key=1786174110-0-0-ad7eff6439d6f1fb23f716550bbb7632",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8b/58/6d/8b586d15fc219c6d43f490448bb11fa4.mp4?auth_key=1786176348-0-0-d5cc2ee6623c2bc6c07baa53c3904b2c",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "4bff7bca295ad4ef2f1e00e53000a468-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/4bff7bca295ad4ef2f1e00e53000a468-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/4b/ff/7b/4bff7bca295ad4ef2f1e00e53000a468.mp4?auth_key=1786174110-0-0-31b0fa9a6f207c1b220cb63c062e0afa",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/4b/ff/7b/4bff7bca295ad4ef2f1e00e53000a468.mp4?auth_key=1786176348-0-0-9cdc40c2be71b6889abe0ff35a800e33",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "00f06405e13c07aa95f7051bb4829984-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/00f06405e13c07aa95f7051bb4829984-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/00/f0/64/00f06405e13c07aa95f7051bb4829984.mp4?auth_key=1786174110-0-0-cd5be0da4fb7f9ac0caeff692df749e7",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/00/f0/64/00f06405e13c07aa95f7051bb4829984.mp4?auth_key=1786176348-0-0-b52bd785ad5aec129a9f8a703c03b82c",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "82dfea3db17ad29e0cd187be1b9d7d40-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/82dfea3db17ad29e0cd187be1b9d7d40-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/82/df/ea/82dfea3db17ad29e0cd187be1b9d7d40.mp4?auth_key=1786174110-0-0-b96d034bf48a8d52c9f4a2636dcda1a1",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/82/df/ea/82dfea3db17ad29e0cd187be1b9d7d40.mp4?auth_key=1786176348-0-0-59eb5382b353f14135029b137aaada97",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "7cf9d84561991c78d7ce517990e53013-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7cf9d84561991c78d7ce517990e53013-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7c/f9/d8/7cf9d84561991c78d7ce517990e53013.mp4?auth_key=1786174110-0-0-f5b21aa148f49ca173b3012b1b24ae20",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7c/f9/d8/7cf9d84561991c78d7ce517990e53013.mp4?auth_key=1786176348-0-0-f27328060aab65abd464ca1a6d95cf97",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "e5f048ed03459f369bfecbab61df2864-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e5f048ed03459f369bfecbab61df2864-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e5/f0/48/e5f048ed03459f369bfecbab61df2864.mp4?auth_key=1786174110-0-0-9c59c805d5b8f26aadfcc0a6ad6eb112",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e5/f0/48/e5f048ed03459f369bfecbab61df2864.mp4?auth_key=1786176348-0-0-e11d8128638c3fec61619c6d6393a059",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "ee793689e16c622bec7e0718f298fb43-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ee793689e16c622bec7e0718f298fb43-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ee/79/36/ee793689e16c622bec7e0718f298fb43.mp4?auth_key=1786174110-0-0-8ec1ddadc375ba4c7d965654ebac0b48",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ee/79/36/ee793689e16c622bec7e0718f298fb43.mp4?auth_key=1786176348-0-0-58b34a96ff82de17014625405d4eaeaf",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "6d4ba71b7697dd700aaf049438e0ba01-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6d4ba71b7697dd700aaf049438e0ba01-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6d/4b/a7/6d4ba71b7697dd700aaf049438e0ba01.mp4?auth_key=1786174110-0-0-55a3c7fbabee2d2b5595ab83c80aca78",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6d/4b/a7/6d4ba71b7697dd700aaf049438e0ba01.mp4?auth_key=1786176348-0-0-102dba2745ddd62a93dfa00d103dc316",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "534e3caddf9bbcc981ac018c4fdd1392-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/534e3caddf9bbcc981ac018c4fdd1392-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/53/4e/3c/534e3caddf9bbcc981ac018c4fdd1392.mp4?auth_key=1786174110-0-0-651b281666a1e9a484cd505bf39d24f8",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/53/4e/3c/534e3caddf9bbcc981ac018c4fdd1392.mp4?auth_key=1786176348-0-0-57af9554da7c5352548af4473c782742",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "85e2eb9a8c74e83ed0d17663491d84ee-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/85e2eb9a8c74e83ed0d17663491d84ee-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/85/e2/eb/85e2eb9a8c74e83ed0d17663491d84ee.mp4?auth_key=1786174110-0-0-a6cb7ae0e6f326665c0e9a2ca82579df",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/85/e2/eb/85e2eb9a8c74e83ed0d17663491d84ee.mp4?auth_key=1786176348-0-0-394dfbc78203ee25ce3d11746ca055fc",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "051ee7437e9ab844ef3d209dc3a47929-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/051ee7437e9ab844ef3d209dc3a47929-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/05/1e/e7/051ee7437e9ab844ef3d209dc3a47929.mp4?auth_key=1786174110-0-0-ef76b496b1d6ae3920b73c85df9aa04a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/05/1e/e7/051ee7437e9ab844ef3d209dc3a47929.mp4?auth_key=1786176348-0-0-052cc9ee131c97d646241619827e727c",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "d1110c97adb44bc574afa2891bd90f4d-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/d1110c97adb44bc574afa2891bd90f4d-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d1/11/0c/d1110c97adb44bc574afa2891bd90f4d.mp4?auth_key=1786174110-0-0-fe78a7c04545793dad2cdad5bea6ff99",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d1/11/0c/d1110c97adb44bc574afa2891bd90f4d.mp4?auth_key=1786176348-0-0-5eef077a5f1f501e8028ee53b57b2586",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "e9954269090f4d8b7c3a767083d73422-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/e9954269090f4d8b7c3a767083d73422-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e9/95/42/e9954269090f4d8b7c3a767083d73422.mp4?auth_key=1786174110-0-0-e42ed394eb2fc190d6a80592b625203d",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/e9/95/42/e9954269090f4d8b7c3a767083d73422.mp4?auth_key=1786176348-0-0-26e4dd0d8c263d73884ab96a3b38c57c",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b804f426f6881f07636856cec9f5a571-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b804f426f6881f07636856cec9f5a571-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b8/04/f4/b804f426f6881f07636856cec9f5a571.mp4?auth_key=1786174110-0-0-41d9d87f5d841e8f05500a383f4f6a49",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b8/04/f4/b804f426f6881f07636856cec9f5a571.mp4?auth_key=1786176348-0-0-999f441579aaf03e51da2ec069888897",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "0487f428921970349a57c0d8fac007cb-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/0487f428921970349a57c0d8fac007cb-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/04/87/f4/0487f428921970349a57c0d8fac007cb.mp4?auth_key=1786174110-0-0-56ae0111bacac299f66696927251e2c1",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/04/87/f4/0487f428921970349a57c0d8fac007cb.mp4?auth_key=1786176348-0-0-684db9d3e9f49f75d4b53cc04684a2d5",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "f0a2d358805ab37616d2749cd4fe5615-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/f0a2d358805ab37616d2749cd4fe5615-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f0/a2/d3/f0a2d358805ab37616d2749cd4fe5615.mp4?auth_key=1786174110-0-0-d5e246a44d4921e1cd0366d7bbe1f501",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f0/a2/d3/f0a2d358805ab37616d2749cd4fe5615.mp4?auth_key=1786176348-0-0-08cb439dc3f0db80bdc1c9d729e1c52f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "78dae1e9120813df81f6dae620f708cc-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/78dae1e9120813df81f6dae620f708cc-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/78/da/e1/78dae1e9120813df81f6dae620f708cc.mp4?auth_key=1786174110-0-0-fe4866f199d221f902d7922cf216ae7a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/78/da/e1/78dae1e9120813df81f6dae620f708cc.mp4?auth_key=1786176348-0-0-aa0d53d53c2e1e1323aa57a4c07ab908",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "0b43e97c65cb0e48428a1d1b8502bcae-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/0b43e97c65cb0e48428a1d1b8502bcae-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/0b/43/e9/0b43e97c65cb0e48428a1d1b8502bcae.mp4?auth_key=1786174110-0-0-7ccdddfa131d9c89e474fdd7f159d9ee",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/0b/43/e9/0b43e97c65cb0e48428a1d1b8502bcae.mp4?auth_key=1786176348-0-0-6066d85fce47f35d05f4d3b078d1aee8",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "dfb231f74fb41277d422629c7ba35e3a-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/dfb231f74fb41277d422629c7ba35e3a-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/df/b2/31/dfb231f74fb41277d422629c7ba35e3a.mp4?auth_key=1786174110-0-0-eab136345924decb934bc3680a6c4b8f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/df/b2/31/dfb231f74fb41277d422629c7ba35e3a.mp4?auth_key=1786176348-0-0-848eff2308981980bfdeb86e97c014b2",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "7e8cbe9baf37483206c94ec12cfe32f1-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7e8cbe9baf37483206c94ec12cfe32f1-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7e/8c/be/7e8cbe9baf37483206c94ec12cfe32f1.mp4?auth_key=1786174110-0-0-7ef9095a253a4e57fe48d9bbd7d76701",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7e/8c/be/7e8cbe9baf37483206c94ec12cfe32f1.mp4?auth_key=1786176348-0-0-5d6bc12156533da55ebc7f8f69e7ef56",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "aedb125c9b1b0c059de5cf2fd06ea49b-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/aedb125c9b1b0c059de5cf2fd06ea49b-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ae/db/12/aedb125c9b1b0c059de5cf2fd06ea49b.mp4?auth_key=1786174110-0-0-d19f7392bdb4796f15e729ef16f79f57",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ae/db/12/aedb125c9b1b0c059de5cf2fd06ea49b.mp4?auth_key=1786176348-0-0-b0c12b67a32dc81e6a9bb4c7f2ce4b22",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "125932d1f573d22e104dc78b6600081f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/125932d1f573d22e104dc78b6600081f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/12/59/32/125932d1f573d22e104dc78b6600081f.mp4?auth_key=1786174110-0-0-ea5838b52fd7ba36268603dd18347f21",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/12/59/32/125932d1f573d22e104dc78b6600081f.mp4?auth_key=1786176348-0-0-9be367e01b5b542230f4368be909c93c",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "bc31f5f44c89c0392b7ad30307be87ee-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/bc31f5f44c89c0392b7ad30307be87ee-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/bc/31/f5/bc31f5f44c89c0392b7ad30307be87ee.mp4?auth_key=1786174110-0-0-4ac04265981700380b697700ab087ddb",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/bc/31/f5/bc31f5f44c89c0392b7ad30307be87ee.mp4?auth_key=1786176348-0-0-c8a39911b793af37c11caff482181269",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "4dc39553da7be2663979ab85210aa61e-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/4dc39553da7be2663979ab85210aa61e-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/4d/c3/95/4dc39553da7be2663979ab85210aa61e.mp4?auth_key=1786174110-0-0-a8272c9e82352dff95456a90e2464d6b",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/4d/c3/95/4dc39553da7be2663979ab85210aa61e.mp4?auth_key=1786176348-0-0-1902cc4158c16ef023dab7705d9053b9",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "ef356616083be87a184529aba42e8f24-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ef356616083be87a184529aba42e8f24-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ef/35/66/ef356616083be87a184529aba42e8f24.mp4?auth_key=1786174110-0-0-4b585698bd94a4ccdc0f10327e197570",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ef/35/66/ef356616083be87a184529aba42e8f24.mp4?auth_key=1786176348-0-0-875e56d79d9030bf0867accb9b92964a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b6add21ed8bf9beaa7fb3bf8a54521c6-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b6add21ed8bf9beaa7fb3bf8a54521c6-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b6/ad/d2/b6add21ed8bf9beaa7fb3bf8a54521c6.mp4?auth_key=1786174110-0-0-30a251c9c81861124e70a5f0c1d53bc6",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b6/ad/d2/b6add21ed8bf9beaa7fb3bf8a54521c6.mp4?auth_key=1786176348-0-0-0725ee57dd700e4901af9ffa33213fcb",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "d7ab3a92f92b1f2006fe464dab0e25da-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/d7ab3a92f92b1f2006fe464dab0e25da-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d7/ab/3a/d7ab3a92f92b1f2006fe464dab0e25da.mp4?auth_key=1786174110-0-0-27c21f292a58c827f5e8d3484f34d8e1",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d7/ab/3a/d7ab3a92f92b1f2006fe464dab0e25da.mp4?auth_key=1786176348-0-0-dd69d1b51d0574a553310be6772b0b82",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "f4d1512232f8694d4035f70dd0327fee-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/f4d1512232f8694d4035f70dd0327fee-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f4/d1/51/f4d1512232f8694d4035f70dd0327fee.mp4?auth_key=1786174110-0-0-eedd4e4b2433676f6c60adcd5f20dd7b",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f4/d1/51/f4d1512232f8694d4035f70dd0327fee.mp4?auth_key=1786176348-0-0-ad2361b3c29e6a21c1b6259688348328",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "9016f0a12abcdaa951bb48a737197a8b-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/9016f0a12abcdaa951bb48a737197a8b-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/90/16/f0/9016f0a12abcdaa951bb48a737197a8b.mp4?auth_key=1786174110-0-0-60802d186027ab0bcdfec37aaf92ff93",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/90/16/f0/9016f0a12abcdaa951bb48a737197a8b.mp4?auth_key=1786176348-0-0-edbef64fbd4d709b2f154fa2bb185817",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "be0e25484ad6096f20ad4f856ccbd28f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/be0e25484ad6096f20ad4f856ccbd28f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/be/0e/25/be0e25484ad6096f20ad4f856ccbd28f.mp4?auth_key=1786174110-0-0-6d4cfc6ce699b88ee36cba5c21561714",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/be/0e/25/be0e25484ad6096f20ad4f856ccbd28f.mp4?auth_key=1786176348-0-0-cb4b6f386aefa4dc2d2b82f59440cbca",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "6e29c5ea456662bd33602c86749ff059-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6e29c5ea456662bd33602c86749ff059-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6e/29/c5/6e29c5ea456662bd33602c86749ff059.mp4?auth_key=1786174110-0-0-067ff3083d2bcf7e17714ac311948c8a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6e/29/c5/6e29c5ea456662bd33602c86749ff059.mp4?auth_key=1786176348-0-0-530eb100591856cc2b916469eb2d0ef6",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b637a16327249adf73a3740ec1bec82f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b637a16327249adf73a3740ec1bec82f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b6/37/a1/b637a16327249adf73a3740ec1bec82f.mp4?auth_key=1786174110-0-0-adde3c9572a452a440f11b4af385a01c",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b6/37/a1/b637a16327249adf73a3740ec1bec82f.mp4?auth_key=1786176348-0-0-0e140168f5f4479ecbe8a81cef0bf5ee",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "526a589b686a4edfeeb34d1f43f50ec6-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/526a589b686a4edfeeb34d1f43f50ec6-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/52/6a/58/526a589b686a4edfeeb34d1f43f50ec6.mp4?auth_key=1786174110-0-0-32673dd894922cdc8fd0f3a3e17e22fb",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/52/6a/58/526a589b686a4edfeeb34d1f43f50ec6.mp4?auth_key=1786176348-0-0-e9b73ffc3518b8f2f87c10af1737b03a",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "8f61530fe26140490adfee1dd9f2ac37-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/8f61530fe26140490adfee1dd9f2ac37-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8f/61/53/8f61530fe26140490adfee1dd9f2ac37.mp4?auth_key=1786174110-0-0-18dcd89e58400467daa3d42e69d4960d",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/8f/61/53/8f61530fe26140490adfee1dd9f2ac37.mp4?auth_key=1786176348-0-0-16fbdb6987386dc02f4ca16ca0ddbbab",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "f2ac034daf1a8e84354101bd6553a0f9-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/f2ac034daf1a8e84354101bd6553a0f9-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f2/ac/03/f2ac034daf1a8e84354101bd6553a0f9.mp4?auth_key=1786174110-0-0-1fce51b4eb000ce8f1d20c45dcd900db",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/f2/ac/03/f2ac034daf1a8e84354101bd6553a0f9.mp4?auth_key=1786176348-0-0-3c7a04b5f4aa423620052c55a186ad5f",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b6506238fff1972141af44de36fb3eb8-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b6506238fff1972141af44de36fb3eb8-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b6/50/62/b6506238fff1972141af44de36fb3eb8.mp4?auth_key=1786174110-0-0-531d2d9a8e47d99debacc5a99239b484",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b6/50/62/b6506238fff1972141af44de36fb3eb8.mp4?auth_key=1786176348-0-0-df2c8325cfef40863c7d2089a83fbc43",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "277989da42e056ab07550ea2b8fb541c-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/277989da42e056ab07550ea2b8fb541c-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/27/79/89/277989da42e056ab07550ea2b8fb541c.mp4?auth_key=1786174110-0-0-efd59bcf08196a792a34ef311dd37dfa",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/27/79/89/277989da42e056ab07550ea2b8fb541c.mp4?auth_key=1786176348-0-0-89fe6a1b01887b76ba35cde9614c7313",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "99462def5220a9e5e72e4e601f9711f7-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/99462def5220a9e5e72e4e601f9711f7-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/99/46/2d/99462def5220a9e5e72e4e601f9711f7.mp4?auth_key=1786174110-0-0-27c84e269290dd3dcc247f47a1ce2c1b",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/99/46/2d/99462def5220a9e5e72e4e601f9711f7.mp4?auth_key=1786176348-0-0-18eb430048677b9b272711398e5d295a",
                                               "type":  "video"
                                           }
                                       ]
@@ -959,280 +1022,280 @@ const DATA = {
                                               "id":  "4cba66fba47374647c34e88a934748d8-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/4cba66fba47374647c34e88a934748d8-102",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/4c/ba/66/4cba66fba47374647c34e88a934748d8.jpeg?auth_key=1786174111-0-0-66e6a66d2d584c05720cebd0315d9e5d",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/4c/ba/66/4cba66fba47374647c34e88a934748d8.jpeg?auth_key=1786176349-0-0-2e88c0516285b5e5c3a5b21ea88c4495",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "7ef67b53d1d3e90d6883fac8f0216a27-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7ef67b53d1d3e90d6883fac8f0216a27-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7e/f6/7b/7ef67b53d1d3e90d6883fac8f0216a27.mp4?auth_key=1786174111-0-0-be623b3c73664790ec5648cb13f7e4c3",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/7e/f6/7b/7ef67b53d1d3e90d6883fac8f0216a27.mp4?auth_key=1786176349-0-0-da780a6d8ba3e2126d4a82c50ca78905",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "7f64d595c799f308a63ef3f54aec2eed-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7f64d595c799f308a63ef3f54aec2eed-102",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/7f/64/d5/7f64d595c799f308a63ef3f54aec2eed.jpeg?auth_key=1786174111-0-0-87e2f95fdf58fda48564bcfb103653c9",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/7f/64/d5/7f64d595c799f308a63ef3f54aec2eed.jpeg?auth_key=1786176349-0-0-64218099acfa3588e3753d85ccc8266e",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "c7211ca38a4ec779d19b043b14c293c0-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/c7211ca38a4ec779d19b043b14c293c0-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c7/21/1c/c7211ca38a4ec779d19b043b14c293c0.mp4?auth_key=1786174111-0-0-aa826dae00dcd7d21f4ad6f228d93a43",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/c7/21/1c/c7211ca38a4ec779d19b043b14c293c0.mp4?auth_key=1786176349-0-0-9aeabccfeb4d50e8e1231f4684ffbf20",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "532c80e4777723da9472d32bc3c7383c-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/532c80e4777723da9472d32bc3c7383c-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/53/2c/80/532c80e4777723da9472d32bc3c7383c.mp4?auth_key=1786174111-0-0-f854453daa9d7cd15d8497a79e92f5f1",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/53/2c/80/532c80e4777723da9472d32bc3c7383c.mp4?auth_key=1786176349-0-0-7e2e32b0384a74987aea233ef7f33225",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "642f8a3ece67331f867447ba5dca1059-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/642f8a3ece67331f867447ba5dca1059-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/64/2f/8a/642f8a3ece67331f867447ba5dca1059.mp4?auth_key=1786174111-0-0-316dd9b516ca1621cb96942341485186",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/64/2f/8a/642f8a3ece67331f867447ba5dca1059.mp4?auth_key=1786176349-0-0-e5582b0ace1c00ef3f60cf13b585b7fe",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "918367edd793590810b9273f926003b4-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/918367edd793590810b9273f926003b4-202",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/91/83/67/918367edd793590810b9273f926003b4.mp4?auth_key=1786174111-0-0-3023c201c0389b14fb4de43ccd0dcdd8",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/91/83/67/918367edd793590810b9273f926003b4.mp4?auth_key=1786176349-0-0-5d685bb6231a09b62429bc2d3321b693",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "888f99d4ed8359671388e3e9f70a6aa2-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/888f99d4ed8359671388e3e9f70a6aa2-102",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/8f/99/888f99d4ed8359671388e3e9f70a6aa2.jpeg?auth_key=1786174111-0-0-08fbfbc8ceee19320bc97b8d8a26e9dd",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/8f/99/888f99d4ed8359671388e3e9f70a6aa2.jpeg?auth_key=1786176349-0-0-9a058dbe33d2bcde7cbc15949791c42d",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "6b600f5ca4848b586a6e6ad5c884036d-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6b600f5ca4848b586a6e6ad5c884036d-201",
                                               "is_mentioned":  true,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6b/60/0f/6b600f5ca4848b586a6e6ad5c884036d.mp4?auth_key=1786174111-0-0-d29343baac833d8f4065a3979b1161df",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/6b/60/0f/6b600f5ca4848b586a6e6ad5c884036d.mp4?auth_key=1786176349-0-0-c9ad27acc33f68cd02480f547b977614",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "d17c117389f2bf68ca3e4f5d4b205911-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/d17c117389f2bf68ca3e4f5d4b205911-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d1/7c/11/d17c117389f2bf68ca3e4f5d4b205911.mp4?auth_key=1786174111-0-0-f3c2de2812f9ba5daf15062bcfa6a124",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/d1/7c/11/d17c117389f2bf68ca3e4f5d4b205911.mp4?auth_key=1786176349-0-0-03990ccb578667b07daa806f90d1e199",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "7b2337f7b8b2b1a14fd548c157bb63a6-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7b2337f7b8b2b1a14fd548c157bb63a6-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/7b/23/37/7b2337f7b8b2b1a14fd548c157bb63a6.jpeg?auth_key=1786174111-0-0-396ff7801341d6140b74e80aef210d52",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/7b/23/37/7b2337f7b8b2b1a14fd548c157bb63a6.jpeg?auth_key=1786176349-0-0-b89f180a623ec6c7bb40fb6c6fd533ef",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "64ef609422ed0bba7a81d9ee682391e8-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/64ef609422ed0bba7a81d9ee682391e8-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/64/ef/60/64ef609422ed0bba7a81d9ee682391e8.mp4?auth_key=1786174111-0-0-f926006e4ad0dc5356d4a14c57803032",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/64/ef/60/64ef609422ed0bba7a81d9ee682391e8.mp4?auth_key=1786176349-0-0-b3756a53a09ca509554c07a107bef52d",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "ba015a3e38c1e1cfee9bcd2a143c8400-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/ba015a3e38c1e1cfee9bcd2a143c8400-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/ba/01/5a/ba015a3e38c1e1cfee9bcd2a143c8400.jpeg?auth_key=1786174111-0-0-e4b0e2081649b6de105d60e8243e4aaa",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/ba/01/5a/ba015a3e38c1e1cfee9bcd2a143c8400.jpeg?auth_key=1786176349-0-0-ae63919b14435c6468164ddefaeba474",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "8ce51d9b35be97066ebfa1ad7bae4095-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/8ce51d9b35be97066ebfa1ad7bae4095-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/8c/e5/1d/8ce51d9b35be97066ebfa1ad7bae4095.jpeg?auth_key=1786174111-0-0-25072fa384f1003ad5cdf506c96d1aa1",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/8c/e5/1d/8ce51d9b35be97066ebfa1ad7bae4095.jpeg?auth_key=1786176349-0-0-e2744fc1254311b23b61d9626484f67d",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "aedb125c9b1b0c059de5cf2fd06ea49b-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/aedb125c9b1b0c059de5cf2fd06ea49b-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ae/db/12/aedb125c9b1b0c059de5cf2fd06ea49b.mp4?auth_key=1786174111-0-0-8fcb564ee5b07aacc82f7805c250ae7f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/ae/db/12/aedb125c9b1b0c059de5cf2fd06ea49b.mp4?auth_key=1786176349-0-0-dc6a209c3626ce675ab54cfba22cd5e3",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "5737c937a66844e43425f2e19ff1ca22-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/5737c937a66844e43425f2e19ff1ca22-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/57/37/c9/5737c937a66844e43425f2e19ff1ca22.mp4?auth_key=1786174111-0-0-4485416b1b39f50017402730337ee373",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/57/37/c9/5737c937a66844e43425f2e19ff1ca22.mp4?auth_key=1786176349-0-0-429bf3e16f4f0b3b0045d201a541bdef",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "323724823f5e5c1cfefc1615100d5cd9-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/323724823f5e5c1cfefc1615100d5cd9-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/32/37/24/323724823f5e5c1cfefc1615100d5cd9.mp4?auth_key=1786174111-0-0-d8c7da4de71ebe286e5a06388e30e8c0",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/32/37/24/323724823f5e5c1cfefc1615100d5cd9.mp4?auth_key=1786176349-0-0-5b4eddca28c3b611c3ba32c1e4eb1850",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "2230043cbac98ae0e2b1af413deb7cd7-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/2230043cbac98ae0e2b1af413deb7cd7-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/22/30/04/2230043cbac98ae0e2b1af413deb7cd7.jpeg?auth_key=1786174111-0-0-57cd4885ca5bda9d75f690f66f8195b2",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/22/30/04/2230043cbac98ae0e2b1af413deb7cd7.jpeg?auth_key=1786176349-0-0-206f7fb062ecb8cd2459cf9f43007f96",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "7797d645db5a85edf6d65a3386a92c13-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7797d645db5a85edf6d65a3386a92c13-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/77/97/d6/7797d645db5a85edf6d65a3386a92c13.mp4?auth_key=1786174111-0-0-c23123fa53a425864c45ff152aae26b6",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/77/97/d6/7797d645db5a85edf6d65a3386a92c13.mp4?auth_key=1786176349-0-0-a448691831d8aa95b3ee1a16ffed59cc",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "f5a5da689cfd914b680ab7d19a087d0c-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/f5a5da689cfd914b680ab7d19a087d0c-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/f5/a5/da/f5a5da689cfd914b680ab7d19a087d0c.jpeg?auth_key=1786174111-0-0-c269b1a77a066f4f33e9d687c629b385",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/f5/a5/da/f5a5da689cfd914b680ab7d19a087d0c.jpeg?auth_key=1786176349-0-0-0086cfb2ac143c9a0f27b18b82d5c545",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "259428280e5bbfe5e935fdfbfb70b591-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/259428280e5bbfe5e935fdfbfb70b591-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/25/94/28/259428280e5bbfe5e935fdfbfb70b591.mp4?auth_key=1786174111-0-0-5513ffc21e42cb0d5ea0537b7c583849",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/25/94/28/259428280e5bbfe5e935fdfbfb70b591.mp4?auth_key=1786176349-0-0-95ebe3756adb95394babe5c2ad465794",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "6d2975ef785f82f2b949b87bf98bf1b9-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/6d2975ef785f82f2b949b87bf98bf1b9-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/6d/29/75/6d2975ef785f82f2b949b87bf98bf1b9.jpeg?auth_key=1786174111-0-0-623d0099d70a6dd22b06e9ea8efa1c82",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/6d/29/75/6d2975ef785f82f2b949b87bf98bf1b9.jpeg?auth_key=1786176349-0-0-a55328c897c47c2feb1c5337c813ebf8",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "7053b4077e81ebdd4ace832e5c9c7655-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7053b4077e81ebdd4ace832e5c9c7655-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/70/53/b4/7053b4077e81ebdd4ace832e5c9c7655.mp4?auth_key=1786174111-0-0-041f2a0dbe332487b26a11632e21d431",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/70/53/b4/7053b4077e81ebdd4ace832e5c9c7655.mp4?auth_key=1786176349-0-0-08fe3dd0a7a38d83ddfd08e73be23f74",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "12d6c56d254ee4c9cfad5ea1d1c025fb-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/12d6c56d254ee4c9cfad5ea1d1c025fb-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/12/d6/c5/12d6c56d254ee4c9cfad5ea1d1c025fb.mp4?auth_key=1786174111-0-0-2ecdcec6eb0709bb1812ddc6c758d4b2",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/12/d6/c5/12d6c56d254ee4c9cfad5ea1d1c025fb.mp4?auth_key=1786176349-0-0-376829d0a2c26297298d7ef6287ee127",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "be0425570bf1f984eeff9efb83210ebc-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/be0425570bf1f984eeff9efb83210ebc-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/be/04/25/be0425570bf1f984eeff9efb83210ebc.mp4?auth_key=1786174111-0-0-2419f61ea901dfbbcb7ed3e70ab381b5",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/be/04/25/be0425570bf1f984eeff9efb83210ebc.mp4?auth_key=1786176349-0-0-f1d6c938ed688b4171a845748cc6a32c",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "9221744c24deba2b33d207da41ae2af2-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/9221744c24deba2b33d207da41ae2af2-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/92/21/74/9221744c24deba2b33d207da41ae2af2.mp4?auth_key=1786174111-0-0-5f850116186f9c59e4aad53aecfa9110",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/92/21/74/9221744c24deba2b33d207da41ae2af2.mp4?auth_key=1786176349-0-0-6ed189d972aa06c35861235d81302d52",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "2872c98a890d4d99e28fc9476539f9b2-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/2872c98a890d4d99e28fc9476539f9b2-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/28/72/c9/2872c98a890d4d99e28fc9476539f9b2.jpeg?auth_key=1786174111-0-0-6d59ec04d3930d9481cbded41b5b86cf",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/28/72/c9/2872c98a890d4d99e28fc9476539f9b2.jpeg?auth_key=1786176349-0-0-2dd0c2311f140c720de4db91f6675e4f",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "b3c317b2cafc89ca7bebd9541816c195-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b3c317b2cafc89ca7bebd9541816c195-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/b3/c3/17/b3c317b2cafc89ca7bebd9541816c195.jpeg?auth_key=1786174111-0-0-0f57808714978e7c59075a362a2107d6",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/b3/c3/17/b3c317b2cafc89ca7bebd9541816c195.jpeg?auth_key=1786176349-0-0-85d334734df94f0b3045e4806996e667",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "35561aadd69cebdf3f53e3049e60b8b8-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/35561aadd69cebdf3f53e3049e60b8b8-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/35/56/1a/35561aadd69cebdf3f53e3049e60b8b8.mp4?auth_key=1786174111-0-0-c02d4594b84b36f227e241601463172a",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/35/56/1a/35561aadd69cebdf3f53e3049e60b8b8.mp4?auth_key=1786176349-0-0-72a321c175638902ecb51b966d2e654b",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "778d09aceb83a1a6ec56ad247672095a-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/778d09aceb83a1a6ec56ad247672095a-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/77/8d/09/778d09aceb83a1a6ec56ad247672095a.mp4?auth_key=1786174111-0-0-0641c5703a0005f668a8e78e44c4f6d7",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/77/8d/09/778d09aceb83a1a6ec56ad247672095a.mp4?auth_key=1786176349-0-0-531e3dc7b99b0bf3ac910564e698ecdc",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "7a3735d55455455d80e8af8bdf4e10b7-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/7a3735d55455455d80e8af8bdf4e10b7-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/7a/37/35/7a3735d55455455d80e8af8bdf4e10b7.jpeg?auth_key=1786174111-0-0-204388d1120703122b703b40a29f5619",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/7a/37/35/7a3735d55455455d80e8af8bdf4e10b7.jpeg?auth_key=1786176349-0-0-ab2d7a4e97e3db0aa0faafd9d1dc6a70",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "140e23c7a461dadaad740bda4318905f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/140e23c7a461dadaad740bda4318905f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/14/0e/23/140e23c7a461dadaad740bda4318905f.mp4?auth_key=1786174111-0-0-1d29bee25e4561878515c4b8510d1762",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/14/0e/23/140e23c7a461dadaad740bda4318905f.mp4?auth_key=1786176349-0-0-cc2f467d904ee13ce7737a204cdaf3ff",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "fe072bc8710f7ac7b6d5031fa219d57a-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/fe072bc8710f7ac7b6d5031fa219d57a-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/fe/07/2b/fe072bc8710f7ac7b6d5031fa219d57a.mp4?auth_key=1786174111-0-0-a0f2ba09a76f4ecdf2f0660872960da2",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/fe/07/2b/fe072bc8710f7ac7b6d5031fa219d57a.mp4?auth_key=1786176349-0-0-2fefc70a3ab62755f98c39609797bc8d",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "641c82d56b58331654c9ddf266582ea7-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/641c82d56b58331654c9ddf266582ea7-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/64/1c/82/641c82d56b58331654c9ddf266582ea7.mp4?auth_key=1786174111-0-0-e7824e4b22de7cdc2e28444eba04729f",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/64/1c/82/641c82d56b58331654c9ddf266582ea7.mp4?auth_key=1786176349-0-0-00f6553219ed343ee2ea6f2e278dd9f7",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "76ba02a21415eae1de9c57d12477dccc-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/76ba02a21415eae1de9c57d12477dccc-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/76/ba/02/76ba02a21415eae1de9c57d12477dccc.jpeg?auth_key=1786174111-0-0-51fa4a06896ee9359294b92f787622a0",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/76/ba/02/76ba02a21415eae1de9c57d12477dccc.jpeg?auth_key=1786176349-0-0-4e2e91a8efb3c1add69fe8d0b274abc7",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "88da24a1a1354b6bcd0f61876725b1d8-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/88da24a1a1354b6bcd0f61876725b1d8-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/da/24/88da24a1a1354b6bcd0f61876725b1d8.jpeg?auth_key=1786174111-0-0-d09c6ab5257a9e115b41d6d42b29937b",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/88/da/24/88da24a1a1354b6bcd0f61876725b1d8.jpeg?auth_key=1786176349-0-0-32bfb716eca2e2743290cd57bfe8c300",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "883e7f4bd698664260c4dcfc62d9cc2f-202",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/883e7f4bd698664260c4dcfc62d9cc2f-202",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/88/3e/7f/883e7f4bd698664260c4dcfc62d9cc2f.mp4?auth_key=1786174111-0-0-8a2faa935227a85c9dbe712e1f98eb65",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/88/3e/7f/883e7f4bd698664260c4dcfc62d9cc2f.mp4?auth_key=1786176349-0-0-ad90787bb6fff7c5eb28531bec8aae41",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "645f1ac2526e35b529eb6a66e31b8f2c-102",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/645f1ac2526e35b529eb6a66e31b8f2c-102",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/64/5f/1a/645f1ac2526e35b529eb6a66e31b8f2c.jpeg?auth_key=1786174111-0-0-dedc512ee60282c67e25a3f1c910de10",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/jpeg/64/5f/1a/645f1ac2526e35b529eb6a66e31b8f2c.jpeg?auth_key=1786176349-0-0-8dd881f03fa8ca776233e845e560b5e9",
                                               "type":  "image"
                                           },
                                           {
                                               "id":  "b54d6fa5fd8433d2e4b4da2d36ef3a5f-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b54d6fa5fd8433d2e4b4da2d36ef3a5f-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b5/4d/6f/b54d6fa5fd8433d2e4b4da2d36ef3a5f.mp4?auth_key=1786174111-0-0-89b33263f3205dcc7a2797481953a4bd",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b5/4d/6f/b54d6fa5fd8433d2e4b4da2d36ef3a5f.mp4?auth_key=1786176349-0-0-ba764088cb9de753cdaa524c4c406e70",
                                               "type":  "video"
                                           },
                                           {
                                               "id":  "b4a5c4ea3c313d0fe5e59e698b2b09fb-201",
                                               "detail_url":  "https://appgrowing-global.youcloud.com/material/b4a5c4ea3c313d0fe5e59e698b2b09fb-201",
                                               "is_mentioned":  false,
-                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b4/a5/c4/b4a5c4ea3c313d0fe5e59e698b2b09fb.mp4?auth_key=1786174111-0-0-0ff0ef1d1d6e808eca3dbbb60d79e3be",
+                                              "media":  "https://creative-ag-global-v4.umcdn.cn/mp4/b4/a5/c4/b4a5c4ea3c313d0fe5e59e698b2b09fb.mp4?auth_key=1786176349-0-0-eb186d58a41eacd521cc56d48b9f6b09",
                                               "type":  "video"
                                           }
                                       ]
@@ -1240,98 +1303,241 @@ const DATA = {
                 ]
 };
 
-// ---- tiny markdown renderer ----
+// ---------- helpers ----------
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function inline(s){return s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
 function md(t){
   if(!t) return "";
-  const lines = esc(t).split(/\r?\n/);
-  let html="", inList=false;
-  const flush=()=>{ if(inList){html+="</ul>";inList=false;} };
+  const lines=esc(t).split(/\r?\n/); let html="",inList=false;
+  const flush=()=>{if(inList){html+="</ul>";inList=false;}};
   for(let ln of lines){
-    let m;
     if(/^\s*#{3,}\s+/.test(ln)){flush();html+="<h3>"+ln.replace(/^\s*#{3,}\s+/,"")+"</h3>";continue;}
     if(/^\s*#{1,2}\s+/.test(ln)){flush();html+="<h2>"+ln.replace(/^\s*#{1,2}\s+/,"")+"</h2>";continue;}
-    if(/^\s*[-*•]\s+/.test(ln)){ if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(ln.replace(/^\s*[-*•]\s+/,""))+"</li>"; continue;}
-    if(/^\s*\d+\.\s+/.test(ln)){ if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(ln.replace(/^\s*\d+\.\s+/,""))+"</li>"; continue;}
-    flush();
-    if(ln.trim()==="") continue;
-    html+="<p>"+inline(ln)+"</p>";
+    if(/^\s*[-*•]\s+/.test(ln)){if(!inList){html+="<ul>";inList=true;}html+="<li>"+inline(ln.replace(/^\s*[-*•]\s+/,""))+"</li>";continue;}
+    if(/^\s*\d+\.\s+/.test(ln)){if(!inList){html+="<ul>";inList=true;}html+="<li>"+inline(ln.replace(/^\s*\d+\.\s+/,""))+"</li>";continue;}
+    flush(); if(ln.trim()==="")continue; html+="<p>"+inline(ln)+"</p>";
   }
-  flush();
-  return html;
+  flush(); return html;
 }
-function inline(s){return s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
+const LS={get:(k,d)=>{try{return localStorage.getItem(k)??d}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
 
-let activeNet="all";
-function render(){
-  document.getElementById("anchor").textContent = DATA.anchor;
-  document.getElementById("generated").textContent = new Date(DATA.generated).toLocaleString("vi-VN");
+// ---------- derived data ----------
+const NETS = DATA.networks||[];
+const ENTRIES = DATA.entries||[];
+const allDates=[...new Set(ENTRIES.map(e=>e.date))].sort();
+const latestDate=allDates[allDates.length-1];
+function prevEntry(net,date){
+  const c=ENTRIES.filter(e=>e.network===net && e.date<date).sort((a,b)=>a.date.localeCompare(b.date));
+  return c.length?c[c.length-1]:null;
+}
+function newIdSet(entry){
+  const p=prevEntry(entry.network,entry.date);
+  if(!p) return new Set();
+  const prev=new Set((p.materials||[]).map(m=>String(m.id)));
+  const s=new Set();
+  (entry.materials||[]).forEach(m=>{if(!prev.has(String(m.id)))s.add(String(m.id));});
+  return s;
+}
 
-  const netChips = document.getElementById("netChips");
-  if(!netChips.dataset.built){
-    let chips = '<span class="chip active" data-net="all">Tất cả network</span>';
-    DATA.networks.forEach(n=> chips += `<span class="chip" data-net="${n.id}">${n.label}</span>`);
-    netChips.innerHTML = chips; netChips.dataset.built="1";
-    netChips.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
-      netChips.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));
-      c.classList.add("active"); activeNet=c.dataset.net; draw();
+let activeNet="all", showNewOnly=false, showStarOnly=false;
+
+// ---------- render: TL;DR ----------
+function renderTldr(){
+  const el=document.getElementById("tldr");
+  let t=DATA.tldr;
+  if(!t || (Array.isArray(t)&&!t.length)){ el.innerHTML='<div class="placeholder">Chưa có TL;DR — sẽ xuất hiện sau lần chạy tự động kế tiếp (08:00).</div>'; return; }
+  let items = Array.isArray(t)? t : String(t).split(/\r?\n/).map(x=>x.replace(/^\s*[-*•]\s*/,"").trim()).filter(Boolean);
+  el.innerHTML="<ul>"+items.map(x=>"<li>"+inline(esc(x))+"</li>").join("")+"</ul>";
+}
+
+// ---------- render: stat cards ----------
+function renderStats(){
+  const el=document.getElementById("stats");
+  const latest=ENTRIES.filter(e=>e.date===latestDate);
+  let tot={c:0,m:0,n:0,v:0,i:0};
+  let cards="";
+  NETS.forEach(n=>{
+    const e=latest.find(x=>x.network===n.id);
+    const mats=e?(e.materials||[]):[];
+    const ns=e?newIdSet(e):new Set();
+    const m=mats.filter(x=>x.is_mentioned).length;
+    const v=mats.filter(x=>x.type==="video").length;
+    const img=mats.length-v;
+    tot.c+=mats.length; tot.m+=m; tot.n+=ns.size; tot.v+=v; tot.i+=img;
+    cards+=`<div class="stat"><h4>${n.label}</h4>
+      <div class="row"><span class="big">${mats.length}</span><span class="k">creative</span></div>
+      <div class="row"><span class="k">🆕 Mới</span><b>${ns.size}</b></div>
+      <div class="row"><span class="k">⭐ AI nhấn mạnh</span><b>${m}</b></div>
+      <div class="row"><span class="k">🎬 Video / 🖼 Ảnh</span><b>${v} / ${img}</b></div></div>`;
+  });
+  cards=`<div class="stat" style="border-color:var(--accent)"><h4>TỔNG CỘNG</h4>
+      <div class="row"><span class="big">${tot.c}</span><span class="k">creative</span></div>
+      <div class="row"><span class="k">🆕 Mới hôm nay</span><b>${tot.n}</b></div>
+      <div class="row"><span class="k">⭐ AI nhấn mạnh</span><b>${tot.m}</b></div>
+      <div class="row"><span class="k">🎬 / 🖼</span><b>${tot.v} / ${tot.i}</b></div></div>`+cards;
+  el.innerHTML=cards;
+}
+
+// ---------- render: line chart (vanilla SVG) ----------
+const COLORS=["#6ea8fe","#7ee787","#f0b429","#ff5c7a","#b083f0"];
+function renderChart(){
+  const el=document.getElementById("chart");
+  if(allDates.length===0){el.innerHTML='<div class="placeholder">Chưa có dữ liệu.</div>';return;}
+  const W=Math.max(520,allDates.length*90), H=220, pad=34;
+  const series=NETS.map((n,i)=>({label:n.label,color:COLORS[i%COLORS.length],
+    pts:allDates.map(d=>{const e=ENTRIES.find(x=>x.network===n.id&&x.date===d);return e?(e.materials||[]).length:0;})}));
+  let maxV=1; series.forEach(s=>s.pts.forEach(v=>{if(v>maxV)maxV=v;}));
+  const x=i=>pad+ (allDates.length<=1?W/2:(i*(W-2*pad)/(allDates.length-1)));
+  const y=v=>H-pad-(v/maxV)*(H-2*pad);
+  let svg=`<svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet">`;
+  svg+=`<line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2a2f3a"/>`;
+  svg+=`<line x1="${pad}" y1="${pad}" x2="${pad}" y2="${H-pad}" stroke="#2a2f3a"/>`;
+  allDates.forEach((d,i)=>{svg+=`<text x="${x(i)}" y="${H-pad+16}" fill="#9aa4b2" font-size="11" text-anchor="middle">${d.slice(5)}</text>`;});
+  svg+=`<text x="${pad-6}" y="${y(maxV)+4}" fill="#9aa4b2" font-size="11" text-anchor="end">${maxV}</text>`;
+  series.forEach(s=>{
+    if(allDates.length>1){
+      let dpath=s.pts.map((v,i)=>(i?"L":"M")+x(i)+" "+y(v)).join(" ");
+      svg+=`<path d="${dpath}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+    }
+    s.pts.forEach((v,i)=>{svg+=`<circle cx="${x(i)}" cy="${y(v)}" r="3.5" fill="${s.color}"/>`;});
+  });
+  svg+=`</svg>`;
+  let leg=`<div class="legend">`+series.map(s=>`<span><i style="background:${s.color}"></i>${s.label}</span>`).join("")+`</div>`;
+  el.innerHTML=svg+leg;
+}
+
+// ---------- render: competitor table ----------
+let compSort={k:"creatives",dir:-1};
+function gatherCompetitors(){
+  const rows=[];
+  ENTRIES.filter(e=>e.date===latestDate).forEach(e=>{
+    (e.competitors||[]).forEach(c=>{
+      rows.push({network:e.networkLabel||e.network,game:c.game||"",publisher:c.publisher||"",
+        creatives:Number(c.creatives)||0,hook:c.hook||"",format:c.format||"",region:c.region||"",why:c.why||""});
     });
-    const dates=[...new Set(DATA.entries.map(e=>e.date))].sort().reverse();
-    const dsel=document.getElementById("dateSel");
-    dates.forEach(d=> dsel.innerHTML+=`<option value="${d}">${d}</option>`);
-    dsel.onchange=draw;
-    document.getElementById("search").oninput=draw;
-  }
-  draw();
+  });
+  return rows;
 }
-function draw(){
+function renderCompetitors(){
+  const el=document.getElementById("competitors");
+  let rows=gatherCompetitors();
+  if(!rows.length){el.innerHTML='<div class="placeholder">Chưa có dữ liệu đối thủ có cấu trúc — sẽ xuất hiện sau lần chạy tự động kế tiếp (08:00), khi prompt mới trả về bảng đối thủ.</div>';return;}
+  rows.sort((a,b)=>{const k=compSort.k;let av=a[k],bv=b[k];if(typeof av==="string"){av=av.toLowerCase();bv=bv.toLowerCase();}return (av>bv?1:av<bv?-1:0)*compSort.dir;});
+  const cols=[["network","Network"],["game","Game"],["publisher","Nhà phát hành"],["creatives","#Creative"],["hook","Hook 3s"],["format","Format"],["region","Khu vực"],["why","Vì sao ăn"]];
+  let h="<div class='tblwrap'><table><thead><tr>"+cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join("")+"</tr></thead><tbody>";
+  rows.forEach(r=>{h+="<tr>"+cols.map(c=>`<td>${esc(String(r[c[0]]))}</td>`).join("")+"</tr>";});
+  h+="</tbody></table></div>";
+  el.innerHTML=h;
+  el.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;compSort.dir=(compSort.k===k?-compSort.dir:-1);compSort.k=k;renderCompetitors();});
+}
+
+// ---------- render: creative grid ----------
+function renderGrid(){
   const dateF=document.getElementById("dateSel").value;
   const q=document.getElementById("search").value.trim().toLowerCase();
-  let entries=DATA.entries.slice();
+  let entries=ENTRIES.slice();
   if(activeNet!=="all") entries=entries.filter(e=>e.network===activeNet);
   if(dateF!=="all") entries=entries.filter(e=>e.date===dateF);
   if(q) entries=entries.filter(e=>(e.analysis||"").toLowerCase().includes(q));
-  entries.sort((a,b)=> b.date.localeCompare(a.date) || a.network.localeCompare(b.network));
-
-  const byDay={};
-  entries.forEach(e=>{(byDay[e.date]=byDay[e.date]||[]).push(e);});
+  entries.sort((a,b)=>b.date.localeCompare(a.date)||a.network.localeCompare(b.network));
+  const byDay={}; entries.forEach(e=>{(byDay[e.date]=byDay[e.date]||[]).push(e);});
   const days=Object.keys(byDay).sort().reverse();
   const c=document.getElementById("content");
-  if(days.length===0){c.innerHTML='<div class="empty">Chưa có dữ liệu phù hợp. Chạy Update-Dashboard.ps1 để cập nhật.</div>';return;}
+  if(!days.length){c.innerHTML='<div class="empty">Không có dữ liệu phù hợp.</div>';return;}
   let html="";
   days.forEach(d=>{
     html+=`<div class="day">📅 ${d}</div>`;
-    byDay[d].forEach((e,i)=>{
-      const mats=e.materials||[];
-      const ment=mats.filter(m=>m.is_mentioned).length;
-      const cid=`a_${d}_${e.network}_${i}`.replace(/[^a-z0-9_]/gi,"");
-      html+=`<div class="card">
-        <div class="card-head">
-          <span class="net-tag">${e.networkLabel||e.network}</span>
-          <span class="count">${mats.length} creative${ment?` · ${ment} được AI nhắc tới`:""}</span>
-          <span class="toggle" onclick="document.getElementById('${cid}').classList.toggle('collapsed')">Thu gọn/mở phân tích</span>
-        </div>
-        <div class="analysis collapsed" id="${cid}">${md(e.analysis)}</div>`;
-      if(mats.length){
+    byDay[d].forEach((e,idx)=>{
+      const mats=e.materials||[]; const ns=newIdSet(e);
+      const cid=("a_"+d+"_"+e.network+"_"+idx).replace(/[^a-z0-9_]/gi,"");
+      html+=`<div class="card"><div class="card-head">
+        <span class="net-tag">${e.networkLabel||e.network}</span>
+        <span class="count">${mats.length} creative · ${ns.size} mới · ${mats.filter(m=>m.is_mentioned).length} AI nhấn mạnh</span>
+        <span class="toggle" onclick="document.getElementById('${cid}').classList.toggle('collapsed')">Thu gọn/mở phân tích</span>
+      </div><div class="analysis collapsed" id="${cid}">${md(e.analysis)}</div>`;
+      const vis=mats.filter(m=>{
+        if(showNewOnly && !ns.has(String(m.id))) return false;
+        if(showStarOnly && LS.get("agg_star_"+m.id)!=="1") return false;
+        return true;
+      });
+      if(vis.length){
         html+='<div class="grid">';
-        mats.forEach(m=>{
-          const badge=m.is_mentioned?'<span class="mentioned">AI nhắc tới</span>':"";
-          let media;
-          if(!m.media){ media='<div class="missing">Chưa tải được media<br>(mở link chi tiết)</div>'; }
-          else if(m.type==="video"){ media=`<video src="${m.media}" controls preload="metadata"></video>`; }
-          else{ media=`<img src="${m.media}" loading="lazy">`; }
-          html+=`<div class="mat">${badge}${media}
+        vis.forEach(m=>{
+          const isNew=ns.has(String(m.id));
+          const starred=LS.get("agg_star_"+m.id)==="1";
+          const note=esc(LS.get("agg_note_"+m.id,""));
+          let badges='<div class="badges">';
+          if(isNew) badges+='<span class="pill new">MỚI</span>';
+          if(m.is_mentioned) badges+='<span class="pill ment">AI</span>';
+          badges+='</div>';
+          let thumb;
+          if(!m.media){thumb='<div class="missing">Không có media<br>(mở Chi tiết)</div>';}
+          else if(m.type==="video"){thumb=`<video class="thumb" src="${m.media}" muted preload="metadata" loop data-src="${m.media}" data-type="video" onmouseenter="this.play()" onmouseleave="this.pause()" onclick="openModal(this)"></video>`;}
+          else{thumb=`<img class="thumb" src="${m.media}" loading="lazy" data-src="${m.media}" data-type="image" onclick="openModal(this)">`;}
+          html+=`<div class="mat">${badges}<span class="star ${starred?'on':''}" data-id="${m.id}" onclick="toggleStar(this)">${starred?'★':'☆'}</span>
+            ${thumb}
+            <div class="noteWrap"><textarea class="note" placeholder="Ghi chú..." data-id="${m.id}" oninput="saveNote(this)">${note}</textarea></div>
             <div class="meta"><span>#${m.id}</span>${m.detail_url?`<a href="${m.detail_url}" target="_blank">Chi tiết ↗</a>`:""}</div>
           </div>`;
         });
         html+='</div>';
+      } else {
+        html+='<div class="placeholder" style="padding:12px 16px">Không có creative khớp bộ lọc.</div>';
       }
       html+='</div>';
     });
   });
   c.innerHTML=html;
 }
-render();
+
+// ---------- interactions ----------
+function toggleStar(el){const id=el.dataset.id;const on=LS.get("agg_star_"+id)==="1";LS.set("agg_star_"+id,on?"0":"1");el.classList.toggle("on",!on);el.textContent=on?"☆":"★";}
+function saveNote(el){LS.set("agg_note_"+el.dataset.id,el.value);}
+function openModal(el){
+  const src=el.dataset.src,type=el.dataset.type;
+  const box=document.getElementById("modalBox");
+  box.innerHTML = type==="video"
+    ? `<video src="${src}" controls autoplay loop style="display:block"></video><a class="dl" href="${src}" target="_blank">Mở/tải bản gốc ↗</a>`
+    : `<img src="${src}"><a class="dl" href="${src}" target="_blank">Mở bản gốc ↗</a>`;
+  document.getElementById("modal").classList.add("open");
+}
+document.getElementById("modalX").onclick=()=>{document.getElementById("modal").classList.remove("open");document.getElementById("modalBox").innerHTML="";};
+document.getElementById("modal").onclick=(e)=>{if(e.target.id==="modal"){e.currentTarget.classList.remove("open");document.getElementById("modalBox").innerHTML="";}};
+
+function exportShortlist(){
+  const rows=[["id","network","date","is_mentioned","note","detail_url","media_url"]];
+  ENTRIES.forEach(e=>(e.materials||[]).forEach(m=>{
+    if(LS.get("agg_star_"+m.id)==="1"){
+      rows.push([m.id,e.networkLabel||e.network,e.date,m.is_mentioned?"1":"0",(LS.get("agg_note_"+m.id,"")||"").replace(/"/g,'""'),m.detail_url||"",m.media||""]);
+    }
+  }));
+  if(rows.length===1){alert("Chưa có creative nào được lưu (★). Bấm ngôi sao trên creative để lưu.");return;}
+  const csv="﻿"+rows.map(r=>r.map(c=>`"${String(c)}"`).join(",")).join("\r\n");
+  const blob=new Blob([csv],{type:"text/csv"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="shortlist_creative.csv";a.click();
+}
+
+// ---------- init ----------
+function init(){
+  document.getElementById("anchor").textContent=DATA.anchor||"";
+  document.getElementById("generated").textContent=DATA.generated?new Date(DATA.generated).toLocaleString("vi-VN"):"";
+  // net chips
+  const nc=document.getElementById("netChips");
+  let chips='<span class="chip active" data-net="all">Tất cả network</span>';
+  NETS.forEach(n=>chips+=`<span class="chip" data-net="${n.id}">${n.label}</span>`);
+  nc.innerHTML=chips;
+  nc.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{nc.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));c.classList.add("active");activeNet=c.dataset.net;renderGrid();});
+  // dates
+  const ds=document.getElementById("dateSel");
+  allDates.slice().reverse().forEach(d=>ds.innerHTML+=`<option value="${d}">${d}</option>`);
+  ds.onchange=renderGrid;
+  document.getElementById("search").oninput=renderGrid;
+  document.getElementById("newBtn").onclick=(e)=>{showNewOnly=!showNewOnly;e.target.classList.toggle("on",showNewOnly);renderGrid();};
+  document.getElementById("starBtn").onclick=(e)=>{showStarOnly=!showStarOnly;e.target.classList.toggle("on",showStarOnly);renderGrid();};
+  document.getElementById("exportBtn").onclick=exportShortlist;
+  renderTldr(); renderStats(); renderChart(); renderCompetitors(); renderGrid();
+}
+init();
 </script>
 </body>
 </html>

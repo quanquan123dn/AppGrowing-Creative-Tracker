@@ -87,12 +87,22 @@ Yêu cầu:
 - Với mỗi creative: nêu hook 3 giây đầu, hình thức (video/playable/in-feed...), và điểm đáng học hỏi.
 - Kết luận ngắn về xu hướng creative đang thắng trên network này.
 Trả lời bằng tiếng Việt CÓ DẤU đầy đủ, trình bày rõ ràng theo từng đối thủ.
+
+Ở CUỐI câu trả lời, xuất THÊM một khối JSON là MẢNG các đối thủ trên network này. Đặt khối đó GIỮA hai dòng đánh dấu riêng biệt: một dòng chỉ ghi ===JSON=== ở trên, và một dòng chỉ ghi ===ENDJSON=== ở dưới. Mỗi phần tử của mảng gồm ĐÚNG các khóa: game, publisher, creatives (số nguyên ước lượng), hook (hook 3s chủ đạo), format (định dạng chính), region (khu vực nhắm tới), why (vì sao hiệu quả, ngắn gọn). CHỈ gồm game đối thủ, KHÔNG gồm "$AnchorGame".
 "@
   try {
     $res = Invoke-Claw -PromptText $prompt -mode 7
     $analysis  = [string]$res.output
     $sessionId = [string]$res.session_id
     $mats = @()
+
+    # Tách khối JSON đối thủ (nếu có) khỏi phần phân tích
+    $competitors = @()
+    $mjson = [regex]::Match($analysis, '(?s)===JSON===\s*(.*?)\s*===ENDJSON===')
+    if ($mjson.Success) {
+      try { $competitors = @($mjson.Groups[1].Value | ConvertFrom-Json) } catch { $competitors = @() }
+      $analysis = ($analysis -replace '(?s)===JSON===.*?===ENDJSON===', '').Trim()
+    }
 
     if ($sessionId) {
       try {
@@ -142,12 +152,13 @@ Trả lời bằng tiếng Việt CÓ DẤU đầy đủ, trình bày rõ ràng 
       analysis     = $analysis
       session_id   = $sessionId
       materials    = $mats
+      competitors  = $competitors
     }
   } catch {
     Write-Host "    LỖI network $($n.id): $($_.Exception.Message)" -ForegroundColor Red
     $entries += [pscustomobject]@{
       date=$today; network=$n.id; networkLabel=$n.label
-      analysis="⚠️ Lỗi khi gọi API hôm nay: $($_.Exception.Message)"; session_id=""; materials=@()
+      analysis="⚠️ Lỗi khi gọi API hôm nay: $($_.Exception.Message)"; session_id=""; materials=@(); competitors=@()
     }
   }
 }
@@ -165,9 +176,24 @@ if (Test-Path $dataFile) {
 $all = @($all | Where-Object { $_.date -and $_.network -and -not ($_.date -eq $today -and ($Networks.id -contains $_.network)) })
 $all += $entries
 
+# ----- TL;DR tổng hợp cả 4 network -----
+Write-Host "==> TL;DR" -ForegroundColor Cyan
+$tldr = @()
+try {
+  $tldrPrompt = "Du lieu context: game goc la $AnchorGame. Dua tren xu huong quang cao cua cac game DOI THU (KHONG phai game goc) the loai stickman idle RPG tren Facebook/Meta, TikTok/Pangle, Unity/AppLovin/IronSource va YouTube/AdMob trong 30 ngay qua, neu 3-5 xu huong CREATIVE noi bat nhat ma doi creative nen hoc. Moi y mot dong bat dau bang '- '. Tra loi tieng Viet CO DAU day du, ngan gon."
+  $tres = Invoke-Claw -PromptText $tldrPrompt -mode 9
+  $ttxt = [string]$tres.output
+  $tldr = @($ttxt -split "`n" | ForEach-Object { $_.Trim() } | Where-Object { $_ -match '^[-*•]' } | ForEach-Object { ($_ -replace '^[-*•]\s*', '').Trim() })
+  if ($tldr.Count -eq 0 -and -not [string]::IsNullOrWhiteSpace($ttxt)) { $tldr = @($ttxt.Trim()) }
+  Write-Host "    TL;DR: $($tldr.Count) ý"
+} catch {
+  Write-Host "    Lỗi TL;DR: $($_.Exception.Message)" -ForegroundColor Yellow
+}
+
 $store = [pscustomobject]@{
   anchor    = $AnchorGame
   generated = (Get-Date).ToString("s")
+  tldr      = @($tldr)
   networks  = @($Networks | ForEach-Object { [pscustomobject]@{ id=$_.id; label=$_.label } })
   entries   = @($all)
 }
