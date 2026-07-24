@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theo dõi Creative đối thủ — Epic Stickman: Idle RPG War</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
+    --text:#e6e9ef; --muted:#9aa4b2; --accent:#6ea8fe; --accent2:#7ee787;
+    --badge:#f0b429; --chip:#232838;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.55}
+  header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#12151c, #12151cf2);border-bottom:1px solid var(--line);padding:16px 22px;backdrop-filter:blur(6px)}
+  h1{margin:0 0 4px;font-size:19px}
+  .sub{color:var(--muted);font-size:13px}
+  .wrap{padding:18px 22px;max-width:1280px;margin:0 auto}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:var(--chip);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:20px;cursor:pointer;font-size:13px;user-select:none}
+  .chip.active{background:var(--accent);color:#0b0d12;border-color:var(--accent);font-weight:600}
+  select,input[type=search]{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:7px 10px;border-radius:8px;font-size:13px}
+  input[type=search]{min-width:220px}
+  .day{margin:26px 0 8px;font-size:15px;color:var(--accent2);border-left:3px solid var(--accent2);padding-left:10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}
+  .card-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 16px;background:var(--panel2);border-bottom:1px solid var(--line)}
+  .net-tag{font-weight:700}
+  .count{color:var(--muted);font-size:13px}
+  .toggle{margin-left:auto;color:var(--accent);cursor:pointer;font-size:13px;user-select:none}
+  .analysis{padding:6px 18px 4px;color:#d7dce5}
+  .analysis h2{font-size:15px;margin:14px 0 6px;color:#fff}
+  .analysis h3{font-size:14px;margin:12px 0 4px;color:#cbd3df}
+  .analysis ul{margin:6px 0 6px 18px;padding:0}
+  .analysis li{margin:3px 0}
+  .analysis.collapsed{max-height:150px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;padding:14px 16px 18px}
+  .mat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative}
+  .mat video,.mat img{width:100%;height:250px;object-fit:cover;display:block;background:#000}
+  .mat .meta{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;font-size:12px}
+  .mat a{color:var(--accent);text-decoration:none}
+  .mentioned{position:absolute;top:8px;left:8px;background:var(--badge);color:#241c00;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px}
+  .empty{color:var(--muted);text-align:center;padding:60px 0}
+  .missing{display:flex;align-items:center;justify-content:center;height:250px;color:var(--muted);font-size:12px;text-align:center;padding:0 10px}
+  footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Theo dõi Creative đối thủ — <span id="anchor"></span></h1>
+  <div class="sub">Cập nhật gần nhất: <span id="generated"></span> · Nguồn: AppGrowing Global</div>
+  <div class="controls">
+    <div class="chips" id="netChips"></div>
+    <select id="dateSel"><option value="all">Tất cả ngày</option></select>
+    <input type="search" id="search" placeholder="Tìm trong nội dung phân tích...">
+  </div>
+</header>
+<div class="wrap" id="content"></div>
+<footer>Dashboard tự sinh bởi Update-Dashboard.ps1 · Dữ liệu creative thuộc AppGrowing Global</footer>
+
+<script>
+/*__DATA__*/
+
+// ---- tiny markdown renderer ----
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function md(t){
+  if(!t) return "";
+  const lines = esc(t).split(/\r?\n/);
+  let html="", inList=false;
+  const flush=()=>{ if(inList){html+="</ul>";inList=false;} };
+  for(let ln of lines){
+    let m;
+    if(/^\s*#{3,}\s+/.test(ln)){flush();html+="<h3>"+ln.replace(/^\s*#{3,}\s+/,"")+"</h3>";continue;}
+    if(/^\s*#{1,2}\s+/.test(ln)){flush();html+="<h2>"+ln.replace(/^\s*#{1,2}\s+/,"")+"</h2>";continue;}
+    if(/^\s*[-*•]\s+/.test(ln)){ if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(ln.replace(/^\s*[-*•]\s+/,""))+"</li>"; continue;}
+    if(/^\s*\d+\.\s+/.test(ln)){ if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(ln.replace(/^\s*\d+\.\s+/,""))+"</li>"; continue;}
+    flush();
+    if(ln.trim()==="") continue;
+    html+="<p>"+inline(ln)+"</p>";
+  }
+  flush();
+  return html;
+}
+function inline(s){return s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
+
+let activeNet="all";
+function render(){
+  document.getElementById("anchor").textContent = DATA.anchor;
+  document.getElementById("generated").textContent = new Date(DATA.generated).toLocaleString("vi-VN");
+
+  const netChips = document.getElementById("netChips");
+  if(!netChips.dataset.built){
+    let chips = '<span class="chip active" data-net="all">Tất cả network</span>';
+    DATA.networks.forEach(n=> chips += `<span class="chip" data-net="${n.id}">${n.label}</span>`);
+    netChips.innerHTML = chips; netChips.dataset.built="1";
+    netChips.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
+      netChips.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));
+      c.classList.add("active"); activeNet=c.dataset.net; draw();
+    });
+    const dates=[...new Set(DATA.entries.map(e=>e.date))].sort().reverse();
+    const dsel=document.getElementById("dateSel");
+    dates.forEach(d=> dsel.innerHTML+=`<option value="${d}">${d}</option>`);
+    dsel.onchange=draw;
+    document.getElementById("search").oninput=draw;
+  }
+  draw();
+}
+function draw(){
+  const dateF=document.getElementById("dateSel").value;
+  const q=document.getElementById("search").value.trim().toLowerCase();
+  let entries=DATA.entries.slice();
+  if(activeNet!=="all") entries=entries.filter(e=>e.network===activeNet);
+  if(dateF!=="all") entries=entries.filter(e=>e.date===dateF);
+  if(q) entries=entries.filter(e=>(e.analysis||"").toLowerCase().includes(q));
+  entries.sort((a,b)=> b.date.localeCompare(a.date) || a.network.localeCompare(b.network));
+
+  const byDay={};
+  entries.forEach(e=>{(byDay[e.date]=byDay[e.date]||[]).push(e);});
+  const days=Object.keys(byDay).sort().reverse();
+  const c=document.getElementById("content");
+  if(days.length===0){c.innerHTML='<div class="empty">Chưa có dữ liệu phù hợp. Chạy Update-Dashboard.ps1 để cập nhật.</div>';return;}
+  let html="";
+  days.forEach(d=>{
+    html+=`<div class="day">📅 ${d}</div>`;
+    byDay[d].forEach((e,i)=>{
+      const mats=e.materials||[];
+      const ment=mats.filter(m=>m.is_mentioned).length;
+      const cid=`a_${d}_${e.network}_${i}`.replace(/[^a-z0-9_]/gi,"");
+      html+=`<div class="card">
+        <div class="card-head">
+          <span class="net-tag">${e.networkLabel||e.network}</span>
+          <span class="count">${mats.length} creative${ment?` · ${ment} được AI nhắc tới`:""}</span>
+          <span class="toggle" onclick="document.getElementById('${cid}').classList.toggle('collapsed')">Thu gọn/mở phân tích</span>
+        </div>
+        <div class="analysis collapsed" id="${cid}">${md(e.analysis)}</div>`;
+      if(mats.length){
+        html+='<div class="grid">';
+        mats.forEach(m=>{
+          const badge=m.is_mentioned?'<span class="mentioned">AI nhắc tới</span>':"";
+          let media;
+          if(!m.media){ media='<div class="missing">Chưa tải được media<br>(mở link chi tiết)</div>'; }
+          else if(m.type==="video"){ media=`<video src="${m.media}" controls preload="metadata"></video>`; }
+          else{ media=`<img src="${m.media}" loading="lazy">`; }
+          html+=`<div class="mat">${badge}${media}
+            <div class="meta"><span>#${m.id}</span>${m.detail_url?`<a href="${m.detail_url}" target="_blank">Chi tiết ↗</a>`:""}</div>
+          </div>`;
+        });
+        html+='</div>';
+      }
+      html+='</div>';
+    });
+  });
+  c.innerHTML=html;
+}
+render();
+</script>
+</body>
+</html>

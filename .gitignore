@@ -1,0 +1,18 @@
+# Khoá bí mật - KHÔNG commit
+apikey.txt
+
+# Video/creative tải về (nặng, ~800MB/ngày)
+media/
+
+# Vercel nội bộ
+.vercel/
+web/.vercel/
+
+# Log & file tạm
+*.log
+tools.log
+vc.log
+deploy.log
+run.log
+web-build.log
+schedule.log
