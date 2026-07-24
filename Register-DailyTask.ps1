@@ -8,8 +8,8 @@ param(
   [string]$TaskName = "AppGrowing Creative Tracker"
 )
 
-$script = Join-Path $PSScriptRoot "Update-Dashboard.ps1"
-if (-not (Test-Path $script)) { Write-Error "Không thấy Update-Dashboard.ps1"; exit 1 }
+$script = Join-Path $PSScriptRoot "Daily-Run.ps1"
+if (-not (Test-Path $script)) { Write-Error "Không thấy Daily-Run.ps1"; exit 1 }
 
 $action  = New-ScheduledTaskAction -Execute "powershell.exe" `
   -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$script`"" `

@@ -80,9 +80,10 @@ $entries = @()
 foreach ($n in $Networks) {
   Write-Host "==> Network: $($n.label)" -ForegroundColor Cyan
   $prompt = @"
-Phân tích các quảng cáo (ad creative) MỚI NHẤT của những game đối thủ trực tiếp của "$AnchorGame" (thể loại stickman idle RPG) đang chạy trên $($n.hint).
+Phân tích quảng cáo (ad creative) MỚI NHẤT của các GAME ĐỐI THỦ CẠNH TRANH với "$AnchorGame" (cùng thể loại stickman idle RPG) đang chạy trên $($n.hint).
+CỰC KỲ QUAN TRỌNG: TUYỆT ĐỐI KHÔNG lấy, KHÔNG liệt kê, KHÔNG phân tích quảng cáo của chính "$AnchorGame". Chỉ lấy creative của các game KHÁC (của nhà phát hành khác) cùng thể loại. Nếu một creative thuộc về "$AnchorGame" thì bỏ qua.
 Yêu cầu:
-- Liệt kê từng game đối thủ và các creative nổi bật của họ trên network này.
+- Liệt kê tên từng game đối thủ (khác "$AnchorGame") kèm nhà phát hành, và các creative nổi bật của họ trên network này.
 - Với mỗi creative: nêu hook 3 giây đầu, hình thức (video/playable/in-feed...), và điểm đáng học hỏi.
 - Kết luận ngắn về xu hướng creative đang thắng trên network này.
 Trả lời bằng tiếng Việt CÓ DẤU đầy đủ, trình bày rõ ràng theo từng đối thủ.
