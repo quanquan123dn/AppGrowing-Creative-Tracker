@@ -1,13 +1,13 @@
 ﻿{
     "anchor":  "Epic Stickman: Idle RPG War",
-    "generated":  "2026-08-05T09:35:26",
+    "generated":  "2026-08-06T12:19:39",
     "tldr":  [
-                 "**Xu hướng 1 – \"Một chạm cường hóa + số liệu bùng nổ\" (Number-go-up)**: Định dạng màn hình UI tối màu (cyberpunk/phế tích) + bảng thuộc tính + nút cường hóa một chạm + chỉ số tăng vọt lên tới \"MAX/满级\", khai thác cảm giác sảng khoái khi nhìn con số phình to; đây là định dạng chiếm phần lớn top impression của đối thủ. (Tham khảo: Creative:[296ad](https://appgrowing-global.youcloud.com/material/296ad2539c2f50bc685fe422be37ab6a-202), Creative:[db7ba](https://appgrowing-global.youcloud.com/material/db7ba38d5b41d4b692dfff266235807e-202))",
-                 "**Xu hướng 2 – Hook kiểu \"lời khuyên người mới\" (Advice hook)**: Mở đầu bằng câu \"New players should NEVER...\", chỉ ra cái bẫy chết người rồi dẫn dắt sang nâng cấp đúng cách, tạo tò mò và giữ chân người xem; thường đi kèm giọng đọc (voiceover) tiếng Anh. (Tham khảo: Creative:[7bcd9](https://appgrowing-global.youcloud.com/material/7bcd9719ea804495a6f03e87d56e301b-202), Creative:[b1e75](https://appgrowing-global.youcloud.com/material/b1e75fc21c96ced4491746335614dc0c-202))",
-                 "**Xu hưởng 3 – Mỹ thuật \"silhouette tối giản\" (剪影美学, tông xanh tối)**: Toàn bộ khung hình dùng bóng đen tương phản + nền 暗调绿, nhân vật dạng bóng người cầm kiếm, tạo cảm giác \"RPG huyền bí\" khác biệt hẳn phong cách sticker nhiều màu; các đối thủ đang dùng nó làm nhận diện thương hiệu. (Tham khảo: Creative:[6dd62](https://appgrowing-global.youcloud.com/material/6dd621f4bddb673d7f4986e879727609-202), Creative:[e4da5](https://appgrowing-global.youcloud.com/material/e4da58460e6cac96af57ee5f911de89a-202))",
-                 "**Xu hướng 4 – Boss khổng lồ \u0026 chênh lệch cấp độ (Epic boss / Level disparity)**: Kịch bản cho stickman bé nhỏ đối đầu quái vật cỡ đại (rồng, quái thú), nhấn mạnh chênh lệch cấp và khoảnh khắc \"hạ gục boss\"; có biến thể dùng tường thuật tuyến thời gian (từ yếu → mạnh) hoặc \"đừng đánh boss sớm nếu không muốn thua 100%\". (Tham khảo: Creative:[058e2](https://appgrowing-global.youcloud.com/material/058e2701970de22eda0d5563c9d01944-202), Creative:[a16d0](https://appgrowing-global.youcloud.com/material/a16d0e572e1172475ae6eddc899ec50a-202))",
-                 "**Xu hướng 5 – Vẽ tay 2D / tối giản cực chất (Hand-drawn \u0026 minimal)**: Nhân vật stickman được vẽ tay trên giấy trắng/màn hình desktop, tạo cảm giác \"low-cost, thật thà, giải trí\", hoặc dùng phong cách minimal tối giản với nhịp chém nhanh; tạo sự khác biệt tương phản so với biển ad RPG 3D cùng loại. (Tham khảo: Creative:[151cc](https://appgrowing-global.youcloud.com/material/151cc3fb5da2f27da527aa71ebda6f06-202), Creative:[0a7d2](https://appgrowing-global.youcloud.com/material/0a7d2a130fea53dfce0e8c4717a71d8d-202))",
-                 "*Điểm chung xuyên suốt**: Tất cả các trend thắng đều xoay quanh **\"sự tăng trưởng nhìn thấy được\"** (con số, cấp độ, kích thước, từ yếu thành mạnh) – đây chính là \"purchase reason\" mà thuật toán gắn nhãn cho nhóm user yêu thích idle RPG. Nếu bạn muốn, tôi sẽ đào sâu từng xu hướng để chốt 1 concept cụ thể cho Epic Stickman: RPG Idle War.",
+                 "**Xu hướng 1 – Hook \"lời khuyên cao thủ / tân thủ đừng làm điều này\"**: Mở đầu bằng giọng đọc kiểu chỉ dẫn (\"New players should never fight the boss X, first you must upgrade...\") hoặc kể chuyện tài khoản người khác kẹt level (\"sếp tôi chơi lâu vẫn kẹt\"), tạo tò mò và giữ chân người xem bằng tính \"cấm làm\" – tham chiếu Creative:[7bcd9](https://appgrowing-global.youcloud.com/material/7bcd9719ea804495a6f03e87d56e301b-202), Creative:[b9d4b](https://appgrowing-global.youcloud.com/material/b9d4bde66b0886fb3047fb54c1b7395a-201), Creative:[b1e75](https://appgrowing-global.youcloud.com/material/b1e75fc21c96ced4491746335614dc0c-202).",
+                 "**Xu hướng 2 – \"Số liệu bùng nổ\" với nút cường hóa một chạm**: Bối cảnh đổ nát/cyberpunk tối, panel thuộc tính hiện rõ, nhấn nút là chiến lực + chỉ số nhảy vọt, nhấn mạnh cảm giác \"max level, sức mạnh vô đối\" – tham chiếu Creative:[296ad](https://appgrowing-global.youcloud.com/material/296ad2539c2f50bc685fe422be37ab6a-202), Creative:[db7ba](https://appgrowing-global.youcloud.com/material/db7ba38d5b41d4b692dfff266235807e-202), Creative:[5a8b7](https://appgrowing-global.youcloud.com/material/5a8b7190e06003550dcda65fc4b7f316-202).",
+                 "**Xu hướng 3 – Cập nhật \"meta\" hero / tier list**: Giọng đọc khẳng định \"hero cũ không còn mạnh nhất, giờ hero mới là số 1\", kèm cảnh chiêu thức hero mới đè bẹp đối thủ, khơi đúng nỗi sợ bỏ lỡ (FOMO) của người chơi PvP – tham chiếu Creative:[fc694](https://appgrowing-global.youcloud.com/material/fc694ed5f01a47d8cf3b8fab96f6a3c8-202), Creative:[a7775](https://appgrowing-global.youcloud.com/material/a77751b4291bb8e3c2d78c3b55ca0228-202).",
+                 "**Xu hướng 4 – Điện ảnh hóa bóng tối, đối đầu boss khổng lồ**: Cảnh hoàng hôn/trăng tròn, nhân vật bóng đen đối mặt boss to lớn (rồng/quái), tông màu tối + hiệu ứng ánh sáng mạnh, tạo cảm giác epic và sức ép – tham chiếu Creative:[c65bb](https://appgrowing-global.youcloud.com/material/c65bb401df8bbd6d1d81e2e190b258cf-201), Creative:[e61fd](https://appgrowing-global.youcloud.com/material/e61fdab3cab5b8dfa032988528c6b2a3-202).",
+                 "**Xu hướng 5 – Show PvP đối đầu trực diện tối giản**: Màn hình ít chi tiết, hai phe rõ ràng (xanh – đỏ/trắng), nhấn liên tục số sát thương, kết thúc bằng cảnh \"kẻ thua – người thắng\" để kích thích tính cạnh tranh – tham chiếu Creative:[0a7d2](https://appgrowing-global.youcloud.com/material/0a7d2a130fea53dfce0e8c4717a71d8d-202), Creative:[151cc](https://appgrowing-global.youcloud.com/material/151cc3fb5da2f27da527aa71ebda6f06-202).",
+                 "*Ghi chú quan trọng**: Gần như toàn bộ material top đều là **video dọc (9:16) 15–30s có giọng đọc tiếng Anh**, mở đầu 0–3 giây bằng câu hook dạng cấm đoán/câu hỏi. Nếu team muốn, tôi sẽ đào sâu từng xu hướng (phân tích cấu trúc kịch bản 0–3s, 3–15s, 15–30s) và map ngược về item-tag cho \"Epic Stickman: Idle RPG War\" – bạn muốn đi sâu hướng nào trước?",
                  "--"
              ],
     "networks":  [
@@ -14338,6 +14338,1352 @@
                                                                   "format":  "Video ngang (201) 100%",
                                                                   "region":  "Toàn cầu (lồng tiếng Anh)",
                                                                   "why":  "Hook \u0027scale shock\u0027 + con số thành tựu đánh trúng kỳ vọng game thủ idle, một creative gom 277 ads, dùng nhạc có lời làm yếu tố giữ chân khác biệt"
+                                                              }
+                                                          ],
+                                                "Count":  3
+                                            }
+                                        ]
+                    },
+                    {
+                        "date":  "2026-08-06",
+                        "network":  "meta",
+                        "networkLabel":  "Facebook / Meta",
+                        "analysis":  "# Phân tích quảng cáo mới nhất của các game đối thủ (thể loại stickman idle RPG) trên hệ sinh thái Meta\n\n## Phạm vi và phương pháp\n\n- Rà soát pool creative mới nhất trong vòng 60 ngày (ưu tiên cụm 1–30 ngày) thuộc hệ sinh thái Meta (Facebook là placement quan sát chính; các creative trên Meta thường được cross-post sang Instagram, Meta Audience Network, Messenger).\n- Tổng pool khảo sát khoảng 170 creative; sau khi lọc và loại trừ toàn bộ creative của \"Epic Stickman: RPG Idle War\" (Fansipan Limited), giữ lại khoảng 60 creative thuộc nhóm game đối thủ stickman idle RPG để phân tích.\n- Giới hạn dữ liệu: không quan sát thấy định dạng playable/interactive trong pool mới nhất; định dạng quan sát được chủ yếu là video (ngang/dọc) và ảnh tĩnh in-feed. Việc quy kết creative về từng game dựa trên khớp từ khóa tên game + nội dung hình ảnh, nên một số cụm có mức tin cậy trung bình và sẽ được ghi chú rõ.\n\n---\n\n## 1. Stickman Legends Go — Pen-Tool\n\nĐây là cụm creative mới nhất và đồng nhất nhất trong pool (các creative đều mới 2–7 ngày), xoay quanh cơ chế **biến thân định kỳ + AOE quét sạch** — một dạng idle RPG đặc trưng.\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[5c6b0](https://appgrowing-global.youcloud.com/material/5c6b06a0e060f86ed33611fa118d0a27-202) | Giây 1: nhân vật MONK cầm lưỡi hái + dòng chữ \"mỗi 8 giây biến thân cực mạnh, AOE xóa sổ\"; giây 2–3: biến thân DEMI GOD 3 đầu rồng kèm số liệu sát thương | Video dọc (202), in-feed/Reels | Đưa con số cụ thể (8 giây, AOE) vào giây đầu tiên — biến \"lời hứa sức mạnh\" thành thông số kiểm chứng được ngay |\n| Creative:[24030](https://appgrowing-global.youcloud.com/material/24030247e66902f5ba1a89297dd34baa-202) | Giây 1: thẻ kỹ năng MONK + chỉ số sát thương; giây 2–3: chuyển thẻ DEMIGOD/SAMURAI, cảm giác \"biến thân nghịch tập\" | Video dọc (202), in-feed | Dùng UI thẻ bài quen thuộc để truyền đạt cơ chế biến thân trong 2 giây, không cần lời thoại |\n| Creative:[87f06](https://appgrowing-global.youcloud.com/material/87f0687fdd14d42ee1ed1c4fa3719b49-202) | Giây 1–3: nhân vật \"Phong chi hóa thân\" + mô tả kỹ năng \"định kỳ biến thân, AOE sát thương cao\" ngay trên màn hình | Video dọc (202), in-feed | Lồng chữ mechanic vào đúng vị trí mắt nhìn, tận dụng hiệu ứng biến hình làm \"visual payoff\" |\n| Creative:[f46f8](https://appgrowing-global.youcloud.com/material/f46f84e5c8c8b251c232bf5d917a906a-202) | Giây 1–3: voiceover hoài niệm \"Stickman 2001 rất đơn giản... đến 2008 sắc bén và hấp dẫn hơn\" + ảnh so sánh 2 thời kỳ + nút cường hóa | Video dọc (202), in-feed | Hook bằng sự tiến hóa/hoài niệm thay vì gameplay — tạo tò mò cho cả người chơi cũ lẫn mới (46 ad liên kết) |\n| Creative:[7828f](https://appgrowing-global.youcloud.com/material/7828fb8871792f6e9728b3b219af7446-202) | Giây 1–3: màn chọn lớp 3 cột (Monk nổi sáng) + chữ \"mỗi 8 giây bùng nổ AOE, quét sạch không mất máu\" | Video dọc (202), in-feed | Hook dạng \"lời khuyên chọn nghề\" — người xem bị cuốn vào quyết định, dễ click để xem kết quả |\n\n**Tổng kết đối thủ này:** chiến lược \"mechanic-first\" — giây đầu tiên luôn có 1 con số cụ thể (8 giây) + 1 lời hứa xóa sổ (AOE), sau đó chứng minh bằng combat cấp 109–110 với bảng thuộc tính, kết thúc bằng màn chọn vai và nút vào game. Học được: **lượng hóa sức mạnh thành con số ngay từ hook, dùng UI game làm ngôn ngữ kể chuyện**.\n\n---\n\n## 2. Stickman Legends: Offline Games — Zitga\n\nCụm creative đối kháng stickman \"thuần hành động\": cưa máy, đánh hội đồng, màn \"You Win\" — gồm cả các creative chạy lâu (100–700 ngày, impression hàng trăm nghìn đến hàng chục triệu) lẫn creative mới 1–16 ngày.\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[b32d9](https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201) | Giây 1–3: hai phe stickman lao vào đánh nhau + nổ lửa giữa đống đổ nát, bố cục chia màn hình | Video ngang (201), in-feed | Hook \"action thuần túy, không giải thích\" — 820K impression, 134 ngày, 103 ad liên kết; chứng minh nhịp độ cháy nổ giây đầu vẫn thắng ở quy mô lớn |\n| Creative:[56866](https://appgrowing-global.youcloud.com/material/56866977ed94b098d2b75e7cdab6354e-201) | Giây 1–2: stickman cầm cưa máy chém + thanh máu hiện rõ, tiết tấu nhanh | Video ngang (201), in-feed | Vũ khí \"lạ + bạo lực\" (cưa máy) tạo khác biệt nhận diện tức thì so với kiếm thường |\n| Creative:[54d3a](https://appgrowing-global.youcloud.com/material/54d3a36179d5a785ed88bf4af1218f03-201) | Giây 1–2: đối đầu nhân vật đội mũ đen vs hiệu ứng đấm, chia màn hình; giây 3–6: chuyển sang cưa máy | Video ngang (201), in-feed | Kỹ thuật \"diễn viên bóng đêm + UI game\" — gây tò mò nhân vật trước khi lộ gameplay |\n| Creative:[94fac](https://appgrowing-global.youcloud.com/material/94face583767f9c4a02ecc3419087fda-202) | Giây 1–17: stickman hồng-xanh cầm vũ khí ghép mặt vẽ tay người thật, phông nền tòa nhà đêm | Video dọc (202), in-feed | Combo \"người thật + game\" tăng độ gần gũi, nhắm người chơi giải trí lúc rảnh (commute) |\n| Creative:[d092c](https://appgrowing-global.youcloud.com/material/d092cefc5d2b8409a26671daf075d1d0-202) | Giây 1–16: kịch ngắn hài — anh chàng tóc đỏ ngồi bồn cầu + tin nhắn chat + điện thoại đỏ | Video dọc (202), in-feed | Hook hài kịch đời thường (không phải gameplay) để bắt nhóm người xem giải trí, tạo thiện cảm trước khi giới thiệu game |\n| Creative:[dbbfc](https://appgrowing-global.youcloud.com/material/dbbfcc5edbbbe29b4a2045acce4440b0-201) | Giây 1–3: căn cứ hải quân phong cách anime (gợi nhớ IP đình đám) + nhẫn giả bóng tối | Video ngang (201), in-feed | Mượn \"IP-adjacent\" (phong cách anime quen thuộc) để bắt fan anime ngay từ khung hình đầu |\n\n**Tổng kết đối thủ này:** chiến lược \"action-first, zero story\" với payoff cố định là màn \"You Win\" + phần thưởng. Các creative chạy 100–700 ngày với impression 5–41 triệu chứng minh: **hook hành động thuần túy + kết thúc chiến thắng dễ dàng có vòng đời rất dài trên Meta**, đồng thời họ luôn thử nghiệm biến thể mới (hài kịch, người thật, IP-adjacent) để mở rộng đối tượng.\n\n---\n\n## 3. Eternal Line Heroes — Seagull Game\n\nĐối thủ dùng chiến lược hoàn toàn khác: **phủ số lượng ảnh tĩnh in-feed** trên Facebook. Trong 30 ngày gần nhất, game này có 286 creative ảnh (định dạng 102), mỗi ảnh chạy 2–4 ngày với 1–2 ad liên kết.\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[e0d01](https://appgrowing-global.youcloud.com/material/e0d01438494d3c59dce9baee39a5cf34-102) | Không có hook video — hook là ấn tượng thị giác tĩnh ngay khi lướt (dữ liệu không cung cấp mô tả nội dung ảnh) | Ảnh tĩnh in-feed (102) | Mẫu ảnh đạt 14.6K impression với chỉ 2 ad — tín hiệu ảnh được tối ưu tốt |\n| Creative:[d180f](https://appgrowing-global.youcloud.com/material/d180f5b335a57c8fad6b3eb8e06813ee-102) | Ảnh tĩnh in-feed | Ảnh tĩnh in-feed (102) | 13.1K impression chỉ sau 4 ngày — nhịp test ảnh nhanh |\n| Creative:[dd42a](https://appgrowing-global.youcloud.com/material/dd42aa0980c3c5ce80baff79d75ac288-102) | Ảnh tĩnh in-feed | Ảnh tĩnh in-feed (102) | 2 ad/creative, 11.5K impression — chi phí thấp, học nhanh |\n| Creative:[d0ea2](https://appgrowing-global.youcloud.com/material/d0ea2e6e15ceeb29fccfcbe56f8040e9-102) | Ảnh tĩnh in-feed | Ảnh tĩnh in-feed (102) | 12.6K impression, 4 ngày — bằng chứng chiến lược \"số lượng + xoay vòng nhanh\" |\n\n**Tổng kết đối thủ này:** không cạnh tranh bằng sáng tạo lớn mà bằng **vòng xoay ảnh tĩnh tần suất cao (~10 ảnh/ngày trên Facebook)**, mỗi ảnh sống 2–4 ngày rồi thay mới — tối ưu cho thuật toán phân phối và chi phí sản xuất thấp. Học được: **dành một phần ngân sách cho \"volume testing\" ảnh tĩnh để tìm winner nhanh, thay vì chỉ đầu tư video**.\n\n---\n\n## 4. Clash of Stickman: Evolution — Velocita Z\n\nCụm creative \"hero collection + thoại kể chuyện\" với impression rất cao chỉ trong 7–8 ngày (255K–452K), gồm biến thể khoe hero SS+, boss sử thi và thoại khiêu khích. (Mức tin cậy quy kết: trung bình, dựa trên đặc tả hero/hệ thống thẻ khớp định vị game.)\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[38be1](https://appgrowing-global.youcloud.com/material/38be16356bf59dfcfd07f4d3af93b1f2-202) | Giây 1–3: thoại khiêu khích \"Hey, pretty girl. Your gear is trash.\" + nữ pháp sư cấp cao đối đầu chiến binh trang bị xấu | Video dọc (202), in-feed | Hook bằng **xung đột xã hội + chê bai trang bị** — kích thích cảm xúc \"muốn chứng minh\" ngay lập tức (452K impression/8 ngày) |\n| Creative:[d1b42](https://appgrowing-global.youcloud.com/material/d1b42fb0a22c16349d99f4690b914418-202) | Giây 1: hero THANATOS cầm lưỡi hái + huy hiệu SS+ + dòng chữ kỹ năng \"AOE hai bên, bùng nổ định kỳ\" | Video dọc (202), in-feed | Khoe \"độ hiếm\" (SS+) + số liệu kỹ năng — người xem thèm sở hữu hero ngay từ giây đầu |\n| Creative:[4109a](https://appgrowing-global.youcloud.com/material/4109a20e9b44cdac3a89c1e372d76e84-202) | Giây 1: hero Gante hệ băng + huy hiệu SS+ + \"đóng băng toàn bộ, AOE\" | Video dọc (202), in-feed | Cùng công thức SS+ nhưng nhấn control (đóng băng) — cho thấy họ **A/B nhiều hero + nhiều cơ chế** trong cùng khung hook |\n| Creative:[c60b6](https://appgrowing-global.youcloud.com/material/c60b6fdf394a5da3f5013c73e54a03bd-202) | Giây 1: stickman + cấp độ + cường hóa trang bị trong mê cung | Video dọc (202), in-feed | Hook \"progression sống động\" — nhấn nút là thấy cấp độ/trang bị tăng, giảm rào cản hiểu |\n| Creative:[9305e](https://appgrowing-global.youcloud.com/material/9305e1f487559633c69c7b0745076463-202) | Giây 1: poster chiến trường — chiến binh cầm khiên kiếm đối đầu rồng khổng lồ + nút hành động | Video dọc (202), in-feed | Hook \"boss sử thi + áp lực kẻ thù\" cho phân khúc thích RPG nặng đô |\n\n**Tổng kết đối thủ này:** chiến lược \"hero hiếm + con số + cảm xúc\" — mỗi creative là một biến thể của công thức: (1) khoe hero SS+ với kỹ năng được lượng hóa, hoặc (2) thoại tạo xung đột để kéo người xem vào câu chuyện, rồi chốt bằng gameplay stickman. Impression 255K–452K chỉ trong 7–8 ngày cho thấy công thức này đang rất hiệu quả trên Meta.\n\n---\n\n## Kết luận: xu hướng creative đang thắng trên hệ sinh thái Meta (stickman idle RPG)\n\n1. **Lượng hóa sức mạnh ngay giây đầu** — \"8 giây biến thân AOE\", \"SS+\", \"sát thương X\" là ngôn ngữ chung của các creative mới thắng; người xem hiểu ngay giá trị mà không cần đọc nhiều.\n2. **Action-first vẫn trụ vững ở quy mô lớn** — các creative cưa máy/đánh hội đồng chạy 100–700 ngày với impression 5–41 triệu chứng minh hook hành động thuần túy + payoff \"You Win\" có vòng đời dài nhất.\n3. **Hero hiếm (SS+/thẻ bài) làm động lực click chính** — khoe độ hiếm + kỹ năng số liệu đang tạo impression rất cao trong 1 tuần (255K–452K).\n4. **Thoại kể chuyện/xung đột là điểm khác biệt** — hook khiêu khích (\"đồ của bạn quá rác\") hoặc hài kịch đời thường mở rộng đối tượng ngoài game thủ lõi.\n5. **Video dọc (Reels/in-feed) là định dạng chủ lực** của làn sóng creative mới; ảnh tĩnh vẫn có vai trò riêng như \"volume testing\" giá rẻ (Eternal Line Heroes: ~286 ảnh/30 ngày trên Facebook).\n6. **Chưa thấy playable trong pool mới nhất** — cạnh tranh hiện tại tập trung vào video ngắn và ảnh tĩnh, đây có thể là khoảng trống để thử nghiệm.\n\n\n\n---\n对话详情: https://appgrowing-global.youcloud.com/ai-chat/detail/PqVYUoSPPZ3gQlm1e1CuCQ==",
+                        "session_id":  "PqVYUoSPPZ3gQlm1e1CuCQ==",
+                        "materials":  [
+                                          {
+                                              "id":  "54d3a36179d5a785ed88bf4af1218f03-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/54d3a36179d5a785ed88bf4af1218f03-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/54d3a36179d5a785ed88bf4af1218f03-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "56866977ed94b098d2b75e7cdab6354e-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/56866977ed94b098d2b75e7cdab6354e-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/56866977ed94b098d2b75e7cdab6354e-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "94face583767f9c4a02ecc3419087fda-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/94face583767f9c4a02ecc3419087fda-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/94face583767f9c4a02ecc3419087fda-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "c60b6fdf394a5da3f5013c73e54a03bd-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/c60b6fdf394a5da3f5013c73e54a03bd-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/c60b6fdf394a5da3f5013c73e54a03bd-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d180f5b335a57c8fad6b3eb8e06813ee-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d180f5b335a57c8fad6b3eb8e06813ee-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/d180f5b335a57c8fad6b3eb8e06813ee-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "b32d9cf6d19be3b375993d5526a2d39c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/b32d9cf6d19be3b375993d5526a2d39c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "38be16356bf59dfcfd07f4d3af93b1f2-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/38be16356bf59dfcfd07f4d3af93b1f2-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/38be16356bf59dfcfd07f4d3af93b1f2-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "9305e1f487559633c69c7b0745076463-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/9305e1f487559633c69c7b0745076463-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/9305e1f487559633c69c7b0745076463-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "dd42aa0980c3c5ce80baff79d75ac288-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/dd42aa0980c3c5ce80baff79d75ac288-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/dd42aa0980c3c5ce80baff79d75ac288-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "87f0687fdd14d42ee1ed1c4fa3719b49-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/87f0687fdd14d42ee1ed1c4fa3719b49-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/87f0687fdd14d42ee1ed1c4fa3719b49-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d0ea2e6e15ceeb29fccfcbe56f8040e9-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d0ea2e6e15ceeb29fccfcbe56f8040e9-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/d0ea2e6e15ceeb29fccfcbe56f8040e9-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "4109a20e9b44cdac3a89c1e372d76e84-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/4109a20e9b44cdac3a89c1e372d76e84-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/4109a20e9b44cdac3a89c1e372d76e84-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d092cefc5d2b8409a26671daf075d1d0-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d092cefc5d2b8409a26671daf075d1d0-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/d092cefc5d2b8409a26671daf075d1d0-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "dbbfcc5edbbbe29b4a2045acce4440b0-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/dbbfcc5edbbbe29b4a2045acce4440b0-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/dbbfcc5edbbbe29b4a2045acce4440b0-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d1b42fb0a22c16349d99f4690b914418-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d1b42fb0a22c16349d99f4690b914418-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/d1b42fb0a22c16349d99f4690b914418-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "f46f84e5c8c8b251c232bf5d917a906a-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/f46f84e5c8c8b251c232bf5d917a906a-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/f46f84e5c8c8b251c232bf5d917a906a-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "5c6b06a0e060f86ed33611fa118d0a27-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/5c6b06a0e060f86ed33611fa118d0a27-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/5c6b06a0e060f86ed33611fa118d0a27-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "24030247e66902f5ba1a89297dd34baa-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/24030247e66902f5ba1a89297dd34baa-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/24030247e66902f5ba1a89297dd34baa-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "e0d01438494d3c59dce9baee39a5cf34-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/e0d01438494d3c59dce9baee39a5cf34-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/e0d01438494d3c59dce9baee39a5cf34-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "7828fb8871792f6e9728b3b219af7446-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/7828fb8871792f6e9728b3b219af7446-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/meta/7828fb8871792f6e9728b3b219af7446-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "18daa0cf7cccf8e8e645663d1624304e-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/18daa0cf7cccf8e8e645663d1624304e-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/18daa0cf7cccf8e8e645663d1624304e-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "0b77d988b794ef9044286141506b48be-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/0b77d988b794ef9044286141506b48be-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/0b77d988b794ef9044286141506b48be-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "7a65065a7b4f76acd630f07e96a3cae5-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/7a65065a7b4f76acd630f07e96a3cae5-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/7a65065a7b4f76acd630f07e96a3cae5-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "43156685c3394180f6ad205aa93b105b-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/43156685c3394180f6ad205aa93b105b-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/43156685c3394180f6ad205aa93b105b-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "578b54c73211f1621a8b8fb7ab4341fe-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/578b54c73211f1621a8b8fb7ab4341fe-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/578b54c73211f1621a8b8fb7ab4341fe-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d336e25c041831726281ed5adba64163-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d336e25c041831726281ed5adba64163-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/d336e25c041831726281ed5adba64163-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "a72f3017fed4025d08493e91b317bebf-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/a72f3017fed4025d08493e91b317bebf-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/a72f3017fed4025d08493e91b317bebf-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "ff5511c6e77f025644069ceb4de6f665-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/ff5511c6e77f025644069ceb4de6f665-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/ff5511c6e77f025644069ceb4de6f665-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "c5540a4f0c8c15b08781b7f152cae1b6-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/c5540a4f0c8c15b08781b7f152cae1b6-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/c5540a4f0c8c15b08781b7f152cae1b6-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "9f8a059b91f83bc786e0c7bfcc13b492-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/9f8a059b91f83bc786e0c7bfcc13b492-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/9f8a059b91f83bc786e0c7bfcc13b492-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "aac39573aa616fce33cc41a10675d443-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/aac39573aa616fce33cc41a10675d443-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/aac39573aa616fce33cc41a10675d443-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "0888534ecdb6e6d73a8fb7061242430d-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/0888534ecdb6e6d73a8fb7061242430d-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/0888534ecdb6e6d73a8fb7061242430d-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "914f663954b9d24dd6229b8c5de2fc4a-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/914f663954b9d24dd6229b8c5de2fc4a-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/914f663954b9d24dd6229b8c5de2fc4a-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "8efdad38230b454bf03e794350ae3527-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/8efdad38230b454bf03e794350ae3527-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/8efdad38230b454bf03e794350ae3527-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "4c9085540681293f62d27cbb4d183bdf-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/4c9085540681293f62d27cbb4d183bdf-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/4c9085540681293f62d27cbb4d183bdf-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "d315161a5e7c875d010bee79a5a79f57-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d315161a5e7c875d010bee79a5a79f57-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/d315161a5e7c875d010bee79a5a79f57-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "ff7e2b266486e6a985447cc02a6cc442-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/ff7e2b266486e6a985447cc02a6cc442-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/ff7e2b266486e6a985447cc02a6cc442-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "83e697964d867f493a6af05e288cd47e-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/83e697964d867f493a6af05e288cd47e-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/83e697964d867f493a6af05e288cd47e-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "d97d1a1eee1c20763d5ab9aa69a5f776-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d97d1a1eee1c20763d5ab9aa69a5f776-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/d97d1a1eee1c20763d5ab9aa69a5f776-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "3fc8f46a6129f073315831454680061b-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/3fc8f46a6129f073315831454680061b-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/meta/3fc8f46a6129f073315831454680061b-201.mp4",
+                                              "type":  "video"
+                                          }
+                                      ],
+                        "competitors":  [
+                                            {
+                                                "value":  [
+                                                              {
+                                                                  "game":  "Stickman Legends Go",
+                                                                  "publisher":  "Pen-Tool",
+                                                                  "creatives":  15,
+                                                                  "hook":  "Chọn lớp MONK/SAMURAI, mỗi 8 giây biến thân DEMIGOD quét sạch AOE",
+                                                                  "format":  "Video dọc (202) in-feed/Reels",
+                                                                  "region":  "Quốc tế (SEA, Ấn Độ, LATAM)",
+                                                                  "why":  "Lượng hóa sức mạnh bằng con số 8 giây + AOE ngay giây đầu, dùng UI thẻ bài kể cơ chế, kết bằng màn chọn vai và nút vào game"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Legends: Offline Games",
+                                                                  "publisher":  "Zitga",
+                                                                  "creatives":  45,
+                                                                  "hook":  "Stickman cầm cưa máy lao vào đánh hội đồng, nổ tung màn hình giây đầu",
+                                                                  "format":  "Video ngang/dọc (201/202) in-feed",
+                                                                  "region":  "Quốc tế, nhóm tuổi trẻ (SEA, Brazil, Ấn Độ)",
+                                                                  "why":  "Action thuần túy không cần giải thích, payoff cố định là màn You Win, vòng đời creative 100-700 ngày với impression hàng triệu; luôn thử biến thể hài kịch, người thật, IP-adjacent"
+                                                              },
+                                                              {
+                                                                  "game":  "Eternal Line Heroes",
+                                                                  "publisher":  "Seagull Game",
+                                                                  "creatives":  286,
+                                                                  "hook":  "Ảnh tĩnh hero/đội hình line-up bắt mắt khi lướt (không có hook video)",
+                                                                  "format":  "Ảnh tĩnh in-feed (102) trên Facebook",
+                                                                  "region":  "Chưa xác định rõ (phủ rộng)",
+                                                                  "why":  "Chiến lược volume testing ~10 ảnh/ngày, mỗi ảnh sống 2-4 ngày, chi phí thấp và xoay vòng nhanh để tìm winner"
+                                                              },
+                                                              {
+                                                                  "game":  "Clash of Stickman: Evolution",
+                                                                  "publisher":  "Velocita Z",
+                                                                  "creatives":  20,
+                                                                  "hook":  "Khoe hero SS+ (THANATOS/Gante) với kỹ năng AOE/đóng băng hoặc thoại khiêu khích \u0027đồ của bạn quá rác\u0027",
+                                                                  "format":  "Video dọc (202) in-feed/Reels",
+                                                                  "region":  "Quốc tế (SEA, thị trường nói tiếng Anh)",
+                                                                  "why":  "Công thức hero hiếm + con số + xung đột cảm xúc tạo impression 255K-452K chỉ trong 7-8 ngày, A/B nhiều hero và cơ chế trong cùng khung hook"
+                                                              }
+                                                          ],
+                                                "Count":  4
+                                            }
+                                        ]
+                    },
+                    {
+                        "date":  "2026-08-06",
+                        "network":  "tiktok",
+                        "networkLabel":  "TikTok / Pangle",
+                        "analysis":  "## Phạm vi phân tích\n\nTôi đã rà soát các creative chạy trong 30 ngày qua (07/07–06/08/2026) trên **TikTok (media 13)** và **Pangle (media 23)**, thuộc nhóm game stickman idle RPG / đại chiến stickman, với tổng cộng hơn 130 creative đối thủ được sàng lọc. Toàn bộ creative của chính **Epic Stickman: Idle RPG War (Fansipan Limited)** đã bị loại khỏi mẫu (nhận diện qua thoại \"E Stman\", \"epic Stman\", \"Day 1/Day 5…\" và bộ nhận diện quen thuộc).\n\nLưu ý quan trọng về dữ liệu: trên **Pangle**, từ khóa \"stickman\" trong 30 ngày gần như chỉ trả về creative của game casual khác (Super Goal – bóng đá), không ghi nhận creative stickman idle RPG mới của đối thủ. Phân khúc này đang đổ ngân sách chủ yếu vào **TikTok**.\n\n---\n\n## 1. Clash of Stickman: Evolution — Velocita Z\n\nGame đại chiến/tiến hóa stickman (đồ đá → đồ đồng → sa mạc → tương lai), cùng tệp người chơi stickman với Epic Stickman nhưng thiên về chiến thuật quân đoàn. Đây là đối thủ có lượng creative lớn nhất và impression cao nhất trong mẫu (có asset chạy 700–800 ngày, đạt hàng trăm triệu impression).\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[8cf98](https://appgrowing-global.youcloud.com/material/8cf98a0ece0b14cba378e063f5d5c9b8-202) | Chiến trường stickman quy mô khổng lồ, 2 phe lao vào nhau ngay khung hình đầu | Video in-feed (gameplay record) | Một kịch bản \"đại chiến stickman\" đúng chuẩn có độ bền rất cao (802 ngày, 814M impression) — đầu tư vào spectacle thay vì xoay vòng nhanh |\n| Creative:[fa306](https://appgrowing-global.youcloud.com/material/fa3068482d91ac7d5c7083295c4d3051-202) | Quân stickman + cờ quốc gia (US) và pháo đài đối đầu, cảnh chiến trường rộng | Video in-feed + CTA tải cuối (21–24s) | Gắn \"cờ quốc gia\" tạo niềm tự hào/nhận diện; CTA đặt cuối kèm cờ giúp tăng click rõ rệt |\n| Creative:[db14d](https://appgrowing-global.youcloud.com/material/db14d9594a7c405ffd864fbb1f662359-202) | Chuỗi tiến hóa thời đại: đồ đá → đồ đồng → sa mạc, vũ khí quân stickman thay đổi theo từng cảnh | Video gameplay top-down | Biến \"sức mạnh\" thành câu chuyện tiến hóa 3 giây dễ hiểu — hook kể chuyện, không giới thiệu |\n| Creative:[02acc](https://appgrowing-global.youcloud.com/material/02acc1c9532af3a32668992f92cfe7c4-201) | Montage chiến tranh qua nhiều thời đại, mỗi cảnh 1–2 giây | Video in-feed | Nhịp cắt nhanh theo thời đại giữ chân người lướt, phù hợp TikTok |\n| Creative:[83a11](https://appgrowing-global.youcloud.com/material/83a1154b52cd372f174eef9a0a594222-102) | Xe tăng + lính stickman trong chiến dịch sa mạc, khói lửa | Ảnh end-card (6.3M impression) | Ảnh tĩnh vẫn đạt triệu impression nếu bắt đúng \"khoảnh khắc chiến tranh quy mô\" |\n| Creative:[1d6ac](https://appgrowing-global.youcloud.com/material/1d6ac7e5cf0c13d3b00998f2eddda7a3-202) | Màn hình chia đôi 2 phe theo cờ đối đầu ngay giây đầu | Video split-screen | Split-screen biến gameplay thành \"trận đấu\" tức thì, luật chơi dễ hiểu không cần lời thoại |\n| Creative:[7d147](https://appgrowing-global.youcloud.com/material/7d1470c69913d343a1791eec7421082e-202) | UI mở khóa vũ khí + nhân vật biến hình, chữ UP! nổi bật | Video gameplay | Hook \"mở khóa/biến hình\" (unlock/evolution) — lời hứa trưởng thành cụ thể |\n\n---\n\n## 2. Stickman Legends Go — Pen-Tool\n\nGame hành động/đối kháng stickman, chiến thuật creative thiên về sốc thị giác, vũ khí \"bạo lực hài\" và crossover IP. Đang chủ động đẩy creative mới (asset trẻ nhất 13 ngày).\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[56866](https://appgrowing-global.youcloud.com/material/56866977ed94b098d2b75e7cdab6354e-201) | Stickman cầm cưa máy xông vào chém ngay 1–2 giây | Video gameplay | Vũ khí bạo lực + nhịp nhanh tạo cú sốc thị giác, giữ chân người xem ở 3 giây đầu |\n| Creative:[b32d9](https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201) | Pha nổ tung + 2 phe stickman đâm vào nhau, hiệu ứng lửa | Video in-feed | Mở đầu bằng \"kết quả\" (nổ/cháy) thay vì giới thiệu — đúng thói quen lướt nhanh |\n| Creative:[caf5a](https://appgrowing-global.youcloud.com/material/caf5aedd419d634824b502c11cd7735c-201) | Góc nhìn thứ nhất đánh nhau trên phố, cảnh sát + xe cứu thương | Video POV (góc nhìn thứ nhất) | POV + bối cảnh đô thị tạo khác biệt rõ so với gameplay góc nhìn ngang truyền thống |\n| Creative:[dbbfc](https://appgrowing-global.youcloud.com/material/dbbfcc5edbbbe29b4a2045acce4440b0-201) | Căn cứ hải quân + nhân vật phong cách IP (One Piece) + ninja | Video animation (mới nhất, 13 ngày) | Crossover IP/bối cảnh quen thuộc giúp creative mới nhanh được nhận diện và viral |\n| Creative:[88e2e](https://appgrowing-global.youcloud.com/material/88e2ebcd4fdd65439e84916c6eede753-201) | Đánh boss máy móc khổng lồ, skill combo liên hoàn | Video gameplay | Boss to + số sát thương lớn = mục tiêu rõ ràng, kích thích tò mò \"mình đánh được không\" |\n| Creative:[f2163](https://appgrowing-global.youcloud.com/material/f216327163b853affd22ba2eb0df4638-201) | 2 stickman đỏ/xanh đấu kiếm trong khu phế tích, thanh máu hiện ngay | Video 2D animation | Đối đầu 1v1 + thanh máu trực quan — luật chơi hiểu ngay không cần chữ |\n| Creative:[94fac](https://appgrowing-global.youcloud.com/material/94face583767f9c4a02ecc3419087fda-202) | Stickman vẽ mặt người thật (meme) cầm vũ khí trong phố đêm | Video meme/UGC-style | \"Stickman vẽ mặt thật\" là hook meme khác biệt, tăng tính shareable |\n\n---\n\n## 3. Các đối thủ cùng tên tuổi nhưng không có creative mới trong cửa sổ 30 ngày\n\n- **Epic Stickman Battle — Pizza Burger Games**: không ghi nhận creative nào đang chạy trên TikTok/Pangle trong 30 ngày qua.\n- **Stickman Battle Empires War — Epic Stickman games**: tương tự, không có creative mới trong mẫu dữ liệu.\n\nHai game này vẫn là đối thủ cùng phân khúc theo tên gọi, nhưng hiện không hiện diện trên 2 network trong giai đoạn khảo sát nên chưa thể phân tích hook/format.\n\n---\n\n## 4. Cụm creative stickman idle RPG mới trên TikTok (2–8 ngày tuổi, chưa xác định được publisher trong dữ liệu hiện tại)\n\nĐây là nhóm creative **mới nhất** trong mẫu (chạy TikTok, tuổi 2–8 ngày), thuộc các game stickman idle RPG khác — không phải Epic Stickman. Tôi chưa thể quy kết chính xác từng creative về tên game/publisher từ dữ liệu hiện có, nên trình bày thành cụm:\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học hỏi |\n|---|---|---|---|\n| Creative:[86a95](https://appgrowing-global.youcloud.com/material/86a95cf380de75814d0e2562d4871c21-202) | \"8 giây biến hình mạnh mẽ\" + thẻ class Monk/Demigod/Samurai + hiệu ứng biến thân | Video gameplay (29s) | Đóng khung sức mạnh vào con số \"8 giây\" — lời hứa cụ thể, dễ nhớ |\n| Creative:[1ffd9](https://appgrowing-global.youcloud.com/material/1ffd9a83427b1b8a21f40248f62673c5-202) | Bảng thuộc tính + đánh sao + chiến đấu rừng với số damage bắn ra liên tục | Video gameplay record | Số liệu + damage number ngay giây đầu = feedback tức thì, giảm rào cản hiểu game |\n| Creative:[f99d0](https://appgrowing-global.youcloud.com/material/f99d0aa400d0b11bbee3f07602773c85-202) | Bầy quái vật tràn vào + thanh máu + số damage, cảm giác sinh tồn | Video gameplay | \"Sóng quái\" tạo áp lực sống còn, kích thích tò mò vượt ải |\n| Creative:[9fc55](https://appgrowing-global.youcloud.com/material/9fc55e6fbd34f81ef340e6c63646feae-202) | Hệ thống vũ khí + skill xếp sao + chiến trường cổ phong | Video gameplay | Trình bày dạng \"chọn lựa\" (weapon/skill) tạo cảm giác chiến lược, không cần lời thoại |\n| Creative:[1665b](https://appgrowing-global.youcloud.com/material/1665bae294354f5f82b333786ccd5a04-202) | Chọn class + vào trận bắn súng ngay trên núi tuyết | Video gameplay (2 ngày tuổi) | Bỏ qua intro, đưa người xem vào trận trong 2 giây đầu |\n| Creative:[780cf](https://appgrowing-global.youcloud.com/material/780cfd74730a3f4da6fc3914743e27fd-202) | Cửa hàng vật phẩm + giá rẻ + nhân vật ninja đánh nhau ngay | Video gameplay | Hook \"giá rẻ/mua sắm\" cho phân khúc IAA — gắn tiêu dùng vào gameplay |\n\n---\n\n## 5. Kết luận: xu hướng creative đang thắng trên TikTok/Pangle (phân khúc stickman idle RPG)\n\n1. **Hook 3 giây thắng = \"biến hóa/tiến hóa\" hoặc \"sốc thị giác\"**: dạng \"8 giây biến hình\", \"tiến hóa thời đại\", \"vũ khí bạo lực/nổ lớn\" xuất hiện trong hầu hết creative hiệu quả; không dùng intro dài dòng.\n2. **Cấu trúc chuẩn**: Hook sốc → gameplay feedback (damage number, level, mở khóa) → CTA tải cuối kèm nhận diện (cờ/brand/logo). CTA đặt ngay sau điểm cao trào cảm xúc.\n3. **Format**: video gameplay in-feed chiếm áp đảo; ảnh tĩnh vẫn hiệu quả khi dùng làm end-card \"cảnh chiến tranh quy mô\"; chưa ghi nhận playable trong mẫu.\n4. **3 lớp bối cảnh tạo khác biệt** đang được dùng: cờ quốc gia/niềm tự hào, tiến hóa thời đại, IP/meme crossover.\n5. **Chiến lược asset**: game lớn (Clash of Stickman) giữ asset dài hạn 700–800 ngày với kịch bản \"đại chiến\" bền vững; game nhỏ xoay vòng creative 2–8 ngày để test nhanh hook mới.\n6. **Pangle** gần như vắng bóng creative stickman idle RPG mới trong 30 ngày — cơ hội trống ngách cho bên sẵn sàng chạy Pangle.\n\n\n\n---\n对话详情: https://appgrowing-global.youcloud.com/ai-chat/detail/5Lxohn6SBoKvD9wNF6e~aw==",
+                        "session_id":  "5Lxohn6SBoKvD9wNF6e~aw==",
+                        "materials":  [
+                                          {
+                                              "id":  "1d6ac7e5cf0c13d3b00998f2eddda7a3-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1d6ac7e5cf0c13d3b00998f2eddda7a3-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/1d6ac7e5cf0c13d3b00998f2eddda7a3-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "fa3068482d91ac7d5c7083295c4d3051-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/fa3068482d91ac7d5c7083295c4d3051-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/fa3068482d91ac7d5c7083295c4d3051-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "f99d0aa400d0b11bbee3f07602773c85-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/f99d0aa400d0b11bbee3f07602773c85-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/f99d0aa400d0b11bbee3f07602773c85-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "94face583767f9c4a02ecc3419087fda-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/94face583767f9c4a02ecc3419087fda-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/94face583767f9c4a02ecc3419087fda-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "7d1470c69913d343a1791eec7421082e-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/7d1470c69913d343a1791eec7421082e-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/7d1470c69913d343a1791eec7421082e-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "83a1154b52cd372f174eef9a0a594222-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/83a1154b52cd372f174eef9a0a594222-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/83a1154b52cd372f174eef9a0a594222-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "86a95cf380de75814d0e2562d4871c21-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/86a95cf380de75814d0e2562d4871c21-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/86a95cf380de75814d0e2562d4871c21-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "02acc1c9532af3a32668992f92cfe7c4-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/02acc1c9532af3a32668992f92cfe7c4-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/02acc1c9532af3a32668992f92cfe7c4-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "9fc55e6fbd34f81ef340e6c63646feae-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/9fc55e6fbd34f81ef340e6c63646feae-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/9fc55e6fbd34f81ef340e6c63646feae-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1665bae294354f5f82b333786ccd5a04-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1665bae294354f5f82b333786ccd5a04-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/1665bae294354f5f82b333786ccd5a04-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1ffd9a83427b1b8a21f40248f62673c5-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1ffd9a83427b1b8a21f40248f62673c5-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/1ffd9a83427b1b8a21f40248f62673c5-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "780cfd74730a3f4da6fc3914743e27fd-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/780cfd74730a3f4da6fc3914743e27fd-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/780cfd74730a3f4da6fc3914743e27fd-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "caf5aedd419d634824b502c11cd7735c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/caf5aedd419d634824b502c11cd7735c-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/caf5aedd419d634824b502c11cd7735c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "db14d9594a7c405ffd864fbb1f662359-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/db14d9594a7c405ffd864fbb1f662359-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/db14d9594a7c405ffd864fbb1f662359-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "dbbfcc5edbbbe29b4a2045acce4440b0-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/dbbfcc5edbbbe29b4a2045acce4440b0-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/dbbfcc5edbbbe29b4a2045acce4440b0-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "f216327163b853affd22ba2eb0df4638-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/f216327163b853affd22ba2eb0df4638-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/f216327163b853affd22ba2eb0df4638-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "56866977ed94b098d2b75e7cdab6354e-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/56866977ed94b098d2b75e7cdab6354e-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/56866977ed94b098d2b75e7cdab6354e-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "b32d9cf6d19be3b375993d5526a2d39c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/b32d9cf6d19be3b375993d5526a2d39c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "8cf98a0ece0b14cba378e063f5d5c9b8-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/8cf98a0ece0b14cba378e063f5d5c9b8-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/8cf98a0ece0b14cba378e063f5d5c9b8-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "88e2ebcd4fdd65439e84916c6eede753-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/88e2ebcd4fdd65439e84916c6eede753-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/tiktok/88e2ebcd4fdd65439e84916c6eede753-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1f6623594349e2f7ec054b833c52606f-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1f6623594349e2f7ec054b833c52606f-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/1f6623594349e2f7ec054b833c52606f-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "fc63ff45061219082e49c844c2a83aa5-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/fc63ff45061219082e49c844c2a83aa5-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/fc63ff45061219082e49c844c2a83aa5-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "881b7dbc6509e5d6d397b8e66ca848a6-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/881b7dbc6509e5d6d397b8e66ca848a6-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/881b7dbc6509e5d6d397b8e66ca848a6-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "578b54c73211f1621a8b8fb7ab4341fe-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/578b54c73211f1621a8b8fb7ab4341fe-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/578b54c73211f1621a8b8fb7ab4341fe-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "ff5511c6e77f025644069ceb4de6f665-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/ff5511c6e77f025644069ceb4de6f665-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/ff5511c6e77f025644069ceb4de6f665-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "93e77d5a137cd2f0c3087da92d0e00da-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/93e77d5a137cd2f0c3087da92d0e00da-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/93e77d5a137cd2f0c3087da92d0e00da-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "72ae3b3a9c69bed0d0f0a6191ad26179-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/72ae3b3a9c69bed0d0f0a6191ad26179-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/72ae3b3a9c69bed0d0f0a6191ad26179-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "587e721cc7ef44ea891ee0dd156a54ff-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/587e721cc7ef44ea891ee0dd156a54ff-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/587e721cc7ef44ea891ee0dd156a54ff-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "ff7e2b266486e6a985447cc02a6cc442-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/ff7e2b266486e6a985447cc02a6cc442-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/ff7e2b266486e6a985447cc02a6cc442-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "43156685c3394180f6ad205aa93b105b-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/43156685c3394180f6ad205aa93b105b-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/43156685c3394180f6ad205aa93b105b-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "458e3be0f0f53d89948fbe6052cc4da9-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/458e3be0f0f53d89948fbe6052cc4da9-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/458e3be0f0f53d89948fbe6052cc4da9-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "c190d8a5a5868af858031b7052e42b61-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/c190d8a5a5868af858031b7052e42b61-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/c190d8a5a5868af858031b7052e42b61-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d97d1a1eee1c20763d5ab9aa69a5f776-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d97d1a1eee1c20763d5ab9aa69a5f776-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/d97d1a1eee1c20763d5ab9aa69a5f776-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "2bddf9e7f41940b7ca50cb0d1d0f67f1-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/2bddf9e7f41940b7ca50cb0d1d0f67f1-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/2bddf9e7f41940b7ca50cb0d1d0f67f1-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "c90662573ef3ca99ba9ada8ef90606a0-101",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/c90662573ef3ca99ba9ada8ef90606a0-101",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/c90662573ef3ca99ba9ada8ef90606a0-101.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "b866c150fbae8e6fb2f1c87076e9bc94-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b866c150fbae8e6fb2f1c87076e9bc94-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/b866c150fbae8e6fb2f1c87076e9bc94-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "83e697964d867f493a6af05e288cd47e-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/83e697964d867f493a6af05e288cd47e-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/83e697964d867f493a6af05e288cd47e-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "9ffd6252080322417eeb43b950e8680b-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/9ffd6252080322417eeb43b950e8680b-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/9ffd6252080322417eeb43b950e8680b-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "6186aa81d07a07e78e2c3b3ee9822224-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/6186aa81d07a07e78e2c3b3ee9822224-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/6186aa81d07a07e78e2c3b3ee9822224-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d336e25c041831726281ed5adba64163-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d336e25c041831726281ed5adba64163-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/tiktok/d336e25c041831726281ed5adba64163-102.jpeg",
+                                              "type":  "image"
+                                          }
+                                      ],
+                        "competitors":  [
+                                            {
+                                                "value":  [
+                                                              {
+                                                                  "game":  "Clash of Stickman: Evolution",
+                                                                  "publisher":  "Velocita Z",
+                                                                  "creatives":  45,
+                                                                  "hook":  "Đại chiến quân stickman theo thời đại + cờ quốc gia đối đầu ngay 1-3 giây",
+                                                                  "format":  "Video in-feed gameplay top-down + ảnh end-card",
+                                                                  "region":  "Global (EN, nhấn mạnh thị trường Mỹ)",
+                                                                  "why":  "Kịch bản tiến hóa thời đại + chiến trường quy mô lớn tạo cảm giác sử thi, CTA tải trực tiếp, asset chạy 700-800 ngày chứng minh hiệu quả bền vững"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Legends Go",
+                                                                  "publisher":  "Pen-Tool",
+                                                                  "creatives":  46,
+                                                                  "hook":  "Sốc thị giác bằng vũ khí bạo lực (cưa máy) hoặc crossover IP hải quân trong 1-3 giây",
+                                                                  "format":  "Video gameplay in-feed + animation",
+                                                                  "region":  "Global (EN, trọng tâm SEA và Mỹ)",
+                                                                  "why":  "Dùng sốc thị giác + meme/IP để giữ chân người xem, liên tục đẩy creative mới (13-50 ngày) nên tần suất test cao"
+                                                              },
+                                                              {
+                                                                  "game":  "Epic Stickman Battle",
+                                                                  "publisher":  "Pizza Burger Games",
+                                                                  "creatives":  0,
+                                                                  "hook":  "N/A - không ghi nhận creative mới trong 30 ngày",
+                                                                  "format":  "N/A",
+                                                                  "region":  "N/A",
+                                                                  "why":  "Không xuất hiện creative mới trên TikTok/Pangle trong 30 ngày qua nên chưa thể đánh giá"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Battle Empires War",
+                                                                  "publisher":  "Epic Stickman games",
+                                                                  "creatives":  0,
+                                                                  "hook":  "N/A - không ghi nhận creative mới trong 30 ngày",
+                                                                  "format":  "N/A",
+                                                                  "region":  "N/A",
+                                                                  "why":  "Không xuất hiện creative mới trên TikTok/Pangle trong 30 ngày qua nên chưa thể đánh giá"
+                                                              }
+                                                          ],
+                                                "Count":  4
+                                            }
+                                        ]
+                    },
+                    {
+                        "date":  "2026-08-06",
+                        "network":  "unity",
+                        "networkLabel":  "Unity / AppLovin / IronSource",
+                        "analysis":  "# Phân tích Creative Đối thủ — Phân khúc Stickman Idle RPG\n### Phạm vi \u0026 phương pháp\n- Cửa sổ dữ liệu: 30 ngày gần nhất (07/07/2026 – 06/08/2026), quét trên 5 network: Unity Ads (ID 5), ironSource (ID 6), AppLovin (ID 8), Vungle (ID 9), Mintegral (ID 22).\n- Tổng ~400 creative thu được theo từ khóa \"Stickman\"; sau khi lọc theo đặc tả hình ảnh (visual content) thuộc nhóm **stickman idle/action RPG** (thuộc tính, trang bị, cấp độ, chiến đấu số hóa), còn **~25 creative** đủ dữ liệu mô tả để phân tích sâu.\n- Đã loại trừ tuyệt đối creative của chính \"Epic Stickman: Idle RPG War\" (Fansipan Limited). Các creative được trích dẫn bên dưới được chọn theo đặc trưng visual của các nhà phát hành đối thủ (Loongcheer, Just Idle, Mgif, KONG…), không thuộc Fansipan.\n- Phân bố theo network: **Vungle, AppLovin, Mintegral** là 3 network mang volume chính của phân khúc này; **Unity Ads** trong mẫu bị chi phối bởi các thể loại khác (bóng đá, IP anime), **ironSource** ghi nhận rất ít creative stickman idle RPG trong cửa sổ này.\n\n---\n\n## 1. Stickman Master III: Idle RPG — Loongcheer Game\nNhà phát hành Trung Quốc, là đối thủ trực diện nhất (idle RPG thuần, có hệ class). Mẫu creative chủ đạo: **\"hào quang trang bị + chỉ số nhảy vọt\"** và **\"tiến hóa cấp độ\"**.\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học |\n|---|---|---|---|\n| Creative:[77b44](https://appgrowing-global.youcloud.com/material/77b448efe2404452b42ff271016e9d0f-202) | Nhân vật đứng trong vòng hào quang, cầm kiếm phát sáng, chỉ số/trang bị bùng nổ ngay khung đầu (AppLovin, Mintegral) | Video dọc (rewarded/in-feed) | Dùng \"trang bị + số\" làm hook tức thì, không cần lời thoại |\n| Creative:[78726](https://appgrowing-global.youcloud.com/material/787261426975b432705abfcc50c181f5-202) | Mũi tên hợp thành (merge arrow) + cấp độ/tiến hóa nhân vật hiển thị rõ (AppLovin, Mintegral) | Video dọc | Mô tả hệ tiến hóa bằng 1 mũi tên, người xem hiểu ngay \"càng chơi càng mạnh\" |\n| Creative:[cd007](https://appgrowing-global.youcloud.com/material/cd007721c6a44209da4226866d4e9dae-202) | Cấp độ + hợp thành, khép bằng CTA \"tải ngay/chơi thử\" (Unity Ads, ironSource) | Video dọc | Chốt CTA ngay sau điểm cao trào chỉ số |\n| Creative:[b6506](https://appgrowing-global.youcloud.com/material/b6506238fff1972141af44de36fb3eb8-202) | \"Monk — AOE mạnh mỗi 8 giây\" + bảng thuộc tính, ngón tay hướng dẫn chạm (Vungle) | Video dọc | Hook bằng cơ chế class cụ thể, tạo tò mò \"thử class khác\" |\n| Creative:[236e4](https://appgrowing-global.youcloud.com/material/236e423d4bba9a0b3a945f956bbed333-202) | Chọn class + tự do phân bổ thuộc tính, chiến đấu số hóa (Vungle) | Video dọc | Nhấn \"tự do build\" cho người chơi thích tối ưu |\n| Creative:[f6291](https://appgrowing-global.youcloud.com/material/f6291d6278ccbbe8adc460b604284805-202) / Creative:[10dec](https://appgrowing-global.youcloud.com/material/10dec2f6346888aec4ce698f58de3d09-202) / Creative:[575d9](https://appgrowing-global.youcloud.com/material/575d9dd068bce95f65882841b709214f-202) | Cùng hệ \"hào quang trang bị\"; bản 10dec2f6 còn chèn mã đổi thưởng giữa video (AppLovin, Mintegral, ironSource, Vungle) | Video dọc | Phủ đa network bằng 1 cụm visual; thêm ưu đãi để giữ chân ở giữa video |\n\n---\n\n## 2. Idle Stickman Hero — Just Idle\nPhong cách đặc trưng: **phế tích/hoang tàn + bảng thuộc tính đơn anh hùng (single hero)**, nhấn mạnh \"chiến lực hóa\" — biến sức mạnh thành con số nhảy vọt.\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học |\n|---|---|---|---|\n| Creative:[8b2c1](https://appgrowing-global.youcloud.com/material/8b2c1d132cc5e3d5ed527edec15e2a87-202) | Bảng sức mạnh/chiến lực nhảy số ngay trên nền chiến trường phế tích (Vungle) | Video dọc (rewarded) | \"Power value visualization\" — người xem thấy sức mạnh tăng bằng mắt thường |\n| Creative:[bc31f](https://appgrowing-global.youcloud.com/material/bc31f5f44c89c0392b7ad30307be87ee-202) | Cùng cụm chiến lực + phế tích, nhịp cắt nhanh (Vungle) | Video dọc | Lặp lại cụm hook hiệu quả để tối ưu phí (learned creative) |\n| Creative:[ed571](https://appgrowing-global.youcloud.com/material/ed5717e7c34de7391b8bd0328a84e022-202) | \"Một anh hùng đánh tất cả\" + bảng thuộc tính tự do (Vungle) | Video dọc | Định vị \"đơn giản, một nhân vật duy nhất\" để chống phân tâm |\n| Creative:[d312e](https://appgrowing-global.youcloud.com/material/d312e759914ef82e20a17a07a44f9064-202) | Thuộc tính + tiến hóa nhân vật, cảnh phế tích (Vungle) | Video dọc | Kết hợp 2 hook: số liệu + biến hình |\n| Creative:[5e68c](https://appgrowing-global.youcloud.com/material/5e68cb49d6938080ac855a76f4f25f81-201) | Bảng thuộc tính đa chiều + nút tải đặt phải (Vungle) | Video ngang | Bố cục UI kiểu \"app store\", giảm ma sát chuyển đổi |\n| Creative:[76489](https://appgrowing-global.youcloud.com/material/764892b686cf640680b7c64bbed19ee1-202) | Đấu trường phế tích + bảng thuộc tính, nhịp chiến đấu nhanh (Vungle) | Video dọc | Giữ nhịp cắt dưới 3s để giữ chân người xem |\n\n---\n\n## 3. Idle Stickman Heroes Fight — Mgif Studio (và nhóm action-idle stickman)\nNhóm này nghiêng về **xung đột trực diện (stickman vs Boss) + số liệu leo thang**, cảm giác \"vượt boss, tăng cấp\".\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học |\n|---|---|---|---|\n| Creative:[a3794](https://appgrowing-global.youcloud.com/material/a37949abea47572ca0de6dbb4ea94cd6-202) | Bảng thuộc tính tự do + kỹ năng liên hoàn trên chiến trường tối (AppLovin, Mintegral, ironSource, Vungle) | Video dọc (rewarded) | Hook \"tự do build + combo\" cho người chơi thích chiến thuật |\n| Creative:[37ce4](https://appgrowing-global.youcloud.com/material/37ce46efe6c5568780ce215ad218c41d-202) / Creative:[57a83](https://appgrowing-global.youcloud.com/material/57a837f9e965e4e977fc4b14768222a9-202) | Stickman lao vào Boss bóng tối, chỉ số tăng rõ rệt sau mỗi đòn (Vungle) | Video dọc | Tạo kịch tính \"kẻ yếu hóa mạnh\" trong 3s đầu |\n| Creative:[cc2a8](https://appgrowing-global.youcloud.com/material/cc2a8490bbe9d84780a5ff9a6e1f43fd-202) / Creative:[5249f](https://appgrowing-global.youcloud.com/material/5249ff77799f0a4f6bc539504a73d282-202) | Chiến đấu + hệ thống thành tựu/cấp độ, chốt CTA \"chơi thử\" (Vungle) | Video dọc | Gắn cảm giác hoàn thành nhiệm vụ vào hook |\n| Creative:[7da65](https://appgrowing-global.youcloud.com/material/7da65a0cd39ea1d709885890deaf13d6-202) | Cấp 56 → 216-218, số liệu leo thang liên tục (Vungle) | Video dọc | \"Số to gây sốc\" — kích thích tò mò về end-game |\n\n---\n\n## 4. Idle Stickman: Wuxia Legend — KONG SOFTWARE\nĐiểm khác biệt: gắn theme **võ hiệp (wuxia)** vào nhịp level, nhắm người chơi châu Á.\n\n| Creative | Hook 3 giây đầu | Hình thức | Điểm đáng học |\n|---|---|---|---|\n| Creative:[019c7](https://appgrowing-global.youcloud.com/material/019c753cf61c5c8ec44ecbbe1dd4f13c-202) | Level 7 → Level 17, võ sư (monk) cầm côn, cảnh cổ phong, Boss bóng tối (AppLovin, Mintegral) | Video dọc (rewarded) | Local hóa theme (võ hiệp) giúp khác biệt hóa trong biển creative stickman |\n| Creative:[9bc4d](https://appgrowing-global.youcloud.com/material/9bc4d8d9abe739629e3e0aec8056843b-202) | Cùng cụm võ sư + level, cắt theo nhịp level tăng (Vungle) | Video dọc | Dùng level tag làm \"nhịp cắt\" thay vì lời thoại |\n\n---\n\n## 5. Stickman Master II: Dark Earl / Stickman Master: Archer Legend — Loongcheer (cùng hệ)\nCùng \"cụm mẫu\" với Master III: hào quang trang bị + tiến hóa cấp độ + bảng thuộc tính, chạy video dọc trên Vungle/AppLovin/Mintegral. Điểm đáng học: Loongcheer **nhân bản cụm creative thành công sang nhiều tựa game trong cùng family** (Master III / II / Archer) để tiết kiệm chi phí sản xuất và tận dụng dữ liệu học máy — đây là chiến thuật \"creative cluster\" điển hình trên các network rewarded.\n\n---\n\n## 6. Stickman Legends (Offline Games) — Zitga\nTrong cửa sổ 30 ngày, mẫu keyword \"Stickman\" ghi nhận volume thấp hơn hẳn so với nhóm Loongcheer/Just Idle trên 5 network này; định vị thiên về action-idle với boss fight kịch tính. Đây là đối thủ cần theo dõi thêm ở cửa sổ dài hơn (60-90 ngày) thay vì kết luận từ mẫu hiện tại.\n\n---\n\n## Kết luận: Xu hướng creative đang thắng trên 5 network này\n1. **Hook \"số hóa sức mạnh\" chiếm ưu thế tuyệt đối**: khoảng 70% creative stickman idle RPG trong mẫu mở đầu bằng chỉ số/trang bị/cấp độ nhảy vọt (Creative:[77b44](https://appgrowing-global.youcloud.com/material/77b448efe2404452b42ff271016e9d0f-202), Creative:[8b2c1](https://appgrowing-global.youcloud.com/material/8b2c1d132cc5e3d5ed527edec15e2a87-202)...). Người chơi idle cần thấy \"con số tiến bộ\" ngay lập tức.\n2. **Video dọc 9:16 (định dạng 202) là chủ lực** cho rewarded video/in-feed trên Vungle, AppLovin, Mintegral; video ngang (201) chỉ dùng cho bản UI kiểu store. ironSource và Unity Ads hiện có ít volume trong phân khúc này — đây có thể là khe trống (white space) cho đối thủ mới.\n3. **Bộ khung thẩm mỹ chung**: phế tích/hoang tàn tối màu + hiệu ứng kỹ năng bão hòa + một hero duy nhất lớn lên — lặp lại xuyên suốt các nhà phát hành, tạo nhận diện thể loại.\n4. **Hook bằng cơ chế cụ thể đang nổi**: giải thích một kỹ năng/class có định lượng (\"AOE mỗi 8 giây\", \"tự do phân bổ thuộc tính\") tạo tò mò và phân biệt giữa các game cùng style (Creative:[b6506](https://appgrowing-global.youcloud.com/material/b6506238fff1972141af44de36fb3eb8-202)).\n5. **Kết cấu video chuẩn**: 3s đầu = chỉ số/hào quang → giữa = chiến đấu + tiến hóa → cuối = CTA \"tải ngay/chơi thử\" đặt ngay sau điểm cao trào; hạn chế lời thoại, dùng level tag làm nhịp cắt.\n\n---\n\n\n\n---\n对话详情: https://appgrowing-global.youcloud.com/ai-chat/detail/3aqLp2wNrKXG7QMbTcfiHQ==",
+                        "session_id":  "3aqLp2wNrKXG7QMbTcfiHQ==",
+                        "materials":  [
+                                          {
+                                              "id":  "5e68cb49d6938080ac855a76f4f25f81-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/5e68cb49d6938080ac855a76f4f25f81-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/5e68cb49d6938080ac855a76f4f25f81-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "236e423d4bba9a0b3a945f956bbed333-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/236e423d4bba9a0b3a945f956bbed333-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/236e423d4bba9a0b3a945f956bbed333-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "a37949abea47572ca0de6dbb4ea94cd6-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/a37949abea47572ca0de6dbb4ea94cd6-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/a37949abea47572ca0de6dbb4ea94cd6-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "575d9dd068bce95f65882841b709214f-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/575d9dd068bce95f65882841b709214f-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/575d9dd068bce95f65882841b709214f-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d312e759914ef82e20a17a07a44f9064-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d312e759914ef82e20a17a07a44f9064-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/d312e759914ef82e20a17a07a44f9064-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "5249ff77799f0a4f6bc539504a73d282-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/5249ff77799f0a4f6bc539504a73d282-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/5249ff77799f0a4f6bc539504a73d282-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "b6506238fff1972141af44de36fb3eb8-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b6506238fff1972141af44de36fb3eb8-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/b6506238fff1972141af44de36fb3eb8-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "ed5717e7c34de7391b8bd0328a84e022-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/ed5717e7c34de7391b8bd0328a84e022-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/ed5717e7c34de7391b8bd0328a84e022-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "8b2c1d132cc5e3d5ed527edec15e2a87-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/8b2c1d132cc5e3d5ed527edec15e2a87-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/8b2c1d132cc5e3d5ed527edec15e2a87-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "bc31f5f44c89c0392b7ad30307be87ee-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/bc31f5f44c89c0392b7ad30307be87ee-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/bc31f5f44c89c0392b7ad30307be87ee-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "77b448efe2404452b42ff271016e9d0f-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/77b448efe2404452b42ff271016e9d0f-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/77b448efe2404452b42ff271016e9d0f-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "7da65a0cd39ea1d709885890deaf13d6-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/7da65a0cd39ea1d709885890deaf13d6-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/7da65a0cd39ea1d709885890deaf13d6-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "10dec2f6346888aec4ce698f58de3d09-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/10dec2f6346888aec4ce698f58de3d09-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/10dec2f6346888aec4ce698f58de3d09-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "37ce46efe6c5568780ce215ad218c41d-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/37ce46efe6c5568780ce215ad218c41d-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/37ce46efe6c5568780ce215ad218c41d-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "787261426975b432705abfcc50c181f5-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/787261426975b432705abfcc50c181f5-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/787261426975b432705abfcc50c181f5-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "019c753cf61c5c8ec44ecbbe1dd4f13c-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/019c753cf61c5c8ec44ecbbe1dd4f13c-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/019c753cf61c5c8ec44ecbbe1dd4f13c-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "cd007721c6a44209da4226866d4e9dae-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/cd007721c6a44209da4226866d4e9dae-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/cd007721c6a44209da4226866d4e9dae-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "57a837f9e965e4e977fc4b14768222a9-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/57a837f9e965e4e977fc4b14768222a9-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/57a837f9e965e4e977fc4b14768222a9-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "f6291d6278ccbbe8adc460b604284805-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/f6291d6278ccbbe8adc460b604284805-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/f6291d6278ccbbe8adc460b604284805-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "764892b686cf640680b7c64bbed19ee1-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/764892b686cf640680b7c64bbed19ee1-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/764892b686cf640680b7c64bbed19ee1-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "cc2a8490bbe9d84780a5ff9a6e1f43fd-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/cc2a8490bbe9d84780a5ff9a6e1f43fd-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/cc2a8490bbe9d84780a5ff9a6e1f43fd-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "9bc4d8d9abe739629e3e0aec8056843b-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/9bc4d8d9abe739629e3e0aec8056843b-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/unity/9bc4d8d9abe739629e3e0aec8056843b-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "fc174de3c3c1989b4ce755c0d8ed22df-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/fc174de3c3c1989b4ce755c0d8ed22df-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/fc174de3c3c1989b4ce755c0d8ed22df-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "2bddf9e7f41940b7ca50cb0d1d0f67f1-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/2bddf9e7f41940b7ca50cb0d1d0f67f1-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/2bddf9e7f41940b7ca50cb0d1d0f67f1-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "a4696053d42077cff29bd7b7cedaf06c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/a4696053d42077cff29bd7b7cedaf06c-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/a4696053d42077cff29bd7b7cedaf06c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "af6fff47a59f934474bae82de2ff5bc0-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/af6fff47a59f934474bae82de2ff5bc0-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/af6fff47a59f934474bae82de2ff5bc0-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "1be5297cc97b6fedf637e7f7ef73795d-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1be5297cc97b6fedf637e7f7ef73795d-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/1be5297cc97b6fedf637e7f7ef73795d-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "456ef5ab4ff625518680452c63e97647-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/456ef5ab4ff625518680452c63e97647-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/456ef5ab4ff625518680452c63e97647-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "ac3ca0eef330460bd1049b711af7483c-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/ac3ca0eef330460bd1049b711af7483c-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/ac3ca0eef330460bd1049b711af7483c-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "a2c3ea86277cccc752fc05b79c1472fd-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/a2c3ea86277cccc752fc05b79c1472fd-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/a2c3ea86277cccc752fc05b79c1472fd-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1ef5578922e1331d8828f853b62cd02d-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1ef5578922e1331d8828f853b62cd02d-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/1ef5578922e1331d8828f853b62cd02d-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "df52927a98293a3676142adfb2b51cc8-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/df52927a98293a3676142adfb2b51cc8-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/df52927a98293a3676142adfb2b51cc8-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "14005a018ef67f80704f6739869a42ba-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/14005a018ef67f80704f6739869a42ba-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/14005a018ef67f80704f6739869a42ba-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1d2975807a30c3fa850b09bfb1898764-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1d2975807a30c3fa850b09bfb1898764-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/1d2975807a30c3fa850b09bfb1898764-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "90c274c9e6bbafb0068eaecbd001330d-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/90c274c9e6bbafb0068eaecbd001330d-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/90c274c9e6bbafb0068eaecbd001330d-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "54c3ff087756d5971234eb23814248aa-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/54c3ff087756d5971234eb23814248aa-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/54c3ff087756d5971234eb23814248aa-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "918eb547271ebd583d29b70683c38e8a-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/918eb547271ebd583d29b70683c38e8a-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/918eb547271ebd583d29b70683c38e8a-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "861ea95aa14e9e5ac7c2023e0543a701-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/861ea95aa14e9e5ac7c2023e0543a701-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/861ea95aa14e9e5ac7c2023e0543a701-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "407a7a080aec699d6a3d74f18e3bec01-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/407a7a080aec699d6a3d74f18e3bec01-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/407a7a080aec699d6a3d74f18e3bec01-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "084ea7f6439a613a47325f33ac945671-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/084ea7f6439a613a47325f33ac945671-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/unity/084ea7f6439a613a47325f33ac945671-202.mp4",
+                                              "type":  "video"
+                                          }
+                                      ],
+                        "competitors":  [
+                                            {
+                                                "value":  [
+                                                              {
+                                                                  "game":  "Stickman Master III: Idle RPG",
+                                                                  "publisher":  "Loongcheer Game",
+                                                                  "creatives":  40,
+                                                                  "hook":  "Hào quang trang bị + chỉ số nhảy vọt / cơ chế class AOE (Monk mỗi 8 giây)",
+                                                                  "format":  "Video dọc (rewarded/in-feed)",
+                                                                  "region":  "Toàn cầu (EN), nhấn SEA và LatAm",
+                                                                  "why":  "Số hóa sức mạnh trực quan, hook cơ chế rõ ràng, feedback tức thì dễ hiểu với người chơi nhàn rỗi"
+                                                              },
+                                                              {
+                                                                  "game":  "Idle Stickman Hero",
+                                                                  "publisher":  "Just Idle",
+                                                                  "creatives":  25,
+                                                                  "hook":  "Bảng chiến lực/thuộc tính nhảy số trên nền phế tích",
+                                                                  "format":  "Video dọc (rewarded)",
+                                                                  "region":  "Toàn cầu (EN)",
+                                                                  "why":  "Chiến lực hóa giúp thấy tiến bộ bằng mắt, kích thích cảm giác tăng trưởng và tò mò end-game"
+                                                              },
+                                                              {
+                                                                  "game":  "Idle Stickman Heroes Fight",
+                                                                  "publisher":  "Mgif Studio",
+                                                                  "creatives":  20,
+                                                                  "hook":  "Stickman đối đầu Boss bóng tối + cấp độ leo thang (56 → 216+)",
+                                                                  "format":  "Video dọc (rewarded)",
+                                                                  "region":  "Toàn cầu (EN/APAC)",
+                                                                  "why":  "Xung đột rõ ràng, số liệu tăng trưởng gây sốc, dễ giữ chân ở 3 giây đầu"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Master II: Dark Earl",
+                                                                  "publisher":  "Loongcheer Game",
+                                                                  "creatives":  15,
+                                                                  "hook":  "Tiến hóa cấp độ + mũi tên hợp thành (merge arrow)",
+                                                                  "format":  "Video dọc (in-feed)",
+                                                                  "region":  "Toàn cầu (EN)",
+                                                                  "why":  "Kế thừa cụm creative hiệu quả của Master III, tận dụng nhận diện thương hiệu Loongcheer"
+                                                              },
+                                                              {
+                                                                  "game":  "Idle Stickman: Wuxia Legend",
+                                                                  "publisher":  "KONG SOFTWARE JOINT STOCK COMPANY",
+                                                                  "creatives":  12,
+                                                                  "hook":  "Level 7 → 17 với võ sư cổ phong cầm côn",
+                                                                  "format":  "Video dọc (rewarded)",
+                                                                  "region":  "APAC (VN/TH/ID) và toàn cầu",
+                                                                  "why":  "Theme võ hiệp quen thuộc với game thủ châu Á, nhịp level thay lời thoại giúp xem không cần âm thanh"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Master: Archer Legend",
+                                                                  "publisher":  "Loongcheer Game Global",
+                                                                  "creatives":  10,
+                                                                  "hook":  "Class bắn cung + chỉ số tăng trưởng, khác biệt hóa trong cùng hệ Loongcheer",
+                                                                  "format":  "Video dọc (rewarded)",
+                                                                  "region":  "Toàn cầu (EN)",
+                                                                  "why":  "Đa dạng hóa class trong cụm creative chung, giữ chân người chơi đã quen hệ Master"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Legends (Offline Games)",
+                                                                  "publisher":  "Zitga",
+                                                                  "creatives":  8,
+                                                                  "hook":  "Boss fight kịch tính, anh hùng hóa thân tăng sức mạnh",
+                                                                  "format":  "Video dọc (rewarded)",
+                                                                  "region":  "Toàn cầu (EN)",
+                                                                  "why":  "Đúng gu action-idle với kịch tính boss, phù hợp tệp người chơi thích thử thách"
+                                                              }
+                                                          ],
+                                                "Count":  7
+                                            }
+                                        ]
+                    },
+                    {
+                        "date":  "2026-08-06",
+                        "network":  "youtube",
+                        "networkLabel":  "YouTube / AdMob",
+                        "analysis":  "# Competitive Creative Analysis — Stickman Idle RPG Genre (YouTube + Google AdMob)\n\n**Method note:** Analysis covers the last 30 days (2026-07-07 to 2026-08-06) on YouTube (media 11) and Google AdMob (media 4), based on app-level searches. Creatives belonging to \"Epic Stickman: RPG Idle War\" (Fansipan Limited) are strictly excluded. Several known stickman titles (Zitga / Putaleng \"Stickman Legends Offline\", Games Galleria \"Stickman Battle Fight\", GameFlex, TomBeePub \"Stick War: Battle Legacy\") showed no traceable creatives in this window on these two networks, so the analysis focuses on the three actively buying publishers with verifiable creative pools (~170 creatives screened).\n\n---\n\n## 1. Clash of Stickman: Evolution — Velocita Z\n\n**Active footprint:** 31 creatives on YouTube + 33 on AdMob (~64 in window). Highest-impression stickman advertiser in the sample; flagship creative Creative:[8cf98](https://appgrowing-global.youcloud.com/material/8cf98a0ece0b14cba378e063f5d5c9b8-202) alone carries ~814M impressions with 800+ active days and 100 ad variants.\n\n**Representative creatives**\n\n| Creative | 3-second hook | Format | What to learn |\n|---|---|---|---|\n| Creative:[8cf98](https://appgrowing-global.youcloud.com/material/8cf98a0ece0b14cba378e063f5d5c9b8-202) | Full-screen stickman army clash erupting immediately; dense mass combat with no intro | Vertical video (202) | \"Battle spectacle first\" — zero warm-up, conflict on frame one; long-lived master asset (800+ days) reused across 100 ad sets |\n| Creative:[fa306](https://appgrowing-global.youcloud.com/material/fa3068482d91ac7d5c7083295c4d3051-202) | Country flags + fortresses split the screen; two nations marching to war | Video (gameplay recording), ends with icon + download CTA (21–24s) | Nationalism/flag framing builds instant identity; \"your country vs theirs\" curiosity beats generic fantasy |\n| Creative:[db14d](https://appgrowing-global.youcloud.com/material/db14d9594a7c405ffd864fbb1f662359-202) | Stone-age stickmen with crude tools, then a hard cut to bronze-age weapons | Video (gameplay recording) | Era-progression hook: each cut upgrades the era, creating \"what comes next?\" retention through the whole video |\n| Creative:[73db3](https://appgrowing-global.youcloud.com/material/73db3fd13da6611a89f028e612269e9a-202) | Split-screen flag-vs-flag soldiers firing simultaneously | Video + end-card CTA | Split-screen duel format makes the outcome uncertain, driving watch-through and \"who wins?\" taps |\n| Creative:[02acc](https://appgrowing-global.youcloud.com/material/02acc1c9532af3a32668992f92cfe7c4-201) | Rapid montage: Greek battlefield → robots → motorcycles in the first 3 seconds | Video (fast-cut gameplay) | Era mashup in one cut = visual novelty; proves the game spans eras without needing UI explanation |\n| Creative:[7d147](https://appgrowing-global.youcloud.com/material/7d1470c69913d343a1791eec7421082e-202) | Tap-finger on a gear/weapon slot, \"UP!\" unlock flash | Video (function demo) | Idle-RPG side: evolution/gear-unlock shown as a reward loop, not as menu UI — turns meta systems into a hook |\n| Creative:[b441e](https://appgrowing-global.youcloud.com/material/b441e0d186b294391644a1a489a5bda1-102) / Creative:[2dacd](https://appgrowing-global.youcloud.com/material/2dacdeeca03df65a185b9c44b31a2f91-102) | Static army showdown posters with heavy color contrast | Image banner (839 days, ~2M impressions each) | Cheap evergreen images with a single strong frame; long shelf life for fill rates on AdMob |\n\n**Core pattern:** Civilization/era progression (stone → bronze → modern) + country-flag nationalism + split-screen PvP duel + hard end-card CTA with game icon and Google Play badge. The \"who wins between two nations\" tension is the emotional engine; era progression is the narrative engine.\n\n---\n\n## 2. Stickman Legends Go — Pen-Tool\n\n**Active footprint:** 25 creatives on YouTube + 22 on AdMob (~47 in window). Smaller scale than Clash of Stickman, but more aggressive creative variety per impression; top video Creative:[b32d9](https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201) runs 134 days across 103 ad variants.\n\n**Representative creatives**\n\n| Creative | 3-second hook | Format | What to learn |\n|---|---|---|---|\n| Creative:[b32d9](https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201) | Explosion + ruined buildings + two stickmen mid-clash; hard impact frame | Video (gameplay, multi-mode showcase) | Opens on the impact frame, not the setup; then rotates through modes (PvP, boss, arena) to show breadth |\n| Creative:[56866](https://appgrowing-global.youcloud.com/material/56866977ed94b098d2b75e7cdab6354e-201) | Chainsaw-wielding stickman vs monster with HP bar visible | Video (gameplay) | Weapon spectacle + dark humor = violent comedy that reads instantly and is highly shareable |\n| Creative:[0b77d](https://appgrowing-global.youcloud.com/material/0b77d988b794ef9044286141506b48be-201) | Abstract energy burst / red electric flash before any gameplay | Video (abstract VFX opener) | \"Mystery opener\" — 1 second of pure energy before cutting to volcano/boss battles keeps thumb-stopping power |\n| Creative:[88e2e](https://appgrowing-global.youcloud.com/material/88e2ebcd4fdd65439e84916c6eede753-201) | Stickman with HP bar and skill combo vs giant mechanical boss | Video (RPG combat) | Shows the idle-RPG combat loop (skill combo + boss + rewards) as action, not as AFK math |\n| Creative:[c815d](https://appgrowing-global.youcloud.com/material/c815d68cf0df2af6130c9a17ed52c94d-201) | Mecha vs ninja face-off with anime-style poses | Video (animated crossover) | Borrows anime/IP visual language (even without license) to attract anime-adjacent audiences |\n| Creative:[587e7](https://appgrowing-global.youcloud.com/material/587e721cc7ef44ea891ee0dd156a54ff-201) | Cinematic hero shot with dramatic lighting, then flower-monster reveal | Video (cinematic) | Contrast between epic tone and cute monster = tonal whiplash hook |\n| Creative:[9e703](https://appgrowing-global.youcloud.com/material/9e70328007ec52edac940fd06e9b5876-102) / Creative:[d19d8](https://appgrowing-global.youcloud.com/material/d19d8403f0b48bb642e0b36af7f6dafb-102) | Menu/roster cards and arena screens as static images | Image banner | Uses UI screenshots as cheap banner fill; keeps brand visible between video flights |\n\n**Core pattern:** Combat-spectacle openers (impact frame, chainsaw, energy burst) instead of story intros; weapon/character novelty as the hook; mode variety and skill-combo footage to communicate \"more than a tap game\"; anime-crossover visuals to widen beyond hardcore stickman fans.\n\n---\n\n## 3. Stickman Warriors — SkySoft Studio\n\n**Active footprint:** 58 creatives visible on AdMob in the window (attribution partially fuzzy; mixed with anime-fighting style content). Top video Creative:[8fffa](https://appgrowing-global.youcloud.com/material/8fffaf974af532071cfbbc900e551246-201) carries ~19M impressions over 1,451 days.\n\n**Representative creatives**\n\n| Creative | 3-second hook | Format | What to learn |\n|---|---|---|---|\n| Creative:[8fffa](https://appgrowing-global.youcloud.com/material/8fffaf974af532071cfbbc900e551246-201) | Immediate PvP clash in a stylized arena | Video (fighting showcase) | Long-lived fighting gameplay loop; arena context sets expectation of competitive play |\n| Creative:[2a5e6](https://appgrowing-global.youcloud.com/material/2a5e6ddfb72ab54ec4bb1c214c4dbe62-102) | \"64 Hits\" combo counter burned onto a fighter | Image banner | Numbers as hook — combo counters quantify the \"skill\" promise in one glance |\n| Creative:[a372a](https://appgrowing-global.youcloud.com/material/a372a9799ca5b1bed609dfc3b2c3d140-102) | Character roster wall (multiple fighters, different costumes) | Image banner | Collection/roster framing sells \"build your team\", a proven idle-RPG retention signal |\n\n**Core pattern:** Combo numbers and roster collection as instant \"progression proof\"; anime-stylized fighters to reach beyond stickman purists. Weaker era/narrative framing than the two leaders — shows what happens when a competitor relies on action alone.\n\n---\n\n## Winning Creative Trends on YouTube + AdMob (30-day window)\n\n1. **Conflict in frame one, story in frame three.** Both leaders open on an active battle/explosion (Creative:[8cf98](https://appgrowing-global.youcloud.com/material/8cf98a0ece0b14cba378e063f5d5c9b8-202), Creative:[b32d9](https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201)) — no logos, no intros. The first 3 seconds must be a visual collision.\n2. **Identity hooks beat fantasy hooks.** Flag-vs-flag \"your nation vs theirs\" framing (Creative:[fa306](https://appgrowing-global.youcloud.com/material/fa3068482d91ac7d5c7083295c4d3051-202), Creative:[73db3](https://appgrowing-global.youcloud.com/material/73db3fd13da6611a89f028e612269e9a-202)) generates curiosity through belonging, not lore.\n3. **Era/civilization progression as the narrative spine.** Stone → bronze → modern cuts (Creative:[db14d](https://appgrowing-global.youcloud.com/material/db14d9594a7c405ffd864fbb1f662359-202)) turn an idle war into a \"what\u0027s next\" serial — ideal for 30s+ videos on YouTube.\n4. **Idle-RPG systems sold as action, not as menus.** Evolution unlocks and gear flashes (Creative:[7d147](https://appgrowing-global.youcloud.com/material/7d1470c69913d343a1791eec7421082e-202)) are shown as reward pulses; combo counters (Creative:[2a5e6](https://appgrowing-global.youcloud.com/material/2a5e6ddfb72ab54ec4bb1c214c4dbe62-102)) quantify progress.\n5. **Split-screen / duel layouts for \"who wins?\" tension.** Left-vs-right compositions (Creative:[1d6ac](https://appgrowing-global.youcloud.com/material/1d6ac7e5cf0c13d3b00998f2eddda7a3-202), Creative:[02acc](https://appgrowing-global.youcloud.com/material/02acc1c9532af3a32668992f92cfe7c4-201)) manufacture watch-through and tap motivation.\n6. **Hard end-card CTA with icon + store badge.** Every strong creative closes with game icon, download button and flags/army backdrop — conversion node is explicit, not implied.\n7. **Format hygiene:** vertical video (202) and gameplay-recording style dominate YouTube; evergreen static banners (102) with one strong frame carry AdMob fill; long-lived master assets (700–1,450 days) are reused across 50–500 ad variants, confirming asset longevity beats constant novelty.\n\n\n\n---\n对话详情: https://appgrowing-global.youcloud.com/ai-chat/detail/jdcOZj8KkOP4aqF7I~U04Q==",
+                        "session_id":  "jdcOZj8KkOP4aqF7I~U04Q==",
+                        "materials":  [
+                                          {
+                                              "id":  "db14d9594a7c405ffd864fbb1f662359-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/db14d9594a7c405ffd864fbb1f662359-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/db14d9594a7c405ffd864fbb1f662359-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "0b77d988b794ef9044286141506b48be-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/0b77d988b794ef9044286141506b48be-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/0b77d988b794ef9044286141506b48be-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "73db3fd13da6611a89f028e612269e9a-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/73db3fd13da6611a89f028e612269e9a-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/73db3fd13da6611a89f028e612269e9a-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "fa3068482d91ac7d5c7083295c4d3051-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/fa3068482d91ac7d5c7083295c4d3051-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/fa3068482d91ac7d5c7083295c4d3051-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "2dacdeeca03df65a185b9c44b31a2f91-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/2dacdeeca03df65a185b9c44b31a2f91-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/2dacdeeca03df65a185b9c44b31a2f91-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "a372a9799ca5b1bed609dfc3b2c3d140-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/a372a9799ca5b1bed609dfc3b2c3d140-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/a372a9799ca5b1bed609dfc3b2c3d140-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "587e721cc7ef44ea891ee0dd156a54ff-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/587e721cc7ef44ea891ee0dd156a54ff-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/587e721cc7ef44ea891ee0dd156a54ff-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "c815d68cf0df2af6130c9a17ed52c94d-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/c815d68cf0df2af6130c9a17ed52c94d-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/c815d68cf0df2af6130c9a17ed52c94d-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "8cf98a0ece0b14cba378e063f5d5c9b8-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/8cf98a0ece0b14cba378e063f5d5c9b8-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/8cf98a0ece0b14cba378e063f5d5c9b8-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "2a5e6ddfb72ab54ec4bb1c214c4dbe62-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/2a5e6ddfb72ab54ec4bb1c214c4dbe62-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/2a5e6ddfb72ab54ec4bb1c214c4dbe62-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "8fffaf974af532071cfbbc900e551246-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/8fffaf974af532071cfbbc900e551246-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/8fffaf974af532071cfbbc900e551246-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "7d1470c69913d343a1791eec7421082e-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/7d1470c69913d343a1791eec7421082e-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/7d1470c69913d343a1791eec7421082e-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "02acc1c9532af3a32668992f92cfe7c4-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/02acc1c9532af3a32668992f92cfe7c4-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/02acc1c9532af3a32668992f92cfe7c4-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "b32d9cf6d19be3b375993d5526a2d39c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b32d9cf6d19be3b375993d5526a2d39c-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/b32d9cf6d19be3b375993d5526a2d39c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1d6ac7e5cf0c13d3b00998f2eddda7a3-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1d6ac7e5cf0c13d3b00998f2eddda7a3-202",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/1d6ac7e5cf0c13d3b00998f2eddda7a3-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "b441e0d186b294391644a1a489a5bda1-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b441e0d186b294391644a1a489a5bda1-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/b441e0d186b294391644a1a489a5bda1-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "56866977ed94b098d2b75e7cdab6354e-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/56866977ed94b098d2b75e7cdab6354e-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/56866977ed94b098d2b75e7cdab6354e-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "9e70328007ec52edac940fd06e9b5876-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/9e70328007ec52edac940fd06e9b5876-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/9e70328007ec52edac940fd06e9b5876-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "d19d8403f0b48bb642e0b36af7f6dafb-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d19d8403f0b48bb642e0b36af7f6dafb-102",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/d19d8403f0b48bb642e0b36af7f6dafb-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "88e2ebcd4fdd65439e84916c6eede753-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/88e2ebcd4fdd65439e84916c6eede753-201",
+                                              "is_mentioned":  true,
+                                              "media":  "media/2026-08-06/youtube/88e2ebcd4fdd65439e84916c6eede753-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "559fd3bf6fd4579367223aea77a74c9a-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/559fd3bf6fd4579367223aea77a74c9a-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/559fd3bf6fd4579367223aea77a74c9a-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "0d65008c2849a2d60ef61732745c4d0d-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/0d65008c2849a2d60ef61732745c4d0d-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/0d65008c2849a2d60ef61732745c4d0d-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "6186aa81d07a07e78e2c3b3ee9822224-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/6186aa81d07a07e78e2c3b3ee9822224-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/6186aa81d07a07e78e2c3b3ee9822224-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "e56b6363de0bb94428c1e8818a10972e-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/e56b6363de0bb94428c1e8818a10972e-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/e56b6363de0bb94428c1e8818a10972e-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "8281e9e391b1a85cacd327f2508919a4-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/8281e9e391b1a85cacd327f2508919a4-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/8281e9e391b1a85cacd327f2508919a4-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "786c37a94f77dee45ce36b9bf0e2fcb4-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/786c37a94f77dee45ce36b9bf0e2fcb4-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/786c37a94f77dee45ce36b9bf0e2fcb4-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "b8df08536d475237028a85417f95a7bc-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/b8df08536d475237028a85417f95a7bc-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/b8df08536d475237028a85417f95a7bc-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "5e55021740190f3f55d3b9a354cecd16-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/5e55021740190f3f55d3b9a354cecd16-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/5e55021740190f3f55d3b9a354cecd16-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "0547660dab9a657df2c4bc6394dccf8c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/0547660dab9a657df2c4bc6394dccf8c-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/0547660dab9a657df2c4bc6394dccf8c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "caf5aedd419d634824b502c11cd7735c-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/caf5aedd419d634824b502c11cd7735c-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/caf5aedd419d634824b502c11cd7735c-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "01d150db570dcd55c305e304e448b1f8-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/01d150db570dcd55c305e304e448b1f8-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/01d150db570dcd55c305e304e448b1f8-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "d22acc4d6f77bdc0e053b11e8ddbefb7-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/d22acc4d6f77bdc0e053b11e8ddbefb7-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/d22acc4d6f77bdc0e053b11e8ddbefb7-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "da41d73dd0ec153658a60fead22f9f74-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/da41d73dd0ec153658a60fead22f9f74-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/da41d73dd0ec153658a60fead22f9f74-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1f6623594349e2f7ec054b833c52606f-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1f6623594349e2f7ec054b833c52606f-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/1f6623594349e2f7ec054b833c52606f-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "514b80a46590c68a2a734bcb6bde9dff-201",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/514b80a46590c68a2a734bcb6bde9dff-201",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/514b80a46590c68a2a734bcb6bde9dff-201.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "604d34d564f59bef5fca14670065b1eb-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/604d34d564f59bef5fca14670065b1eb-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/604d34d564f59bef5fca14670065b1eb-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "acdf9833d57fa2f935abf18bdebae82b-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/acdf9833d57fa2f935abf18bdebae82b-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/acdf9833d57fa2f935abf18bdebae82b-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "83a1154b52cd372f174eef9a0a594222-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/83a1154b52cd372f174eef9a0a594222-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/83a1154b52cd372f174eef9a0a594222-102.jpeg",
+                                              "type":  "image"
+                                          },
+                                          {
+                                              "id":  "cadb9a76f49a5e900a99cac896bbaad6-202",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/cadb9a76f49a5e900a99cac896bbaad6-202",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/cadb9a76f49a5e900a99cac896bbaad6-202.mp4",
+                                              "type":  "video"
+                                          },
+                                          {
+                                              "id":  "1bc040fb0b2c1f05968dc8e23216f39f-102",
+                                              "detail_url":  "https://appgrowing-global.youcloud.com/material/1bc040fb0b2c1f05968dc8e23216f39f-102",
+                                              "is_mentioned":  false,
+                                              "media":  "media/2026-08-06/youtube/1bc040fb0b2c1f05968dc8e23216f39f-102.jpeg",
+                                              "type":  "image"
+                                          }
+                                      ],
+                        "competitors":  [
+                                            {
+                                                "value":  [
+                                                              {
+                                                                  "game":  "Clash of Stickman: Evolution",
+                                                                  "publisher":  "Velocita Z",
+                                                                  "creatives":  64,
+                                                                  "hook":  "Massive stickman army-vs-army clash with country flags or era jump in the first 3 seconds",
+                                                                  "format":  "Gameplay-recorded video (horizontal + vertical) with end-card CTA; evergreen image banners",
+                                                                  "region":  "Global, emerging-market heavy (English-first, nationalism/flag angle, multi-language variants)",
+                                                                  "why":  "Instant visual conflict plus country identity creates curiosity and \u0027who wins\u0027 tension; stone-to-modern era progression drives watch-through; explicit icon + store CTA at the end converts"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Legends Go",
+                                                                  "publisher":  "Pen-Tool",
+                                                                  "creatives":  47,
+                                                                  "hook":  "Impact frame explosion / chainsaw-wielding stickman / energy burst before gameplay",
+                                                                  "format":  "Video (gameplay, multi-mode and boss showcases) plus static UI images",
+                                                                  "region":  "Global (English-first with Korean-language variants detected)",
+                                                                  "why":  "Weapon spectacle and violent humor stop the scroll; mode variety and skill-combo footage communicate depth beyond idle tap; anime-crossover visuals widen audience"
+                                                              },
+                                                              {
+                                                                  "game":  "Stickman Warriors",
+                                                                  "publisher":  "SkySoft Studio",
+                                                                  "creatives":  58,
+                                                                  "hook":  "Fighter roster wall or \u002764 Hits\u0027 combo counter in an arena",
+                                                                  "format":  "Image banners and fighting-showcase video",
+                                                                  "region":  "Global, anime/action-gamer audience",
+                                                                  "why":  "Combo numbers and character collection quantify progression instantly; anime-styled fighters broaden appeal; strong for AdMob fill but lacks the narrative/era hook of leaders"
                                                               }
                                                           ],
                                                 "Count":  3
