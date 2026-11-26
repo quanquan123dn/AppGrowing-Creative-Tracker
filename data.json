@@ -1,6 +1,6 @@
 ﻿{
     "anchor":  "Epic Stickman: Idle RPG War",
-    "generated":  "2026-11-25T08:00:21",
+    "generated":  "2026-11-26T08:00:49",
     "tldr":  [
 
              ],
@@ -23085,6 +23085,58 @@
                     },
                     {
                         "date":  "2026-11-25",
+                        "network":  "youtube",
+                        "networkLabel":  "YouTube / AdMob",
+                        "analysis":  "âš ï¸ Lá»—i khi gá»i API hÃ´m nay: The remote server returned an error: (403) Forbidden.",
+                        "session_id":  "",
+                        "materials":  [
+
+                                      ],
+                        "competitors":  [
+
+                                        ]
+                    },
+                    {
+                        "date":  "2026-11-26",
+                        "network":  "meta",
+                        "networkLabel":  "Facebook / Meta",
+                        "analysis":  "âš ï¸ Lá»—i khi gá»i API hÃ´m nay: Unable to connect to the remote server",
+                        "session_id":  "",
+                        "materials":  [
+
+                                      ],
+                        "competitors":  [
+
+                                        ]
+                    },
+                    {
+                        "date":  "2026-11-26",
+                        "network":  "tiktok",
+                        "networkLabel":  "TikTok / Pangle",
+                        "analysis":  "âš ï¸ Lá»—i khi gá»i API hÃ´m nay: The remote server returned an error: (403) Forbidden.",
+                        "session_id":  "",
+                        "materials":  [
+
+                                      ],
+                        "competitors":  [
+
+                                        ]
+                    },
+                    {
+                        "date":  "2026-11-26",
+                        "network":  "unity",
+                        "networkLabel":  "Unity / AppLovin / IronSource",
+                        "analysis":  "âš ï¸ Lá»—i khi gá»i API hÃ´m nay: The remote server returned an error: (403) Forbidden.",
+                        "session_id":  "",
+                        "materials":  [
+
+                                      ],
+                        "competitors":  [
+
+                                        ]
+                    },
+                    {
+                        "date":  "2026-11-26",
                         "network":  "youtube",
                         "networkLabel":  "YouTube / AdMob",
                         "analysis":  "âš ï¸ Lá»—i khi gá»i API hÃ´m nay: The remote server returned an error: (403) Forbidden.",
